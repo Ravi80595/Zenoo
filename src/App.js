@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 
 function App() {
-const [backgroundColor, setBackgroundColor] = useState('#ffffff'); // Initial background color
+const [backgroundColor, setBackgroundColor] = useState('linear-gradient(0deg, rgba(116,126,236,1) 8%, rgba(99,122,230,1) 17%, rgba(48,84,255,1) 30%, rgba(31,66,254,1) 38%, rgba(33,52,219,1) 49%, rgba(15,27,223,1) 65%, rgba(24,15,209,1) 81%, rgba(6,0,212,1) 100%)'); // Initial background color
 
 const handleButtonClick = (color) => {
   setBackgroundColor(color);

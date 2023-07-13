@@ -46,50 +46,49 @@ return(
     <Box>
         <Text fontSize={20}>Want to further your experience and learn more about the aviation industry? Check out these resources that Atmos is based upon.</Text>
     </Box>
-    <Heading pt={10} fontFamily='_NewYork'>OUR VARIOUS ARTICLES</Heading>
+    <Heading pt='150px' fontSize={50} fontFamily='_NewYork'>OUR ARTICLES</Heading>
 
 
-    <Flex pt={10} pb={5} justifyContent='space-between'>
-        <Heading>REAL ESTATE</Heading>
+    <Flex pt={10} pb={3} justifyContent='space-between'>
+        <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text>See the source</Text>
         <GoArrowUpRight/>
         </Flex>
     </Flex>
     <hr height='22px'/>
-    <Flex pt={5} pb={5} justifyContent='space-between'>
-        <Heading>Real Estate</Heading>
+    <Flex pt={5} pb={3} justifyContent='space-between'>
+        <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text>See the source</Text>
         <GoArrowUpRight/>
         </Flex>
     </Flex>
     <hr height='12px'/>
-    <Flex pt={5} pb={5} justifyContent='space-between'>
-        <Heading>Real Estate</Heading>
+    <Flex pt={5} pb={3} justifyContent='space-between'>
+        <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text>See the source</Text>
         <GoArrowUpRight/>
         </Flex>
     </Flex>
     <hr height='12px'/>
-    <Flex pt={5} pb={5} justifyContent='space-between'>
-        <Heading>Real Estate</Heading>
+    <Flex pt={5} pb={3} justifyContent='space-between'>
+        <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text>See the source</Text>
         <GoArrowUpRight/>
         </Flex>
     </Flex>
     <hr height='12px'/>
-    <Flex pt={5} pb={5} justifyContent='space-between'>
-        <Heading>Real Estate</Heading>
+    <Flex pt={5} pb={3} justifyContent='space-between'>
+        <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text>See the source</Text>
         <GoArrowUpRight/>
         </Flex>
     </Flex>
     <hr height='12px'/>
-
     <Heading pt={20} fontSize={60} fontFamily='_NewYork'>Zenoo Playgrounds </Heading>
     <Text pt={8} lineHeight={8} fontSize={20}>This experiment is part of Leeroy's Playground, a creative space used to experiment technically, visually, while pushing boundaries of artistry and inventiveness.</Text>
     <Button mt={5}>CTA</Button>

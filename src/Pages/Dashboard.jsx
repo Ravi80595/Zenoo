@@ -9,10 +9,14 @@ import '../CSS/Dashboard.css'
 import '../CSS/Fonts.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {BiLogoInstagramAlt} from 'react-icons/bi'
+import {AiFillFacebook} from 'react-icons/ai'
+
 
 const Dashboard = () => {
     const [isContentVisible, setIsContentVisible] = useState(true);
     
+
 useEffect(() => {
     AOS.init();
 }, [])
@@ -32,7 +36,7 @@ return () => window.removeEventListener('scroll', handleScroll);
 }, []);
 
 return(
-    <Box>
+    <Box className='custom-scrollbar'>
         <Flex pt={10} color='white' fontSize={60} justifyContent='space-around'>
             <Box fontSize={20} w='5%' textAlign='left'>
                 logo
@@ -101,9 +105,21 @@ return(
     <Heading data-aos='fade-up' pt={20} fontSize={60} fontFamily='_NewYork'>Zenoo Playgrounds </Heading>
     <Text data-aos='fade-up' pt={8} lineHeight={8} fontSize={20}>This experiment is part of Leeroy's Playground, a creative space used to experiment technically, visually, while pushing boundaries of artistry and inventiveness.</Text>
     <Button mt={5}>CTA</Button>
-    </Box>
+
+
+    <Flex mt='150px' justifyContent='space-between'>
+    <Text color='white'>Created by Laudco Media</Text>
+    <Flex justifyContent='space-around' fontSize={20}>
+        <BiLogoInstagramAlt className='footerLogo'/>
+        <AiFillFacebook className='footerLogo'/>
+        <AiFillFacebook className='footerLogo'/>
+        <BiLogoInstagramAlt className='footerLogo'/>
+        <AiFillFacebook className='footerLogo'/>
+        <BiLogoInstagramAlt className='footerLogo'/>
     </Flex>
-    <Text color='white' mt='150px'>Created by Laudco Media</Text>
+    </Flex>   
+    </Box>
+     </Flex>
     </Box>
   )
 }

@@ -1,6 +1,7 @@
 import { Box,Flex,Text,Heading,Button,Image} from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import {GrClose} from 'react-icons/gr'
+import {CloseIcon} from '@chakra-ui/icons'
 import { Link } from 'react-router-dom'
 // import Cube from '../Components/Cube'
 import {GoArrowUpRight} from 'react-icons/go'
@@ -30,8 +31,8 @@ return(
             <Box w='40%' className={`content ${isContentVisible ? '' : 'hidden'}`} fontFamily='"DM Sans",sans-serif' position='fixed'>ZENOO</Box>
             <Box pt={3} color='white'>
                 <Link to='/'>
-        <Box position='fixed' fontSize={40} right={20} color='white'>
-            <GrClose color='red' />
+        <Box position='fixed' fontSize={30} right={20} color='white'>
+            <CloseIcon color='white' />
             </Box>
             </Link>
             </Box>

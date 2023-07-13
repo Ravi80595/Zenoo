@@ -14,7 +14,7 @@ return (
         <Text fontSize={190} fontFamily='_NewYork' pt={150} color='white'>ZENOO</Text>
         <SvgImage className="rotating-image" />
         <Link to='/main'>
-        <Button className='button' p={7} borderRadius={20} color={colors}>Explore opportunities</Button>
+        <Button  _hover={{backgroundColor:colors,color:'white',transition:'1s ease'}} p={7} borderRadius={20} color={colors}>Explore opportunities</Button>
         </Link>
         </Box>
         

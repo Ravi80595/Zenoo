@@ -26,10 +26,11 @@ const Dashboard = () => {
 return(
     <Box>
         <Flex pt={10} color='white' fontSize={60} justifyContent='space-around'>
-            <Box w='10%'>
+            <Box fontSize={20} w='5%' textAlign='left'>
+                logo
             </Box >
-            <Box w='40%' className={`content ${isContentVisible ? '' : 'hidden'}`} fontFamily='"DM Sans",sans-serif' position='fixed'>ZENOO</Box>
-            <Box pt={3} color='white'>
+            <Box w='50%' className={`content ${isContentVisible ? '' : 'hidden'}`} fontFamily='"DM Sans",sans-serif' position='fixed'>ZENOO</Box>
+            <Box pt={3} color='white' w='40%'>
                 <Link to='/'>
         <Box position='fixed' fontSize={30} right={20} color='white'>
             <CloseIcon color='white' />

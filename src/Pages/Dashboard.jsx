@@ -15,21 +15,21 @@ const Dashboard = () => {
     
 useEffect(() => {
     AOS.init();
-    }, [])
+}, [])
 
 
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const threshold = 100; 
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+useEffect(() => {
+const handleScroll = () => {
+    const threshold = 100; 
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      setIsContentVisible(scrollTop < threshold);
-    };
+    setIsContentVisible(scrollTop < threshold);
+};
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+window.addEventListener('scroll', handleScroll);
+return () => window.removeEventListener('scroll', handleScroll);
+}, []);
 
 return(
     <Box>
@@ -58,7 +58,7 @@ return(
     <Heading pt='150px' fontSize={50} fontFamily='_NewYork'>OUR ARTICLES</Heading>
 
 
-    <Flex pt={10} pb={3} justifyContent='space-between'>
+    <Flex data-aos='fade-up' pt={10} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text'>See the source</Text>
@@ -66,7 +66,7 @@ return(
         </Flex>
     </Flex>
     <hr height='22px'/>
-    <Flex pt={5} pb={3} justifyContent='space-between'>
+    <Flex data-aos='fade-up' pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text'>See the source</Text>
@@ -74,7 +74,7 @@ return(
         </Flex>
     </Flex>
     <hr height='12px'/>
-    <Flex pt={5} pb={3} justifyContent='space-between'>
+    <Flex data-aos='fade-up' pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text'>See the source</Text>
@@ -82,7 +82,7 @@ return(
         </Flex>
     </Flex>
     <hr height='12px'/>
-    <Flex pt={5} pb={3} justifyContent='space-between'>
+    <Flex data-aos='fade-up' pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text'>See the source</Text>
@@ -90,7 +90,7 @@ return(
         </Flex>
     </Flex>
     <hr height='12px'/>
-    <Flex pt={5} pb={3} justifyContent='space-between'>
+    <Flex data-aos='fade-up' pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text'>See the source</Text>

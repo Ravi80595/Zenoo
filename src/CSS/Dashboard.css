@@ -6,4 +6,18 @@
 .content.hidden {
     opacity: 0;
 }
+
+/* Scroll Animation */
+
+
+
+.scrolling-text {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
   
+  .scrolling-text:hover {
+    transform: rotateX(360deg);
+  }

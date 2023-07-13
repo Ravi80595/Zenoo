@@ -7,9 +7,17 @@ import { Link } from 'react-router-dom'
 import {GoArrowUpRight} from 'react-icons/go'
 import '../CSS/Dashboard.css'
 import '../CSS/Fonts.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Dashboard = () => {
     const [isContentVisible, setIsContentVisible] = useState(true);
+    
+useEffect(() => {
+    AOS.init();
+    }, [])
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,11 +47,11 @@ return(
             </Box>
         </Flex>
     <Flex w='90%' m='auto' zIndex={9999}>
-    <Box w='40%' mt='180px' ml={0} position='fixed'>
+    <Box data-aos='fade-right' w='40%' mt='180px' ml={0} position='fixed'>
         {/* <Cube/> */}
         <Image h='350px' backgroundColor='transparent' src='https://habtech.ca/wp-content/uploads/2016/05/scalablegif1.gif'/>
     </Box>
-    <Box textAlign='left' mt={200} ml='50%' w='40%' color={'white'}>
+    <Box data-aos='fade-left' textAlign='left' mt={200} ml='50%' w='40%' color={'white'}>
     <Box>
         <Text fontSize={20}>Want to further your experience and learn more about the aviation industry? Check out these resources that Atmos is based upon.</Text>
     </Box>
@@ -53,7 +61,7 @@ return(
     <Flex pt={10} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
-        <Text>See the source</Text>
+        <Text className='scrolling-text'>See the source</Text>
         <GoArrowUpRight/>
         </Flex>
     </Flex>
@@ -61,7 +69,7 @@ return(
     <Flex pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
-        <Text>See the source</Text>
+        <Text className='scrolling-text'>See the source</Text>
         <GoArrowUpRight/>
         </Flex>
     </Flex>
@@ -69,7 +77,7 @@ return(
     <Flex pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
-        <Text>See the source</Text>
+        <Text className='scrolling-text'>See the source</Text>
         <GoArrowUpRight/>
         </Flex>
     </Flex>
@@ -77,7 +85,7 @@ return(
     <Flex pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
-        <Text>See the source</Text>
+        <Text className='scrolling-text'>See the source</Text>
         <GoArrowUpRight/>
         </Flex>
     </Flex>
@@ -85,13 +93,13 @@ return(
     <Flex pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
-        <Text>See the source</Text>
+        <Text className='scrolling-text'>See the source</Text>
         <GoArrowUpRight/>
         </Flex>
     </Flex>
     <hr height='12px'/>
-    <Heading pt={20} fontSize={60} fontFamily='_NewYork'>Zenoo Playgrounds </Heading>
-    <Text pt={8} lineHeight={8} fontSize={20}>This experiment is part of Leeroy's Playground, a creative space used to experiment technically, visually, while pushing boundaries of artistry and inventiveness.</Text>
+    <Heading data-aos='fade-up' pt={20} fontSize={60} fontFamily='_NewYork'>Zenoo Playgrounds </Heading>
+    <Text data-aos='fade-up' pt={8} lineHeight={8} fontSize={20}>This experiment is part of Leeroy's Playground, a creative space used to experiment technically, visually, while pushing boundaries of artistry and inventiveness.</Text>
     <Button mt={5}>CTA</Button>
     </Box>
     </Flex>

@@ -31,7 +31,7 @@ return(
             <Box pt={3} color='white'>
                 <Link to='/'>
         <Box position='fixed' fontSize={40} right={20} color='white'>
-            <GrClose />
+            <GrClose color='red' />
             </Box>
             </Link>
             </Box>

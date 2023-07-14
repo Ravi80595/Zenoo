@@ -1,7 +1,5 @@
 import { Box,Flex,Text,Heading,Button,Image} from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
-import {GrClose} from 'react-icons/gr'
-import {CloseIcon} from '@chakra-ui/icons'
 import { Link } from 'react-router-dom'
 // import Cube from '../Components/Cube'
 import {GoArrowUpRight} from 'react-icons/go'
@@ -9,8 +7,8 @@ import '../CSS/Dashboard.css'
 import '../CSS/Fonts.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {BiLogoInstagramAlt} from 'react-icons/bi'
-import {AiFillFacebook} from 'react-icons/ai'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 
 const Dashboard = () => {
@@ -27,7 +25,6 @@ useEffect(() => {
 const handleScroll = () => {
     const threshold = 100; 
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
     setIsContentVisible(scrollTop < threshold);
 };
 
@@ -36,33 +33,14 @@ return () => window.removeEventListener('scroll', handleScroll);
 }, []);
 
 return(
-    <Box className='custom-scrollbar'>
-        <Flex pt={10} color='white' fontSize={60} justifyContent='space-around'>
-            <Box fontSize={20} w='5%' textAlign='left'>
-                logo
-            </Box >
-            <Box w='50%' className={`content ${isContentVisible ? '' : 'hidden'}`} fontFamily='"DM Sans",sans-serif' position='fixed'>ZENOO</Box>
-            <Box pt={3} color='white' w='40%'>
-                <Link to='/'>
-        <Box position='fixed' fontSize={30} right={20} color='white'>
-            <CloseIcon color='white' />
-            </Box>
-            </Link>
-            </Box>
-        </Flex>
-    <Flex w='90%' m='auto' zIndex={9999}>
-    <Box data-aos='fade-right' w='40%' mt='180px' ml={0} position='fixed'>
-        {/* <Cube/> */}
+    <Box className='custom-scrollbar' style={{background:'linear-gradient(0deg, rgb(127, 133, 203) 15%, rgb(176 176 183) 22%, rgba(41,66,186,1) 40%, rgba(33,51,153,1) 47%, rgba(25,37,133,1) 57%, rgba(9,15,105,1) 70%, rgba(13,8,107,1) 81%, rgba(17,4,73,1) 100%)'}}>
+        <Navbar/>
+<Flex zIndex={9999} w='90%' m='auto'>
+    <Box data-aos='fade-right' w='40%' mt='180px'>
         <Image h='350px' backgroundColor='transparent' src='https://habtech.ca/wp-content/uploads/2016/05/scalablegif1.gif'/>
     </Box>
-    <Box data-aos='fade-left' textAlign='left' mt={200} ml='50%' w='40%' color={'white'}>
-    <Box>
-        <Text fontSize={20}>Want to further your experience and learn more about the aviation industry? Check out these resources that Atmos is based upon.</Text>
-    </Box>
-    <Heading pt='150px' fontSize={50} fontFamily='_NewYork'>OUR ARTICLES</Heading>
-
-
-    <Flex data-aos='fade-up' pt={10} pb={3} justifyContent='space-between'>
+    <Box data-aos='fade-left' textAlign='left' w='40%' m='auto' mt={150} color={'white'}>
+    <Flex data-aos='fade-up' pt={0} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text'>See the source</Text>
@@ -101,25 +79,25 @@ return(
         <GoArrowUpRight/>
         </Flex>
     </Flex>
-    <hr height='12px'/>
-    <Heading data-aos='fade-up' pt={20} fontSize={60} fontFamily='_NewYork'>Zenoo Playgrounds </Heading>
-    <Text data-aos='fade-up' pt={8} lineHeight={8} fontSize={20}>This experiment is part of Leeroy's Playground, a creative space used to experiment technically, visually, while pushing boundaries of artistry and inventiveness.</Text>
-    <Button mt={5}>CTA</Button>
-
-
-    <Flex mt='150px' justifyContent='space-between'>
-    <Text color='white'>Created by Laudco Media</Text>
-    <Flex justifyContent='space-around' fontSize={20}>
-        <BiLogoInstagramAlt className='footerLogo'/>
-        <AiFillFacebook className='footerLogo'/>
-        <AiFillFacebook className='footerLogo'/>
-        <BiLogoInstagramAlt className='footerLogo'/>
-        <AiFillFacebook className='footerLogo'/>
-        <BiLogoInstagramAlt className='footerLogo'/>
-    </Flex>
-    </Flex>   
+    <hr height='12px'/>   
     </Box>
      </Flex>
+<Flex justifyContent='space-around'  pt={50} w='60%' m='auto' gap={40}>
+    <Box w='50%' color='white'>
+        <Image src='https://images.squarespace-cdn.com/content/v1/59b892162278e7ce6ec4c43c/1681326962477-S0N2M9H0WBBC14MHZEA8/Final+MS+Sticker.png?format=2500w'/>
+        <Text fontWeight='bold' fontSize={30}>Mission</Text>
+        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. In recusandae earum quod, praesentium debitis nam veritatis eum officia ullam perferendis, ipsum asperiores est voluptatum? Tempora ipsum id veritatis mollitia ea laudantium labore?</Text>
+        <Button pl={35} pr={35} mt={5}>CTA</Button>
+    </Box>
+    <Box w='50%' color='white'>
+        <Image src='https://images.squarespace-cdn.com/content/v1/59b892162278e7ce6ec4c43c/1681326962477-S0N2M9H0WBBC14MHZEA8/Final+MS+Sticker.png?format=2500w'/>
+        <Text fontWeight='bold' fontSize={30} mt={-3}>Vission</Text>
+        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. In recusandae earum quod, praesentium debitis nam veritatis eum officia ullam perferendis, ipsum asperiores est voluptatum? Tempora ipsum id veritatis mollitia ea laudantium labore?</Text>
+        <Button pl={35} pr={35} mt={5}>CTA</Button>
+    </Box>
+</Flex>
+     <Footer/>
+
     </Box>
   )
 }

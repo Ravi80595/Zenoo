@@ -1,7 +1,6 @@
 import { Box,Flex,Text,Heading,Button,Image} from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-// import Cube from '../Components/Cube'
 import {GoArrowUpRight} from 'react-icons/go'
 import '../CSS/Dashboard.css'
 import '../CSS/Fonts.css'
@@ -35,7 +34,7 @@ return () => window.removeEventListener('scroll', handleScroll);
 return(
     <Box className='custom-scrollbar' style={{background:'linear-gradient(0deg, rgb(127, 133, 203) 15%, rgb(176 176 183) 22%, rgba(41,66,186,1) 40%, rgba(33,51,153,1) 47%, rgba(25,37,133,1) 57%, rgba(9,15,105,1) 70%, rgba(13,8,107,1) 81%, rgba(17,4,73,1) 100%)'}}>
         <Navbar/>
-<Flex zIndex={9999} w='90%' m='auto'>
+    <Flex zIndex={9999} w='90%' m='auto'>
     <Box data-aos='fade-right' w='40%' mt='180px'>
         <Image h='350px' backgroundColor='transparent' src='https://habtech.ca/wp-content/uploads/2016/05/scalablegif1.gif'/>
     </Box>
@@ -82,7 +81,7 @@ return(
     <hr height='12px'/>   
     </Box>
      </Flex>
-<Flex justifyContent='space-around'  pt={50} w='60%' m='auto' gap={40}>
+    <Flex justifyContent='space-around'  pt={50} w='60%' m='auto' gap={40}>
     <Box w='50%' color='white'>
         <Image src='https://images.squarespace-cdn.com/content/v1/59b892162278e7ce6ec4c43c/1681326962477-S0N2M9H0WBBC14MHZEA8/Final+MS+Sticker.png?format=2500w'/>
         <Text fontWeight='bold' fontSize={30}>Mission</Text>
@@ -97,7 +96,6 @@ return(
     </Box>
 </Flex>
      <Footer/>
-
     </Box>
   )
 }

@@ -12,18 +12,19 @@ return (
         <Flex justifyContent='space-between' >
         <Image w={10} src={Logo}/>
         <Flex fontSize={20} justifyContent='space-around' w='30%' pt={0} color='white'>
+            <Link to='/about'>
             <Text>About us</Text>
+            </Link>
+            <Link to='/contact'>
             <Text>Contact us</Text>
+            </Link>
         <Box w='10%'>   
         <Link to='/'>
         <CloseIcon color='white' />
         </Link>   
-        
         </Box>
         </Flex>
-        
         </Flex>
-      
     </Box>
   )
 }

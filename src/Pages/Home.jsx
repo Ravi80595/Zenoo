@@ -39,7 +39,7 @@ return (
         <Box h={'90vh'} data-aos='fade-up'>
         <Text className='title' fontSize={190}  fontFamily='_NewYork' pt={100} color='white'>ZENOO</Text>
         <div color='white' class="scrolling-text1" w='50%' m='auto'>
-        <p>Uniting Home and Finance with Trust</p>
+        <p>Uniting Real-Estate and Finance with Trust</p>
         </div>
         <Link to='/main'>
         <Button  _hover={{backgroundColor:colors,color:'white',transition:'1s ease'}} p={7} borderRadius={20} color={colors}>Explore opportunities</Button>

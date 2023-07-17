@@ -96,7 +96,7 @@ return(
     </Box>
 </Flex>
      <Footer/>
-     <Flex background='black' gap={10} position='fixed' left={0} bottom={0} zIndex={999999}>
+     <Flex p={2} background='black' gap={10} position='fixed' left={0} bottom={0} zIndex={999999}>
           <Link to='/main'>
           <Button>Template 1</Button>
           </Link>

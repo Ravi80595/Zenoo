@@ -24,7 +24,7 @@ nav ul {
     display: none;
     position: absolute;
     background-color: grey;
-    padding: 10px;
+    padding: 20px;
     color: white;
   }
   
@@ -36,4 +36,21 @@ nav ul {
     color: white;
     text-decoration: none;
   }
+
+  .brandBox {
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .brandBox:hover {
+    transform: translateY(-20px);
+  }
+
+  
   

@@ -8,7 +8,7 @@ const Navbar1= () => {
 
 
 return (
-    <Box position='fixed' w='100%' zIndex={999999999}>
+    <Box position='fixed' w='100%' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
     <Box p={5} background='#0e0c4d'>
         <Flex justifyContent='space-between'>
           <Link to='/template1'>
@@ -31,16 +31,15 @@ return (
     </Box>
    
     <nav>
-  <ul> <Flex justifyContent='space-around' background='grey'>
+  <ul> <Flex justifyContent='space-around' background='white' color='black'>
     <li class="dropdown">
     <a href="#">Brand</a>
-    
      <ul class="dropdown-menu">
         <li><a href="#">Service 1</a></li>
         <li><a href="#">Service 2</a></li>
         <li><a href="#">Service 3</a></li>
       </ul>
-      </li><Box zIndex={99999999} borderLeft='2px solid white'></Box>
+      </li><Box zIndex={99999999} borderLeft='2px solid black'></Box>
     <li class="dropdown">
       <a href="#">Brand</a>
       <ul class="dropdown-menu">
@@ -48,7 +47,7 @@ return (
         <li><a href="#">Service 2</a></li>
         <li><a href="#">Service 3</a></li>
       </ul>
-    </li><Box zIndex={99999999} borderLeft='2px solid white'></Box>
+    </li><Box zIndex={99999999} borderLeft='2px solid black'></Box>
     <li class="dropdown">
     <a href="#">Brand</a>
     <ul class="dropdown-menu">
@@ -56,7 +55,7 @@ return (
         <li><a href="#">Service 2</a></li>
         <li><a href="#">Service 3</a></li>
       </ul>
-    </li><Box zIndex={99999999} borderLeft='2px solid white'></Box>
+    </li><Box zIndex={99999999} borderLeft='2px solid black'></Box>
     <li class="dropdown">
     <a href="#">Brand</a>
     <ul class="dropdown-menu">
@@ -64,7 +63,7 @@ return (
         <li><a href="#">Service 2</a></li>
         <li><a href="#">Service 3</a></li>
       </ul>
-    </li><Box zIndex={99999999} borderLeft='2px solid white'></Box>
+    </li><Box zIndex={99999999} borderLeft='2px solid black'></Box>
     <li class="dropdown">
     <a href="#">Brand</a>
     <ul class="dropdown-menu">
@@ -72,7 +71,7 @@ return (
         <li><a href="#">Service 2</a></li>
         <li><a href="#">Service 3</a></li>
       </ul>
-    </li><Box zIndex={99999999} borderLeft='2px solid white'></Box>
+    </li><Box zIndex={99999999} borderLeft='2px solid black'></Box>
     <li class="dropdown">
     <a href="#">Brand</a>
     <ul class="dropdown-menu">
@@ -80,7 +79,7 @@ return (
         <li><a href="#">Service 2</a></li>
         <li><a href="#">Service 3</a></li>
       </ul>
-    </li><Box zIndex={99999999} borderLeft='2px solid white'></Box>
+    </li><Box zIndex={99999999} borderLeft='2px solid black'></Box>
     <li class="dropdown">
     <a href="#">Brand</a>
     <ul class="dropdown-menu">
@@ -88,7 +87,7 @@ return (
         <li><a href="#">Service 2</a></li>
         <li><a href="#">Service 3</a></li>
       </ul>
-    </li><Box zIndex={99999999} borderLeft='2px solid white'></Box>
+    </li><Box zIndex={99999999} borderLeft='2px solid black'></Box>
     </Flex>
   </ul>
 

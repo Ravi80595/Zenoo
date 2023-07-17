@@ -9,9 +9,9 @@ const Home2 = () => {
 
 
 return (
-    <>
+    <Box background='#f9f9f9'>
       <Navbar1/>
-      <Box pt={50}>
+      <Box pt={50} >
         <Box pt={50}>
       <Carousel/>
         </Box>
@@ -33,7 +33,7 @@ return (
 </Flex>
 
       <Footer1/>
-    </>
+    </Box>
   )
 }
 

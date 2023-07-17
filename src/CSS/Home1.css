@@ -12,8 +12,8 @@ nav ul {
     display: block;
     padding: 2px;
     text-decoration: none;
-    color: white;
-    background-color: grey;
+    color: black;
+    background-color: white;
   }
   
   nav ul li:hover > .dropdown-menu {
@@ -23,9 +23,9 @@ nav ul {
   .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: grey;
+    background-color: white;
     padding: 20px;
-    color: white;
+    color: black;
   }
   
   .dropdown-menu li {
@@ -33,14 +33,14 @@ nav ul {
   }
   
   .dropdown-menu li a {
-    color: white;
+    color: black;
     text-decoration: none;
   }
 
   .brandBox {
     width: 200px;
     height: 200px;
-    background-color: #f1f1f1;
+    background-color: f1f1f1;
     /* display: flex; */
     /* justify-content: center; */
     align-items: center;

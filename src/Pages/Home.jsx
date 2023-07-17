@@ -34,6 +34,9 @@ return (
           <Link to='/template2'>
           <Button>Template 3</Button>
           </Link>
+          <Link to='/template3'>
+          <Button>Template 4</Button>
+          </Link>
         </Flex>
     </Flex>
         <Box h={'90vh'} data-aos='fade-up'>

@@ -56,7 +56,7 @@ return (
         </Box>
       </Box>
     </Box>
-    <Footer1/>
+    
     </>
   )
 }

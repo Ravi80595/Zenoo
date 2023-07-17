@@ -3,6 +3,7 @@ import Navbar1 from './Navbar1'
 import { Box, Flex,Image,Button,Text,Heading } from '@chakra-ui/react'
 import '../../CSS/Home1.css'
 import Footer1 from './Footer1'
+import { Link } from 'react-router-dom'
 
 const Home1 = () => {
 
@@ -63,6 +64,20 @@ return (
     </Box>
 </Flex>
 <Footer1/>
+<Flex background='black' gap={10} position='fixed' left={0} bottom={0} zIndex={999999}>
+          <Link to='/main'>
+          <Button>Template 1</Button>
+          </Link>
+          <Link to='/template1'>
+          <Button>Template 2</Button>
+          </Link>
+          <Link to='/template2'>
+          <Button>Template 3</Button>
+          </Link>
+          <Link to='/template3'>
+          <Button>Template 4</Button>
+          </Link>
+        </Flex>
     </Box>
   )
 }

@@ -4,6 +4,7 @@ import Footer1 from '../Template1/Footer1'
 import Carousel from '../../Components/Carousel'
 import { Box,Flex,Image,Text,Button } from '@chakra-ui/react'
 import Slider from '../../Components/Slider'
+import { Link } from 'react-router-dom'
 
 const Home2 = () => {
 
@@ -33,6 +34,20 @@ return (
 </Flex>
 
       <Footer1/>
+      <Flex background='black' gap={10} position='fixed' left={0} bottom={0} zIndex={999999}>
+          <Link to='/main'>
+          <Button>Template 1</Button>
+          </Link>
+          <Link to='/template1'>
+          <Button>Template 2</Button>
+          </Link>
+          <Link to='/template2'>
+          <Button>Template 3</Button>
+          </Link>
+          <Link to='/template3'>
+          <Button>Template 4</Button>
+          </Link>
+        </Flex>
     </Box>
   )
 }

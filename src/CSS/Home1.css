@@ -23,8 +23,9 @@ nav ul {
   .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: grey;
     padding: 10px;
+    color: white;
   }
   
   .dropdown-menu li {
@@ -32,7 +33,7 @@ nav ul {
   }
   
   .dropdown-menu li a {
-    color: #333;
+    color: white;
     text-decoration: none;
   }
   

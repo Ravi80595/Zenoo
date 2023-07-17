@@ -10,8 +10,10 @@ const Navbar1= () => {
 return (
     <Box position='fixed' w='100%' zIndex={999999999}>
     <Box p={5} background='#0e0c4d'>
-        <Flex justifyContent='space-between' >
+        <Flex justifyContent='space-between'>
+          <Link to='/template1'>
         <Image w={10} src={Logo}/>
+        </Link>
         <Flex fontSize={20} justifyContent='space-around' w='30%' pt={0} color='white'>
             <Link to='/about'>
             <Text>About us</Text>

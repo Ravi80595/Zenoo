@@ -1,14 +1,14 @@
 import { Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
-import styles from '../CSS/footer.module.css'
+import styles from '../../CSS/footer.module.css'
 import { BsFacebook, BsInstagram, BsYoutube, BsTwitter } from "react-icons/bs";
 
 
-const Footer = () => {
+const Footer1 = () => {
 
 
 return (
-    <div className={styles.container} style={{background:'linear-gradient(180deg, rgba(127,133,203,1) 15%, rgba(99,102,230,1) 22%, rgba(41,66,186,1) 40%, rgba(33,51,153,1) 47%, rgba(25,37,133,1) 57%, rgba(9,15,105,1) 70%, rgba(13,8,107,1) 81%, rgba(17,4,73,1) 100%)'}}>
+    <div className={styles.container} style={{background:'#303441'}}>
       <Stack color='white' direction="horizontal" justify="space-between">
         <Stack gap="10px">
           <Text fontSize="16px" fontWeight="700">
@@ -76,4 +76,4 @@ return (
   );
 };
 
-export default Footer;
+export default Footer1;

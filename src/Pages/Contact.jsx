@@ -1,8 +1,9 @@
 import { Box,Image,Flex,Heading,Text,Button} from '@chakra-ui/react'
 import React from 'react'
-import Footer1 from './Template1/Footer1'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+
+
 
 const Contact = () => {
 

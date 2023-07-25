@@ -55,7 +55,7 @@
     width: 20%;
     overflow: hidden;
     margin: auto;
-    color: white;
+    /* color: white; */
     margin-top: -15px;
     padding-bottom: 10px;
   }

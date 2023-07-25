@@ -24,12 +24,14 @@
 
 
 .footerLogo{
-color: white;
+color: blue;
 cursor: pointer;
+font-size: 32px;
+margin-bottom: 32px;
 }
 .footerLogo:hover{
 /* animation: fadeUP 1s; */
-transform: scale(2.4);
+transform: scale(1.7);
 transition: 0.1s;
 /* transition: opacity 1s ease; */
 }

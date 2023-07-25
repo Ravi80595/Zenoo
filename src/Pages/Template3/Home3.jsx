@@ -1,27 +1,30 @@
-import React from 'react'
-import Navbar1 from '../Template1/Navbar1'
+import React, { useState } from 'react'
 import { Box,Flex,Text,Image, Button, Heading,Stack} from '@chakra-ui/react'
-import {BiLogoInstagramAlt} from 'react-icons/bi'
-import {AiFillFacebook,AiOutlineWhatsApp,AiFillLinkedin} from 'react-icons/ai'
 import '../../CSS/footer.module.css'
 import Logo from '../../Images/Logo.png'
 import { Link } from 'react-router-dom'
 import {CloseIcon} from '@chakra-ui/icons'
 import {GoArrowUpRight} from 'react-icons/go'
-import Footer from '../../Components/Footer'
 import styles from '../../CSS/footer.module.css'
 import { BsFacebook, BsInstagram, BsYoutube, BsTwitter } from "react-icons/bs";
-
+import Accordian from './Accordian'
+import ChatBox from '../../Components/Chat/ChatBox'
+import ChatIcon2 from '../../Components/Chat/ChatIcon2'
+import ChatIcon from '../../Components/Chat/ChatIcon'
 
 
 const Home3 = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
+  const handleChatIconClick = () => {
+    setIsChatOpen(!isChatOpen);
+  };
 
 return (
     <Box background='#f9f9f9'>
-      
+
     <Box w='100%' backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
-    <Box background='#10257f'>
+    {/* <Box background='#10257f'>
       <Flex justifyContent='space-between' pl={4}>
         <Flex fontSize={25} justifyContent='space-around' gap={3}>
         <BiLogoInstagramAlt className='footerLogo'/>
@@ -30,7 +33,6 @@ return (
         <AiFillLinkedin className='footerLogo'/>
         </Flex>
         <Flex color='white' gap={5} pr={5}>
-        {/* <AiOutlineWhatsApp pt={5}/>  */}
         115821-0312
         <Box borderLeft='2px solid white'></Box>
         <Text>Contact@gmail.com</Text>
@@ -38,7 +40,13 @@ return (
         <Text> Monday - Friday: 10:00 - 22:00</Text>
         </Flex>
       </Flex>
-      </Box>
+    </Box> */}
+    <Box background={'transparent'} position={'absolute'} left={2} top={'52vh'} color={'blue'}>
+      <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/>
+      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png'/>
+      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png'/>
+      <Image className='footerLogo' w='40px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png'/>
+    </Box>
       <Box p={5} background='white'>
         <Flex justifyContent='space-between' >
         <Image w={10} src={Logo}/>
@@ -110,34 +118,50 @@ return (
     </Box>
       <Image w='900px' src='https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg'/>
     </Flex>
-    <Flex w='100%' m='auto' h='400px' mt={90} gap={50}>
-      <Image src='https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1080,h_675/https://realestatemagazine.ca/wp-content/uploads/2022/08/img-25202208081901-1080x600.jpg'/>
-      <Box pr={10}>
-        <Heading pb={4}>Who We Are.</Heading>
+
+
+
+
+
+    {/* <Flex w='100%' m='auto' h='400px' mt={90} gap={50}> */}
+      <Box w='70%' m='auto' mt={90} pr={10}>
+        <Heading pb={4} fontFamily={'Parata'}>Who We Are.</Heading>
         <Text>With over $2 Billion in sales, Our agency is the industry’s top luxury producer with over 27 years of experience in marketing Australia’s most prestigious waterfront properties. 
           <br />
           <Text>Due to our unparalleled results, expertise and dedication, we rank amongst the Top 6 agencies in Sydney and Australia.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam ab illo laudantium blanditiis sint doloremque aut, incidunt porro suscipit dignissimos iure veniam vel perspiciatis voluptatem consequuntur similique vero. Magni?
           </Text>
         </Text>
-        <Button mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>CTA</Button>
+        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>CTA</Button>
       </Box>
-      </Flex>
+      {/* </Flex> */}
+
+
+
+
+
       <Flex justifyContent='space-around'  pt={50} w='60%' m='auto' gap={40}>
     <Box w='50%'>
         <Image src='https://images.squarespace-cdn.com/content/v1/59b892162278e7ce6ec4c43c/1681326962477-S0N2M9H0WBBC14MHZEA8/Final+MS+Sticker.png?format=2500w'/>
         <Text fontWeight='bold' fontSize={30}>Mission</Text>
         <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. In recusandae earum quod, praesentium debitis nam veritatis eum officia ullam perferendis, ipsum asperiores est voluptatum? Tempora ipsum id veritatis mollitia ea laudantium labore?</Text>
-        <Button mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>CTA</Button>
+        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>CTA</Button>
     </Box>
     <Box w='50%'>
         <Image src='https://images.squarespace-cdn.com/content/v1/59b892162278e7ce6ec4c43c/1681326962477-S0N2M9H0WBBC14MHZEA8/Final+MS+Sticker.png?format=2500w'/>
         <Text fontWeight='bold' fontSize={30} mt={-3}>Vission</Text>
         <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. In recusandae earum quod, praesentium debitis nam veritatis eum officia ullam perferendis, ipsum asperiores est voluptatum? Tempora ipsum id veritatis mollitia ea laudantium labore?</Text>
-        <Button mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>CTA</Button>
+        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>CTA</Button>
     </Box>
 </Flex>
-<div className={styles.container} style={{background:'#10257f'}}>
+<Box mt={120} >
+  <Heading fontFamily='Parata'>FAQ</Heading>
+  <Text mb={22}>Discovering the Answers: Frequently Asked Questions</Text>
+<Accordian/>
+</Box>
+
+
+<div zIndex={999999999} className={styles.container} style={{background:'#10257f'}}>
       <Stack color='white' direction="horizontal" justify="space-between">
         <Stack gap="10px">
           <Text fontSize="16px" fontWeight="700">
@@ -202,7 +226,7 @@ return (
       </Stack>
       <Text textAlign='center' color='white'>Created by Laudco Media</Text>
     </div>
-    <Flex p={2} background='black' gap={10} position='fixed' left={0} bottom={0} zIndex={999999}>
+    {/* <Flex p={2} background='black' gap={10} position='fixed' left={0} bottom={0} zIndex={999999}>
           <Link to='/main'>
           <Button>Template 1</Button>
           </Link>
@@ -215,7 +239,12 @@ return (
           <Link to='/template3'>
           <Button>Template 4</Button>
           </Link>
-        </Flex>
+        </Flex> */}
+         <div className="chat">
+      {isChatOpen && <ChatBox/>}
+      {isChatOpen?<ChatIcon2 onClick={handleChatIconClick}/>:
+      <ChatIcon onClick={handleChatIconClick} />}
+      </div>
     </Box>
   )
 }

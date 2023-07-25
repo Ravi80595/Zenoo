@@ -1,14 +1,15 @@
 import { Box,Image,Flex,Heading,Text,Button} from '@chakra-ui/react'
 import React from 'react'
-import Navbar1 from './Template1/Navbar1'
 import Footer1 from './Template1/Footer1'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 const Contact = () => {
 
 
 return(
     <>
-      <Navbar1/>
+      <Navbar/>
       <Box w='100%' m='auto' textAlign='left'>
       <Box w='90%' m='auto' color='black' pt={120} textAlign='left'> 
         Home > Contact us
@@ -25,7 +26,7 @@ return(
         </Box>
       </Flex>
       </Box>
-      <Footer1/>
+      <Footer/>
     </>
   )
 }

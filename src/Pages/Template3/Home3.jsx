@@ -5,12 +5,11 @@ import Logo from '../../Images/Logo.png'
 import { Link } from 'react-router-dom'
 import {CloseIcon} from '@chakra-ui/icons'
 import {GoArrowUpRight} from 'react-icons/go'
-import styles from '../../CSS/footer.module.css'
-import { BsFacebook, BsInstagram, BsYoutube, BsTwitter } from "react-icons/bs";
 import Accordian from './Accordian'
 import ChatBox from '../../Components/Chat/ChatBox'
 import ChatIcon2 from '../../Components/Chat/ChatIcon2'
 import ChatIcon from '../../Components/Chat/ChatIcon'
+import Footer from '../../Components/Footer'
 
 
 const Home3 = () => {
@@ -24,28 +23,15 @@ return (
     <Box background='#f9f9f9'>
 
     <Box w='100%' backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
-    {/* <Box background='#10257f'>
-      <Flex justifyContent='space-between' pl={4}>
-        <Flex fontSize={25} justifyContent='space-around' gap={3}>
-        <BiLogoInstagramAlt className='footerLogo'/>
-        <AiOutlineWhatsApp className='footerLogo'/>
-        <AiFillFacebook className='footerLogo'/>
-        <AiFillLinkedin className='footerLogo'/>
-        </Flex>
-        <Flex color='white' gap={5} pr={5}>
-        115821-0312
-        <Box borderLeft='2px solid white'></Box>
-        <Text>Contact@gmail.com</Text>
-        <Box borderLeft='2px solid white'></Box>
-        <Text> Monday - Friday: 10:00 - 22:00</Text>
-        </Flex>
-      </Flex>
-    </Box> */}
     <Box background={'transparent'} position={'absolute'} left={2} top={'52vh'} color={'blue'}>
-      <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/>
-      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png'/>
-      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png'/>
-      <Image className='footerLogo' w='40px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png'/>
+      <a href="https://www.instagram.com/zenoo186/ " target='blank'>
+      <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
+      <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
+      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png'/></a>
+      <a href="https://api.whatsapp.com/send/?phone=7711884456&text&type=phone_number&app_absent=0" target='blank'>
+      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png'/></a>
+      <a href="https://www.facebook.com/zenoo18" target='blank'>
+      <Image className='footerLogo' w='40px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png'/></a>
     </Box>
       <Box p={5} background='white'>
         <Flex justifyContent='space-between' >
@@ -66,9 +52,9 @@ return (
         </Flex>
     </Box>
     </Box>
-    <Flex gap={48} h='630px' background='#fdfdfd'>
-      <Box mt={200} ml={70} w='100%'>
-    <Flex   pt={0} pb={3} justifyContent='space-between'>
+    <Flex gap={'125px'} h='630px' background='#fdfdfd'>
+      <Box mt={200} ml={90} w='100%'>
+    <Flex pt={0} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
@@ -77,7 +63,7 @@ return (
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex   pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>FINANCE</Text>
+        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>Loan services</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
@@ -85,7 +71,7 @@ return (
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex   pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>LEGAL ADVISORS</Text>
+        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>Insurance Solutions</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
@@ -93,14 +79,14 @@ return (
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex   pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>CONSTRUCTION</Text>
+        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>Legal Assistance</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
     </Flex>
     <hr height='12px'/>
-    <Flex   pt={5} pb={3} justifyContent='space-between'>
+    {/* <Flex   pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>CFO</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
@@ -114,27 +100,21 @@ return (
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight  color='rgb(54, 84, 206)'/>
       </Flex>
-    </Flex>
+    </Flex> */}
     </Box>
       <Image w='900px' src='https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg'/>
     </Flex>
-
-
-
-
-
     {/* <Flex w='100%' m='auto' h='400px' mt={90} gap={50}> */}
-      <Box w='70%' m='auto' mt={90} pr={10}>
+      <Box w='70%' m='auto' mt={90} pr={10} >
         <Heading pb={4} fontFamily={'Parata'}>Who We Are.</Heading>
-        <Text>With over $2 Billion in sales, Our agency is the industry’s top luxury producer with over 27 years of experience in marketing Australia’s most prestigious waterfront properties. 
+        <Text>At ZENOO, we're not just a conglomerate; we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of real estate, loan services, insurance solutions, legal assistance, interior design, and construction management. Our journey began with a simple yet audacious dream - to create a one-stop hub where all your dreams find their true home.
           <br />
-          <Text>Due to our unparalleled results, expertise and dedication, we rank amongst the Top 6 agencies in Sydney and Australia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam ab illo laudantium blanditiis sint doloremque aut, incidunt porro suscipit dignissimos iure veniam vel perspiciatis voluptatem consequuntur similique vero. Magni?
+          <Text>
+We believe in more than just transactions; we believe in the experiences that turn dreams into reality. At ZENOO, we're not just in the business of bricks and mortar, numbers, or policies - we are in the business of building trust, nurturing aspirations, and fostering growth. Our team of experts works tirelessly, combining their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.
           </Text>
         </Text>
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>CTA</Button>
       </Box>
-      {/* </Flex> */}
 
 
 
@@ -154,92 +134,15 @@ return (
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>CTA</Button>
     </Box>
 </Flex>
-<Box mt={120} >
+<Box pb={277} mt={120} backgroundImage={'https://www.vaporstore.com/wp-content/uploads/2016/05/Savin-NY-Website-Background-Web.jpg'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>
   <Heading fontFamily='Parata'>FAQ</Heading>
   <Text mb={22}>Discovering the Answers: Frequently Asked Questions</Text>
 <Accordian/>
 </Box>
-
-
-<div zIndex={999999999} className={styles.container} style={{background:'#10257f'}}>
-      <Stack color='white' direction="horizontal" justify="space-between">
-        <Stack gap="10px">
-          <Text fontSize="16px" fontWeight="700">
-            Company
-          </Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">About us</Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">Career</Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">Blog</Text>
-        <Text fontSize="16px" fontWeight="700" paddingTop="20px">Our Services</Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">Real Estate</Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">Finance</Text>
-        </Stack>
-        <Stack gap="10px">
-        <Text fontSize="16px" fontWeight="700">Featured Categories</Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">CFO</Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">Loan</Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">Brand 3</Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">Appartment Low to Hide </Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">Offices for Rent</Text>
-        </Stack>
-        <Stack gap="10px">
-        <Text fontSize="16px" fontWeight="700">Need Help</Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer"> FAQ'S</Text>
-        <Text fontSize="16px" fontWeight="700" paddingTop="20px"> Policy Info</Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">Privacy Policy</Text>
-        <Text fontSize="14px" fontWeight="500" cursor="pointer">Terms of Use</Text>
-        </Stack>
-        <Stack gap="10px" marginRight="20px">
-          <Text fontSize="16px" fontWeight="700">
-            Follow us on
-          </Text>
-          <Stack direction="horizontal" gap="25px">
-            <BsInstagram
-              style={{ width: "25px", height: "25px", cursor: "pointer" }}
-            />
-            <BsFacebook
-              style={{ width: "25px", height: "25px", cursor: "pointer" }}
-            />
-            <BsYoutube
-              style={{ width: "25px", height: "25px", cursor: "pointer" }}
-            />
-            <BsTwitter
-              style={{ width: "25px", height: "25px", cursor: "pointer" }}
-            />
-          </Stack>
-        </Stack>
-      </Stack>
-      <Stack gap="10px" marginBottom="40px" marginTop="60px">
-        <Text fontSize="16px" fontWeight="700" color='white'>
-          Our Payment Partners
-        </Text>
-        <Stack direction="horizontal" justify="space-between">
-          <Stack direction="horizontal" gap="40px" width="784px" height="24px">
-              <Image src='https://assets.pharmeasy.in/apothecary/images/gpay.png?dim=1440x0' height="18px" />
-              <Image src='https://assets.pharmeasy.in/apothecary/images/paytm.png?dim=1440x0' height="18px" />
-              <Image src='https://assets.pharmeasy.in/apothecary/images/phonepe.png?dim=1440x0' height="18px" />
-              <Image src='https://assets.pharmeasy.in/apothecary/images/amazon.png?dim=1440x0' height="18px" />
-              <Image src='https://assets.pharmeasy.in/apothecary/images/mobikwik.png?dim=1440x0' height="18px" />
-          </Stack>
-          <Text color='white' fontSize="14px">© 2022 Zenoo. All Rights Reserved</Text>
-        </Stack>
-      </Stack>
-      <Text textAlign='center' color='white'>Created by Laudco Media</Text>
-    </div>
-    {/* <Flex p={2} background='black' gap={10} position='fixed' left={0} bottom={0} zIndex={999999}>
-          <Link to='/main'>
-          <Button>Template 1</Button>
-          </Link>
-          <Link to='/template1'>
-          <Button>Template 2</Button>
-          </Link>
-          <Link to='/template2'>
-          <Button>Template 3</Button>
-          </Link>
-          <Link to='/template3'>
-          <Button>Template 4</Button>
-          </Link>
-        </Flex> */}
+<Box >
+<Image src=''/>
+</Box>
+<Footer/>
          <div className="chat">
       {isChatOpen && <ChatBox/>}
       {isChatOpen?<ChatIcon2 onClick={handleChatIconClick}/>:

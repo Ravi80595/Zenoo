@@ -46,10 +46,14 @@ return (
         </Flex>
     </Flex> */}
     <Box background={'whitesmoke'} position={'absolute'} left={3} top={'38%'} color={'blue'}>
-      <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/>
-      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png'/>
-      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png'/>
-      <Image className='footerLogo' w='40px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png'/>
+    <a href="https://www.instagram.com/zenoo186/ " target='blank'>
+      <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
+      <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
+      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png'/></a>
+      <a href="https://api.whatsapp.com/send/?phone=7711884456&text&type=phone_number&app_absent=0" target='blank'>
+      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png'/></a>
+      <a href="https://www.facebook.com/zenoo18" target='blank'>
+      <Image className='footerLogo' w='40px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png'/></a>
     </Box>
         <Box background={'whitesmoke'} color={'blue'} h={'90vh'} data-aos='fade-up'>
           <Image pt={91} ml={588} mr={112} w={188} src='https://zenoo.vercel.app/static/media/Logo.60cc4a9cbf255d6eeb4e.png'/>

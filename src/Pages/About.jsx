@@ -29,11 +29,15 @@ return (
           <Text>
           At ZENOO, we're not just a conglomerate; we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of real estate, loan services, insurance solutions, legal assistance, interior design, and construction management. Our journey began with a simple yet audacious dream - to create a one-stop hub where all your dreams find their true home.
          <br/> <br/>
-            We believe in more than just transactions; we believe in the experiences that turn dreams into reality. At ZENOO, we're not just in the business of bricks and mortar, numbers, or policies - we are in the business of building trust, nurturing aspirations, and fostering growth. Our team of experts works tirelessly, combining their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.
+         Founded by ______ , ZENOO set sail on an ambitious odyssey to shape the future of various industries. Fueled by the pursuit of excellence, integrity, and unyielding customer satisfaction, we embarked on this transformative journey - a journey that remains anchored in a deep-rooted commitment to our clients' unique needs.
           </Text>
           <Button mt={5} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>CTA</Button>
         </Box>
       </Flex>
+
+      <Text mt={'170px'} fontSize={'30px'} textAlign={'center'}>Our Values </Text>
+    <Text textAlign={'center'}>At the heart of Zenoo lies five core values that govern the way we conduct our business:</Text>
+    <SimpleThreeColumns/>
       <Box backgroundColor='#efefef' mt={10} pt={5} pb={10}>
         <Box w={"80%"} m='auto'>
         <Text pb={10} fontSize={'30px'}>Our Leadership</Text>
@@ -67,9 +71,7 @@ return (
       </Box>
     </Box>
     <Reviews/>
-    <Text mt={50} fontSize={'30px'}>Core Values </Text>
-    <Text>At the heart of Zenoo lies five core values that govern the way we conduct our business:</Text>
-    <SimpleThreeColumns/>
+    
     <Footer/>
     </>
   )

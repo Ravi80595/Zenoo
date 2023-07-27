@@ -20,19 +20,22 @@ return(
         </Link>
           > Contact us</Text>
       </Box>
-      <Heading mt={120} ml={10}>Gurgaon Office</Heading>
-      <Flex w='80%' m='auto' gap={20}  mb={90}>
-        <Box w='40%' mt='90px'>
-          <Text>Morbi mollis elit vitae elit molestie lobortis. Cras eu purus ipsum. Aliquam et ullamcorper nisl. Nam sem justo, sagittis sit amet sem at, mollis congue eros. Quisque vel mattis eros. Proin euismod massa id est finibus, rutrum ornare velit pellentesque. Ut arcu magna, interdum eget egestas eget, sagittis a libero. Donec felis tellus, vehicula at purus condimentum, hendrerit dictum odio. Vivamus et condimentum sapien.</Text>
+      <Heading mt={[50,120,120,120]} ml={10}>Gurgaon Office</Heading>
+      <Flex direction={['column-reverse','column','column','row']} w='80%' m='auto' gap={20}  mb={90}>
+        <Box w={['95%','95%','40%','50%']} mt={['30px','30px','90px','90px']}>
+          <Text>Zenoo, as a conglomerate deeply entrenched in various core sector, has always operated as a values-driven organization. These fundamental principles serve as the bedrock of our businesses within the Zenoo group, guiding our growth and shaping our approach to conducting operations.</Text>
           <Text pt={5}> <b>Call Us : </b>0124 4240520</Text>
           <Text pt={2}> <b>Address : </b>Plot No.14, Sector 44, Gurugram, Haryana 122003</Text>
           <Button mt={5} borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s  '}  textAlign={'center'}>GET DIRECTIONS</Button>
         </Box>
-        <Box w='60%'>
+        <Box w='90%'>
           <MapComponent/>
         </Box>
       </Flex>
-
+        <Box textAlign ='center' w={'60%'} m='auto' pb={70} >
+          <Text pb={"20px"} fontWeight={'bold'} fontSize='40px' fontFamily={'sans-serif'}>Why partner with Zenoo</Text>
+          <Text>Selecting ZENOO means aligning with a reliable partner dedicated to your prosperity. Whether you're in the market for a new property, obtaining a loan, protecting your assets through insurance, or seeking legal counsel, we deliver a smooth and all-inclusive journey. Our harmonized approach guarantees tailored solutions that cater to your needs, empowering you to pursue your objectives with unwavering assurance</Text>
+        </Box>
       </Box>
       <Footer/>
     </>

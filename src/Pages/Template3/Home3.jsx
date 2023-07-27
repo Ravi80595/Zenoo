@@ -106,8 +106,9 @@ return (
     </Flex>
     {/* <Flex w='100%' m='auto' h='400px' mt={90} gap={50}> */}
       <Box w='70%' m='auto' mt={90} pr={10} >
-        <Heading pb={4} fontFamily={'Parata'}>Who We Are.</Heading>
-        <Text>At ZENOO, we're not just a conglomerate; we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of real estate, loan services, insurance solutions, legal assistance, interior design, and construction management. Our journey began with a simple yet audacious dream - to create a one-stop hub where all your dreams find their true home.
+        <Heading fontFamily={'Parata'}>Who We Are.</Heading>
+        <Text fontWeight={'bold'} pb={4}>Unlocking the Potential of Tomorrow, Today</Text>
+        <Text>At ZENOO, we're not just a conglomerate, we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of real estate, loan services, insurance solutions, legal assistance, interior design, and construction management. Our journey began with a simple yet audacious dream - to create a one-stop hub where all your dreams find their true home.
           <br />
           <Text>
 We believe in more than just transactions; we believe in the experiences that turn dreams into reality. At ZENOO, we're not just in the business of bricks and mortar, numbers, or policies - we are in the business of building trust, nurturing aspirations, and fostering growth. Our team of experts works tirelessly, combining their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.

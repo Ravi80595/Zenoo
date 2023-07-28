@@ -1,7 +1,7 @@
 import { Box, SimpleGrid, Text, Stack, Flex,Image } from '@chakra-ui/react'
-
-
-
+import icon3 from '../Images/icon3.png'
+import icon2 from '../Images/icon2.png'
+import icon1 from '../Images/icon1.png'
 
 export default function SimpleThreeColumns() {
   return (
@@ -17,7 +17,7 @@ export default function SimpleThreeColumns() {
         rounded={'full'}
         bg={'gray.100'}
         mb={1}>
-         <Image src='https://www.pngfind.com/pngs/m/243-2439504_customer-support-icon-technical-support-hd-png-download.png'/>
+         <Image src={icon2}/>
       </Flex>
       <Text fontWeight={600}>Customer Centeric</Text>
       <Text color={'gray.600'}>Our clients are at the heart of everything we do. We prioritize their needs and work tirelessly to exceed their expectations. </Text>
@@ -32,7 +32,7 @@ export default function SimpleThreeColumns() {
         rounded={'full'}
         bg={'gray.100'}
         mb={1}>
-        <Image src='https://i.pinimg.com/originals/71/c7/53/71c7533cc831bf2d6ddffdd74cd117bb.png'/>
+        <Image src={icon1}/>
       </Flex>
       <Text fontWeight={600}>Comunitty Oriented</Text>
       <Text color={'gray.600'}>We are actively involved in supporting and giving back to the communities we operate in</Text>
@@ -47,7 +47,7 @@ export default function SimpleThreeColumns() {
         rounded={'full'}
         bg={'gray.100'}
         mb={1}>
-        <Image src='https://w7.pngwing.com/pngs/131/264/png-transparent-computer-icons-administration-icons-miscellaneous-angle-logo.png'/>     
+        <Image src={icon3}/>     
     </Flex>
       <Text fontWeight={600}>Expertise</Text>
       <Text color={'gray.600'}>Our team is comprised of skilled professionals who possess in-depth knowledge and expertise in their respective fields</Text>

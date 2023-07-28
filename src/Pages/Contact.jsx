@@ -38,7 +38,7 @@ return(
         </Box>
       </Box>
      
-        <Box p={22} borderRadius={22} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'  textAlign={'left'} w={['90%','60%','60%','60%']} m='auto' mb={'62px'}>
+        <Box p={22} borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'  textAlign={'left'} w={['90%','60%','60%','50%']} m='auto' mb={'62px'}>
           <Text fontSize={'36px'}>DROP US A LINE</Text>
           <Text pb={10}>Get in touch with our team by completing the below form or call us now. One of our customer service agents will get back to you shortly.</Text>
           <Box w='60%' m='auto'>

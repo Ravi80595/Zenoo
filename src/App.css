@@ -1,8 +1,9 @@
 .MainBox{
   text-align: center;
-    background-image: url(https://static.scientificamerican.com/sciam/cache/file/6B2730C8-B0D0-485F-A0618F3954CF58D8_source.jpg);
+    background-image: url('./Images/mainImage.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
 }
 body{
   overflow-y: scroll;

@@ -11,7 +11,7 @@ import ChatIcon2 from '../../Components/Chat/ChatIcon2'
 import ChatIcon from '../../Components/Chat/ChatIcon'
 import Footer from '../../Components/Footer'
 import ContinuousVideo from '../../Components/ContinousVideo'
-
+import whoweare from '../../Images/Whoweare.png'
 
 const Home3 = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -96,9 +96,9 @@ return (
 
     {/* <ContinuousVideo/> */}
 
-    <Flex mt={70}>
-      <Box mt={40}>
-        <Image src='https://www.pngmart.com/files/7/Real-Estate-PNG-Transparent-Picture.png'/>
+    <Flex mt={50}>
+      <Box w={'40%'} mt={40}>
+        <Image src={whoweare}/>
       </Box>
       <Box w='50%' m='auto' mt={90}>
         <Heading fontFamily={'Parata'}>Who We Are</Heading>
@@ -125,9 +125,9 @@ We believe in more than just transactions; we believe in the experiences that tu
     </Box>
     </Box>
     <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['90%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-        <Image w={'100%'} h={200} src='https://ahujarealtor.com/wp-content/uploads/2022/08/istockphoto-1284575136-170667a.jpg'/>
+        <Image w={'100%'} h={200} src='https://temptationrealtyinc.com/wp-content/uploads/2015/04/v.jpg'/>
         <Box p={5}>
-        <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Vission</Text>
+        <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Vision</Text>
         <Text>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
         <Link to='/about'>
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5}  backgroundColor='#3654CE' color='white'>Know More</Button></Link>
@@ -135,7 +135,7 @@ We believe in more than just transactions; we believe in the experiences that tu
     </Box>
 </Flex>
 <Box pb={277} mt={120} backgroundImage={'https://www.vaporstore.com/wp-content/uploads/2016/05/Savin-NY-Website-Background-Web.jpg'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>
-  <Heading fontFamily='Parata'>FAQ's</Heading>
+  <Heading pt={12} fontFamily='Parata'>FAQ's</Heading>
   {/* <Text mb={22}>Discovering the Answers: Frequently Asked Questions</Text> */}
 <Accordian/>
 </Box>

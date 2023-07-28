@@ -57,7 +57,7 @@ return (
         /></a>
       </Stack>
       <Text color={'white'}>info@zenoo.in</Text>
-      <Text pt={3}>Plot No.14, <br /> Sector 44, Gurugram, <br /> Haryana 122003</Text>
+      <Text>Plot No.14, <br /> Sector 44, Gurugram, <br /> Haryana 122003</Text>
     </Stack>
   </Stack>
   <Stack gap="10px" marginBottom="40px" marginTop="60px">

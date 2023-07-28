@@ -14,7 +14,7 @@ useEffect(() => {
 }, [])
 
 
-return (
+return(
     <Box>
     <Box position={'absolute'} left={3} top={'38%'} color={'blue'}>
     <a href="https://www.instagram.com/zenoo186/ " target='blank'>

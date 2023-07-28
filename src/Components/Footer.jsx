@@ -10,7 +10,7 @@ const Footer = () => {
 
 return (
   <div zIndex={999999999} className={styles.container} style={{background:'#10257f'}}>
-  <Stack color='white' direction="horizontal" justify="space-between">
+  <Stack color='white' direction={["column",'row',"horizontal","horizontal"]} justify="space-between">
     <Stack gap="10px">
       <Text fontSize="16px" fontWeight="700">
         Company
@@ -63,8 +63,8 @@ return (
     <Text fontSize="16px" fontWeight="700" color='white'>
       Our Payment Partners
     </Text>
-    <Stack direction="horizontal" justify="space-between">
-      <Stack direction="horizontal" gap="40px" width="784px" height="24px">
+    <Stack direction={["column","horizontal","horizontal","horizontal"]} justify="space-between">
+      <Stack direction="horizontal" gap={["10px","10px","40px","40px"]} width={["84px","84px","784px","784px"]} height="24px">
           <Image src='https://assets.pharmeasy.in/apothecary/images/gpay.png?dim=1440x0' height="18px" />
           <Image src='https://assets.pharmeasy.in/apothecary/images/paytm.png?dim=1440x0' height="18px" />
           <Image src='https://assets.pharmeasy.in/apothecary/images/phonepe.png?dim=1440x0' height="18px" />

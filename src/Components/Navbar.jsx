@@ -12,7 +12,7 @@ return (
         <Flex justifyContent='space-between'>
             <Link to='/template3'>
         <Image w={10} src={Logo}/></Link>
-        <Flex fontSize={20} justifyContent='space-around' w={['30%','30%','30%','30%']} pt={0} color='white'>
+        <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['70%','30%','30%','30%']} pt={0} color='white'>
             <Link to='/about'>
             <Text>About us</Text>
             </Link>

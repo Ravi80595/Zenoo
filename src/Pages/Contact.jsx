@@ -32,13 +32,13 @@ return(
           <MapComponent/>
         </Box>
       </Flex>
-        <Box textAlign ='center' w={'60%'} m='auto' pb={70} >
-          <Text pb={"20px"} fontWeight={'bold'} fontSize='40px' fontFamily={'sans-serif'}>Why partner with Zenoo</Text>
+        <Box textAlign ='center' w={['90%','60%','60%','60%']} m='auto' pb={70} >
+          <Text pb={"20px"} fontWeight={'bold'} fontSize={['20px','40px','40px','40px']} fontFamily={'sans-serif'}>Why partner with Zenoo</Text>
           <Text>Selecting ZENOO means aligning with a reliable partner dedicated to your prosperity. Whether you're in the market for a new property, obtaining a loan, protecting your assets through insurance, or seeking legal counsel, we deliver a smooth and all-inclusive journey. Our harmonized approach guarantees tailored solutions that cater to your needs, empowering you to pursue your objectives with unwavering assurance</Text>
         </Box>
       </Box>
      
-        <Box p={22} borderRadius={22} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'  textAlign={'left'} w='60%' m='auto' mb={'62px'}>
+        <Box p={22} borderRadius={22} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'  textAlign={'left'} w={['90%','60%','60%','60%']} m='auto' mb={'62px'}>
           <Text fontSize={'36px'}>DROP US A LINE</Text>
           <Text pb={10}>Get in touch with our team by completing the below form or call us now. One of our customer service agents will get back to you shortly.</Text>
           <Box w='60%' m='auto'>

@@ -14,16 +14,16 @@
         padding: 40px;
         text-align: left;
         background-color: #eef4fe;
-        margin-top: 100px;
+        /* margin-top: 100px; */
     }
 }
 @media screen and (max-width:759px) and (min-width:200px) {
     .container{
-        width: 95%;
+        width: 100%;
         margin: auto;
         padding: 40px;
         text-align: left;
         background-color: #eef4fe;
-        margin-top: 100px;
+        /* margin-top: 100px; */
     }
 }

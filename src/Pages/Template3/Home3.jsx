@@ -25,7 +25,7 @@ const Home3 = () => {
 return (
     <Box background='#f9f9f9'>
     <Box w='100%' backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
-    <Box background={'transparent'} position={'absolute'} left={2} top={'52vh'} color={'blue'}>
+    <Box background={'transparent'} position={'absolute'} left={22} top={'52vh'} color={'blue'}>
       <a href="https://www.instagram.com/zenoo186/ " target='blank'>
       <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
       <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
@@ -38,7 +38,7 @@ return (
       <Box p={5} background='white'>
         <Flex justifyContent='space-between' >
         <Image w={10} src={Logo}/>
-        <Flex fontSize={20} justifyContent='space-around' w='30%' pt={0} color='#10257f'>
+        <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['60%','60%','30%','30%']} pt={0} color='#10257f'>
             <Link to='/about'>
             <Text>About us</Text>
             </Link>
@@ -55,8 +55,8 @@ return (
     </Box>
     </Box>
     <Flex direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h='630px' background='#fdfdfd'>
-      <Box mt={[20,200,200,200]} ml={90} w='100%'>
-    <Flex pt={0} pb={3} justifyContent='space-between'>
+      <Box p={11} mt={[20,200,200,200]} ml={[10,90,90,90]} w={['90%','90%','100%','100%']}>
+    <Flex  pt={0} pb={3} justifyContent='space-between'>
         <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
@@ -64,15 +64,15 @@ return (
         </Flex>
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
-    <Flex   pt={5} pb={3} justifyContent='space-between'>
+    <Flex pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Loan services</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
     </Flex>
-    <hr height='22px'  color='rgb(54, 84, 206)'/>
-    <Flex   pt={5} pb={3} justifyContent='space-between'>
+    <hr height='22px' color='rgb(54, 84, 206)'/>
+    <Flex pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Insurance Solutions</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
@@ -109,15 +109,15 @@ We believe in more than just transactions; we believe in the experiences that tu
 
 
 
-      <Flex justifyContent='space-around'  pt={50} w='60%' m='auto' gap={40}>
-    <Box w='50%'>
+      <Flex direction={['column','column','column','row']}  justifyContent='space-around'  pt={50} w='60%' m='auto' gap={40}>
+    <Box w={['90%','90%','50%','50%']}>
         <Image src='https://images.squarespace-cdn.com/content/v1/59b892162278e7ce6ec4c43c/1681326962477-S0N2M9H0WBBC14MHZEA8/Final+MS+Sticker.png?format=2500w'/>
         <Text fontWeight='bold' fontSize={30}>Mission</Text>
         <Text>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve</Text>
         <Link to='/contact'>
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>
-    <Box w='50%'>
+    <Box w={['90%','90%','50%','50%']}>
         <Image src='https://images.squarespace-cdn.com/content/v1/59b892162278e7ce6ec4c43c/1681326962477-S0N2M9H0WBBC14MHZEA8/Final+MS+Sticker.png?format=2500w'/>
         <Text fontWeight='bold' fontSize={30} mt={-3}>Vission</Text>
         <Text>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>

@@ -14,6 +14,9 @@ import Footer from '../../Components/Footer'
 
 const Home3 = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [showMore, setShowMore] = useState(false)
+
+
 
   const handleChatIconClick = () => {
     setIsChatOpen(!isChatOpen);
@@ -21,7 +24,6 @@ const Home3 = () => {
 
 return (
     <Box background='#f9f9f9'>
-
     <Box w='100%' backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
     <Box background={'transparent'} position={'absolute'} left={2} top={'52vh'} color={'blue'}>
       <a href="https://www.instagram.com/zenoo186/ " target='blank'>
@@ -52,10 +54,10 @@ return (
         </Flex>
     </Box>
     </Box>
-    <Flex gap={'125px'} h='630px' background='#fdfdfd'>
-      <Box mt={200} ml={90} w='100%'>
+    <Flex direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h='630px' background='#fdfdfd'>
+      <Box mt={[20,200,200,200]} ml={90} w='100%'>
     <Flex pt={0} pb={3} justifyContent='space-between'>
-        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>REAL ESTATE</Text>
+        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>REAL ESTATE</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
@@ -63,7 +65,7 @@ return (
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex   pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>Loan services</Text>
+        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Loan services</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
@@ -71,7 +73,7 @@ return (
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex   pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>Insurance Solutions</Text>
+        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Insurance Solutions</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
@@ -79,33 +81,18 @@ return (
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex   pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>Legal Assistance</Text>
+        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Legal Assistance</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
     </Flex>
     <hr height='12px'/>
-    {/* <Flex   pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>CFO</Text>
-        <Flex gap={5} pt={3}>
-        <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
-        <GoArrowUpRight color='rgb(54, 84, 206)'/>
-        </Flex>
-    </Flex>
-    <hr height='12px'/>
-    <Flex   pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={30} fontWeight='bold' color='rgb(16, 37, 127)'>REAL ESTATE</Text>
-        <Flex gap={5} pt={3}>
-        <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
-        <GoArrowUpRight  color='rgb(54, 84, 206)'/>
-      </Flex>
-    </Flex> */}
     </Box>
       <Image w='900px' src='https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg'/>
     </Flex>
     {/* <Flex w='100%' m='auto' h='400px' mt={90} gap={50}> */}
-      <Box w='70%' m='auto' mt={90} pr={10} >
+      <Box w='70%' m='auto' mt={90}  >
         <Heading fontFamily={'Parata'}>Who We Are.</Heading>
         <Text fontWeight={'bold'} pb={4}>Unlocking the Potential of Tomorrow, Today</Text>
         <Text>At ZENOO, we're not just a conglomerate, we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of real estate, loan services, insurance solutions, legal assistance, interior design, and construction management. Our journey began with a simple yet audacious dream - to create a one-stop hub where all your dreams find their true home.
@@ -114,7 +101,8 @@ return (
 We believe in more than just transactions; we believe in the experiences that turn dreams into reality. At ZENOO, we're not just in the business of bricks and mortar, numbers, or policies - we are in the business of building trust, nurturing aspirations, and fostering growth. Our team of experts works tirelessly, combining their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.
           </Text>
         </Text>
-        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>CTA</Button>
+        <Link to='/about'>
+        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
       </Box>
 
 
@@ -126,13 +114,19 @@ We believe in more than just transactions; we believe in the experiences that tu
         <Image src='https://images.squarespace-cdn.com/content/v1/59b892162278e7ce6ec4c43c/1681326962477-S0N2M9H0WBBC14MHZEA8/Final+MS+Sticker.png?format=2500w'/>
         <Text fontWeight='bold' fontSize={30}>Mission</Text>
         <Text>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve</Text>
-        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>CTA</Button>
+        <Link to='/contact'>
+        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>
     <Box w='50%'>
         <Image src='https://images.squarespace-cdn.com/content/v1/59b892162278e7ce6ec4c43c/1681326962477-S0N2M9H0WBBC14MHZEA8/Final+MS+Sticker.png?format=2500w'/>
         <Text fontWeight='bold' fontSize={30} mt={-3}>Vission</Text>
-        <Text>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence</Text>
-        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>CTA</Button>
+        <Text>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
+        {showMore && (
+        <p>By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence
+        </p>  
+      )}<Text onClick={() => setShowMore(!showMore)}>{showMore==false?'more...':'less..'}</Text>
+        <Link to='/contact'>
+        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>
 </Flex>
 <Box pb={277} mt={120} backgroundImage={'https://www.vaporstore.com/wp-content/uploads/2016/05/Savin-NY-Website-Background-Web.jpg'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>

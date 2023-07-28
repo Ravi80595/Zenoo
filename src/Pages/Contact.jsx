@@ -13,8 +13,8 @@ const Contact = () => {
 return(
     <>
       <Navbar/>
-      <Box w='100%' m='auto' textAlign='left'>
-      <Box w='100%' h={290} m='auto' color='black' pt={100} pl={21} color='white' textAlign='left' backgroundImage={'https://hooquest.com/wp-content/uploads/2021/11/facebook-cover-2.jpg'} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
+      <Box w='100%' m='auto' textAlign='left' backgroundColor={'white'}>
+      <Box backgroundColor={'white'} w='100%' h={290} m='auto' color='black' pt={100} pl={21} color='white' textAlign='left' backgroundImage={'https://hooquest.com/wp-content/uploads/2021/11/facebook-cover-2.jpg'} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
       <Text> 
         <Link to='/template3' > Home &nbsp;
         </Link>
@@ -37,7 +37,8 @@ return(
           <Text>Selecting ZENOO means aligning with a reliable partner dedicated to your prosperity. Whether you're in the market for a new property, obtaining a loan, protecting your assets through insurance, or seeking legal counsel, we deliver a smooth and all-inclusive journey. Our harmonized approach guarantees tailored solutions that cater to your needs, empowering you to pursue your objectives with unwavering assurance</Text>
         </Box>
       </Box>
-        <Box p={22} borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'  textAlign={'left'} w={['90%','60%','60%','50%']} m='auto' mb={'62px'}>
+      <Box backgroundColor={'white'} pb={'62px'}>
+        <Box backgroundColor={'white'} p={22} borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'  textAlign={'left'} w={['90%','60%','60%','50%']} m='auto' >
           <Text fontSize={'36px'}>DROP US A LINE</Text>
           <Text pb={10}>Get in touch with our team by completing the below form or call us now. One of our customer service agents will get back to you shortly.</Text>
           <Box w='60%' m='auto'>
@@ -48,6 +49,7 @@ return(
           <Text pt={5}>Message</Text>
           <Textarea placeholder='Enter your message here'/>
           <Flex mt={10} justifyContent={'center'}><Button borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s'}  textAlign={'center'}>Submit</Button></Flex>
+          </Box>
           </Box>
         </Box>
       <Footer/>

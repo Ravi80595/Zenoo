@@ -10,6 +10,7 @@ import ChatBox from '../../Components/Chat/ChatBox'
 import ChatIcon2 from '../../Components/Chat/ChatIcon2'
 import ChatIcon from '../../Components/Chat/ChatIcon'
 import Footer from '../../Components/Footer'
+import ContinuousVideo from '../../Components/ContinousVideo'
 
 
 const Home3 = () => {
@@ -40,10 +41,10 @@ return (
         <Image w={10} src={Logo}/>
         <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['60%','60%','30%','30%']} pt={0} color='#10257f'>
             <Link to='/about'>
-            <Text>About us</Text>
+            <Text className='Link_btns'>About us</Text>
             </Link>
             <Link to='/contact'>
-            <Text>Contact us</Text>
+            <Text className='Link_btns'>Contact us</Text>
             </Link>
         <Box w='10%'>   
         <Link to='/'>
@@ -65,7 +66,7 @@ return (
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Loan services</Text>
+        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Loan Services</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
@@ -92,10 +93,18 @@ return (
       <Image w='900px' src='https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg'/>
     </Flex>
     {/* <Flex w='100%' m='auto' h='400px' mt={90} gap={50}> */}
-      <Box w='70%' m='auto' mt={90}  >
-        <Heading fontFamily={'Parata'}>Who We Are.</Heading>
+
+    {/* <ContinuousVideo/> */}
+
+    <Flex mt={70}>
+      <Box mt={40}>
+        <Image src='https://www.pngmart.com/files/7/Real-Estate-PNG-Transparent-Picture.png'/>
+      </Box>
+      <Box w='50%' m='auto' mt={90}>
+        <Heading fontFamily={'Parata'}>Who We Are</Heading>
         <Text fontWeight={'bold'} pb={4}>Unlocking the Potential of Tomorrow, Today</Text>
         <Text>At ZENOO, we're not just a conglomerate, we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of real estate, loan services, insurance solutions, legal assistance, interior design, and construction management. Our journey began with a simple yet audacious dream - to create a one-stop hub where all your dreams find their true home.
+          <br />
           <br />
           <Text>
 We believe in more than just transactions; we believe in the experiences that turn dreams into reality. At ZENOO, we're not just in the business of bricks and mortar, numbers, or policies - we are in the business of building trust, nurturing aspirations, and fostering growth. Our team of experts works tirelessly, combining their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.
@@ -104,34 +113,30 @@ We believe in more than just transactions; we believe in the experiences that tu
         <Link to='/about'>
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
       </Box>
-
-
-
-
-
-      <Flex direction={['column','column','column','row']}  justifyContent='space-around'  pt={50} w='60%' m='auto' gap={40}>
-    <Box w={['90%','90%','50%','50%']}>
-        <Image src='https://images.squarespace-cdn.com/content/v1/59b892162278e7ce6ec4c43c/1681326962477-S0N2M9H0WBBC14MHZEA8/Final+MS+Sticker.png?format=2500w'/>
-        <Text fontWeight='bold' fontSize={30}>Mission</Text>
+      </Flex>
+      <Flex direction={['column','column','column','row']}  justifyContent='space-around'  pt={90} w='60%' m='auto' gap={40}>
+    <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['90%','90%','50%','50%']}  boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
+        <Image w={'100%'} h={200} src='https://www.praxivaluations.praxi/files/news/ILQI%20large.jpg'/>
+        <Box p={5}>
+        <Text pt={3} fontWeight='bold' fontSize={30}>Mission</Text>
         <Text>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve</Text>
-        <Link to='/contact'>
-        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
+        <Link to='/about'>
+        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>
-    <Box w={['90%','90%','50%','50%']}>
-        <Image src='https://images.squarespace-cdn.com/content/v1/59b892162278e7ce6ec4c43c/1681326962477-S0N2M9H0WBBC14MHZEA8/Final+MS+Sticker.png?format=2500w'/>
-        <Text fontWeight='bold' fontSize={30} mt={-3}>Vission</Text>
+    </Box>
+    <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['90%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
+        <Image w={'100%'} h={200} src='https://ahujarealtor.com/wp-content/uploads/2022/08/istockphoto-1284575136-170667a.jpg'/>
+        <Box p={5}>
+        <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Vission</Text>
         <Text>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
-        {showMore && (
-        <p>By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence
-        </p>  
-      )}<Text onClick={() => setShowMore(!showMore)}>{showMore==false?'more...':'less..'}</Text>
-        <Link to='/contact'>
-        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
+        <Link to='/about'>
+        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5}  backgroundColor='#3654CE' color='white'>Know More</Button></Link>
+    </Box>
     </Box>
 </Flex>
 <Box pb={277} mt={120} backgroundImage={'https://www.vaporstore.com/wp-content/uploads/2016/05/Savin-NY-Website-Background-Web.jpg'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>
-  <Heading fontFamily='Parata'>FAQ</Heading>
-  <Text mb={22}>Discovering the Answers: Frequently Asked Questions</Text>
+  <Heading fontFamily='Parata'>FAQ's</Heading>
+  {/* <Text mb={22}>Discovering the Answers: Frequently Asked Questions</Text> */}
 <Accordian/>
 </Box>
 <Box >

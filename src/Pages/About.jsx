@@ -14,7 +14,7 @@ const About = () => {
 return(
 <>
 <Navbar/>
-    <Box w='100%' m='auto' textAlign='left'>
+    <Box backgroundColor={'white'} w='100%' m='auto' textAlign='left'>
       <Box w='100%' h={290} m='auto' color='black' pt={100} pl={21} color='white' textAlign='left' backgroundImage={'https://hooquest.com/wp-content/uploads/2021/11/facebook-cover-2.jpg'} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
       <Text> 
         <Link to='/template3' _hover={{color:'blue'}}> Home &nbsp;

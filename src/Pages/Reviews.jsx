@@ -49,7 +49,7 @@ const Reviews = () => {
 
   return (
     
-    <Box p={5}>
+    <Box p={5} backgroundColor={'white'}>
     {/* <Box>
       <img src={Playstore}/>
     </Box> */}

@@ -16,7 +16,7 @@ useEffect(() => {
 
 return (
     <Box>
-    <Box background={'whitesmoke'} position={'absolute'} left={3} top={'38%'} color={'blue'}>
+    <Box position={'absolute'} left={3} top={'38%'} color={'blue'}>
     <a href="https://www.instagram.com/zenoo186/ " target='blank'>
       <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
       <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
@@ -26,7 +26,7 @@ return (
       <a href="https://www.facebook.com/zenoo18" target='blank'>
       <Image className='footerLogo' w='40px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png'/></a>
     </Box>
-        <Box background={'whitesmoke'} color={'blue'} h={'99vh'} data-aos='fade-up'>
+        <Box color={'blue'} h={'99vh'} data-aos='fade-up'>
           <Flex justifyContent={'center'}>
           <Image pt={['222px',91,91,91]} w={188} src='https://zenoo.vercel.app/static/media/Logo.60cc4a9cbf255d6eeb4e.png'/></Flex>
         <Text className='title' fontSize={['50px',100,100,100]}  fontFamily='_NewYork' pt={1} color='blue'>ZENOO</Text>

@@ -1,26 +1,17 @@
-import { Flex,Button} from '@chakra-ui/react';
 import AllRoute from './AllRoutes/AllRoute';
 import './App.css';
-import { useState } from 'react';
 
 
 
 
 function App() {
-const [colors,setColors]=useState('blue')
-const [backgroundColor, setBackgroundColor] = useState('#efefef');
 
-
-const handleButtonClick = (color,color2) => {
-  setBackgroundColor(color);
-  setColors(color2)
-};
 
 
 return (
-    <div className='MainBox' border='2px solid red'>
-      <div className='content'>
-      <AllRoute backgroundColor={backgroundColor} colors={colors} />
+    <div className='MainBox'>
+      <div>
+      <AllRoute />
       </div>
       {/* <Flex>
           <Button onClick={() => handleButtonClick('linear-gradient(0deg, rgba(210,168,168,1) 0%, rgba(191,80,80,1) 20%, rgba(238,24,24,1) 39%, rgba(255,0,0,1) 100%)','red')} bg='red' color='white' _hover={{color:'white'}}>Red</Button>

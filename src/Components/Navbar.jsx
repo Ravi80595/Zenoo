@@ -14,10 +14,10 @@ return (
         <Image w={10} src={Logo}/></Link>
         <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['70%','30%','30%','30%']} pt={0} color='white'>
             <Link to='/about'>
-            <Text>About us</Text>
+            <Text className='Link_btns-dark'>About us</Text>
             </Link>
             <Link to='/contact'>
-            <Text>Contact us</Text>
+            <Text className='Link_btns-dark'>Contact us</Text>
             </Link>
         <Box w='10%'>   
         <Link to='/'>

@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
 import MapComponent from '../Components/MapComponent'
-
+import cover from '../Images/cover.png'
 
 
 const Contact = () => {
@@ -14,15 +14,15 @@ return(
     <>
       <Navbar/>
       <Box w='100%' m='auto' textAlign='left' backgroundColor={'white'}>
-      <Box backgroundColor={'white'} w='100%' h={290} m='auto' color='black' pt={100} pl={21} color='white' textAlign='left' backgroundImage={'https://hooquest.com/wp-content/uploads/2021/11/facebook-cover-2.jpg'} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
+      <Box backgroundColor={'white'} w='100%' h={290} m='auto' color='black' pt={100} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
       <Text> 
         <Link to='/template3' > Home &nbsp;
         </Link>
           > Contact us</Text>
       </Box>
-      <Heading mt={[50,120,120,120]} ml={10}>Gurgaon Office</Heading>
-      <Flex direction={['column-reverse','column','column','row']} w='80%' m='auto' gap={20}  mb={90}>
-        <Box w={['95%','95%','40%','50%']} mt={['30px','30px','90px','90px']}>
+      {/* <Heading mt={[50,120,120,120]} ml={10}>Gurgaon Office</Heading> */}
+      <Flex mt={[50,120,120,120]} direction={['column-reverse','column','column','row']} w='80%' m='auto' gap={20}  mb={90}>
+        <Box w={['95%','95%','40%','50%']} mt={['30px','30px','90px','30px']}>
           <Text>Zenoo, as a conglomerate deeply entrenched in various core sector, has always operated as a values-driven organization. These fundamental principles serve as the bedrock of our businesses within the Zenoo group, guiding our growth and shaping our approach to conducting operations.</Text>
           <Text pt={5}> <b>Call Us : </b>0124 4240520</Text>
           <Text pt={2}> <b>Address : </b>Plot No.14, Sector 44, Gurugram, Haryana 122003</Text>

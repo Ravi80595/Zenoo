@@ -46,18 +46,38 @@ return(
     <Text textAlign={'center'}>At the heart of Zenoo lies five core values that govern the way we conduct our business:</Text>
     <SimpleThreeColumns/>
     <SimpleTwoColumns/>
+
+
+
     <Box background={'#efefef'}>
     <Flex direction={['column','column','column','row']} w='90%' m='auto' gap={40} pt={20} pb={20}>
         <Box>
-          <Image h={300} src='https://satvikrealty.com/wp-content/uploads/2021/08/mission-vision.jpg'/>
+          <Image  src='https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/about-us-img3.jpg'/>
         </Box>
         <Box textAlign={'left'} w={'70%'}>
-          <Text fontSize={'36px'} >Vision</Text>
+          <Text fontSize={'36px'} >Mision</Text>
           <Text lineHeight={'1.5rem'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. 
 By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence.</Text>
         </Box>
       </Flex>
       </Box>
+
+
+      <Box background={'#efefef'}>
+    <Flex direction={['column','column','column','row']} w='90%' m='auto' gap={40} pt={20} pb={20}>
+        
+        <Box textAlign={'left'} w={'70%'}>
+          <Text fontSize={'36px'} >Vision</Text>
+          <Text lineHeight={'1.5rem'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. 
+By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence.</Text>
+        </Box>
+        <Box>
+          <Image  src='https://satvikrealty.com/wp-content/uploads/2021/08/mission-vision.jpg'/>
+        </Box>
+      </Flex>
+      </Box>
+
+
       <Box backgroundColor='#efefef' pt={10} pt={5} pb={10}>
         <Box w={"80%"} m='auto'>
         <Text pb={10} fontSize={'30px'}>Our Leadership</Text>

@@ -7,12 +7,12 @@ import 'leaflet/dist/leaflet.css';
 
 
 const MapComponent = () => {
-    const position = [28.4962, 77.0830];
+    const position = [28.453432537750142, 77.06834227116423];
 
 
   
 return (
-      <MapContainer center={position} zoom={12} style={{ height: '400px', width: '100%' }}>
+      <MapContainer center={position} zoom={15} style={{ height: '400px', width: '100%',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; OpenStreetMap contributors"

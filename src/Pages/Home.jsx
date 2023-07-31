@@ -14,6 +14,8 @@ useEffect(() => {
 }, [])
 
 
+//https://images.pexels.com/photos/258149/pexels-photo-258149.jpeg?cs=srgb&dl=pexels-pixabay-258149.jpg&fm=jpg
+
 return(
     <Box>
     <Box position={'absolute'} left={3} top={'38%'} color={'blue'}>
@@ -30,7 +32,7 @@ return(
           <Flex justifyContent={'center'}>
           <Image pt={['222px',91,91,91]} w={188} src='https://zenoo.vercel.app/static/media/Logo.60cc4a9cbf255d6eeb4e.png'/></Flex>
         <Text className='title' fontSize={['50px',100,100,100]}  fontFamily='_NewYork' pt={1} color='blue'>ZENOO</Text>
-        <div color='blue' class="scrolling-text1" w={['90%','50%','50%','50%']} m='auto'>
+        <div color='blue' style={{paddingBottom:'5px'}} w={['90%','50%','50%','50%']} m='auto'>
         <p>Uniting Real-Estate and Finance with Trust</p>
         </div>
         <Link to='/template3'>

@@ -10,7 +10,7 @@ export default function SimpleThreeColumns() {
       <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} p={5} background={'white'}  borderRadius={10}>
       <Box pb={5} w={'15%'} m={'auto'}>
          <Image src={icon2}/></Box>
-      <Text pb={2} fontWeight={600}>Customer Centeric</Text>
+      <Text pb={2} fontWeight={600}>Customer-Centric</Text>
       <Text color={'gray.600'}>Our clients are at the heart of everything we do. We prioritize their needs and work tirelessly to exceed their expectations. </Text>
     </Box>
     <Box  _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} p={5} background={'white'}  borderRadius={10}>
@@ -22,7 +22,7 @@ export default function SimpleThreeColumns() {
     <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} p={5} background={'white'}  borderRadius={10}>
       <Box pb={5} w={'15%'} m={'auto'}>
          <Image src={icon3}/></Box>
-      <Text pb={2} fontWeight={600}>Customer Centeric</Text>
+      <Text pb={2} fontWeight={600}>Expertise</Text>
       <Text color={'gray.600'}>Our clients are at the heart of everything we do. We prioritize their needs and work tirelessly to exceed their expectations. </Text>
     </Box>
     {/* <Stack>

@@ -12,6 +12,17 @@ import ZENOO1 from '../Images/ZENOO1.png'
 const Contact = () => {
 
 
+const latitude = 28.453432537750142; // Replace with the actual latitude
+const longitude = 77.06834227116423; // Replace with the actual longitude
+
+const handleClick = () => {
+  // Construct the Google Maps URL with the specific location's latitude and longitude
+  const googleMapsURL = `https://www.google.com/maps?q=${latitude},${longitude}`;
+  window.open(googleMapsURL, '_blank');
+  // window.location.href = googleMapsURL;
+};
+
+
 return(
     <>
       <Navbar/>
@@ -40,7 +51,7 @@ return(
       <a href="https://www.facebook.com/zenoo18" target='blank'>
       <Image w='30px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png'/></a>
           </Flex>
-          <Button mt={5} borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s  '}  textAlign={'center'}>GET DIRECTIONS</Button>
+          <Button onClick={handleClick} mt={5} borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s  '}  textAlign={'center'}>GET DIRECTIONS</Button>
         </Box>
         <Box w='90%' mt={[20,20,0,0]}>
           <MapComponent/>

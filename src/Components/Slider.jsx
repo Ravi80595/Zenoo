@@ -1,58 +1,25 @@
 import { Box, SimpleGrid, Text, Stack, Flex,Image } from '@chakra-ui/react'
-
-
+import icon4 from '../Images/icon4.png'
+import icon5 from '../Images/icon5.png'
 
 
 export default function SimpleTwoColumns() {
   return (
-    <Box textAlign={'left'} p={4} w='90%' m='auto' mt={50} mb={90}>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-      <Stack>
-      <Flex
-        w={16}
-        h={16}
-        // align={'center'}
-        // justify={'center'}
-        color={'white'}
-        rounded={'full'}
-        bg={'gray.100'}
-        mb={1}>
-         <Image src='https://www.pngfind.com/pngs/m/243-2439504_customer-support-icon-technical-support-hd-png-download.png'/>
-      </Flex>
-      <Text fontWeight={600}>Customer Centeric</Text>
-      <Text color={'gray.600'}>Our clients are at the heart of everything we do. We prioritize their needs and work tirelessly to exceed their expectations. </Text>
-    </Stack>
-    <Stack>
-      <Flex
-        w={16}
-        h={16}
-        align={'center'}
-        justify={'center'}
-        color={'white'}
-        rounded={'full'}
-        bg={'gray.100'}
-        mb={1}>
-        <Image src='https://i.pinimg.com/originals/71/c7/53/71c7533cc831bf2d6ddffdd74cd117bb.png'/>
-      </Flex>
-      <Text fontWeight={600}>Comunitty Oriented</Text>
-      <Text color={'gray.600'}>We are actively involved in supporting and giving back to the communities we operate in</Text>
-    </Stack>
-    {/* <Stack>
-      <Flex
-        w={16}
-        h={16}
-        align={'center'}
-        justify={'center'}
-        color={'white'}
-        rounded={'full'}
-        bg={'gray.100'}
-        mb={1}>
-        <Image src='https://w7.pngwing.com/pngs/131/264/png-transparent-computer-icons-administration-icons-miscellaneous-angle-logo.png'/>     
+    <Box textAlign={'center'} p={4} w={['90%','90%','60%','60%']} m='auto' mt={50} mb={90}>
+      <Flex direction={['column','column','row','row']} gap={20}>
+      <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} background={'white'} p={5} borderRadius={10}>
+      <Box pb={5} w={'20%'} m={'auto'}>
+         <Image src={icon4}/></Box>
+      <Text pb={2} fontWeight={600}>Integrity</Text>
+      <Text color={'gray.600'}>We uphold the highest ethical standards, maintaining transparency and honesty in all our interactions. </Text>
+    </Box>
+    <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} p={5} background={'white'}  borderRadius={10}>
+      <Box pb={5} w={'20%'} m={'auto'}>
+         <Image src={icon5}/></Box>
+      <Text pb={2} fontWeight={600}>Innovation</Text>
+      <Text color={'gray.600'}>We embrace innovation and continuously adapt to the changing landscape of the industries we serve.  </Text>
+    </Box>
     </Flex>
-      <Text fontWeight={600}>Expertise</Text>
-      <Text color={'gray.600'}>Our team is comprised of skilled professionals who possess in-depth knowledge and expertise in their respective fields</Text>
-    </Stack> */}
-      </SimpleGrid>
     </Box>
   )
 }

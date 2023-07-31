@@ -1,0 +1,36 @@
+.sideBox{
+    margin-top: 40vh;
+    width: 140px;
+    position: fixed;
+    z-index: 999999;
+    color: white;
+}
+.sideBox1{
+    width: 129px;
+    height: 50px;
+    justify-content: space-evenly;
+    background-color: #3d49f2;
+    margin-left: -89px;
+    display: block;
+}
+.sideBox1:hover{
+    margin-left: -10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.sideBox2{
+    font-size: 25px;
+    padding-top: 5px;
+}
+
+
+@media only screen and (max-width: 640px) {
+
+    .sideBox1{
+        margin-top: 60vh;
+        display: hidden;
+        background-color: transparent;
+    }
+
+
+}

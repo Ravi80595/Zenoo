@@ -28,7 +28,7 @@ const StarRating = ({ numberOfStars }) => {
 const ReviewsData = [
   {
       name:"Nibha Singh",
-      date:"April 22, 2023",
+      date:"Jan 22, 2023",
       review:"ZENOO provided me with a wonderful experience. They guided me all the way throughout the property process. Special mention to their sales team who understood my preferences and offered me the best property options in Gurgaon. ",
       rating:4
   },
@@ -40,19 +40,19 @@ const ReviewsData = [
   },
   {
       name:"Pooja Kushwaha ",
-      date:"April 15, 2023",
+      date:"March 15, 2023",
       review:"ZENOO is a lifesaver! Their exceptional services cover everything from property to loans and insurance. With their expert guidance, even with a low CIBIL score, they made it possible for me to secure the help I needed. Definitely recommend this company to my office colleagues.😊",
       rating:5
   },
   {
       name:"Anil Prasad ",
-      date:"April 23, 2023",
+      date:"Feb 23, 2023",
       review:"My favorite part about this company is their attentiveness and problem-solving approach which is truly commendable. Their unique combination of loans, insurance, and interior services under one roof is remarkable. Nice job, ZENOO!",
       rating:3
   },
   {
       name:"Debanjan Roy",
-      date:"April 18, 2023",
+      date:"Dec 18, 2022",
       review:"ZENOO has been an exceptional partner to me and my family. Their real estate team helped me find my dream home effortlessly, and their insurance solutions provided peace of mind. The legal assistance during my property transaction was outstanding. Highly recommended!",
       rating:5
   }

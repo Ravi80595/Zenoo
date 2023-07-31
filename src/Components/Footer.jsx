@@ -4,6 +4,8 @@ import styles from '../CSS/footer.module.css'
 import { BsFacebook, BsInstagram, BsYoutube, BsTwitter } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import {AiFillLinkedin} from 'react-icons/ai'
+import ScrollToTopLink from "./ScrollToTopLink";
+import ScrollToFAQLink from "./Scrolls";
 
 
 
@@ -17,10 +19,10 @@ return (
       <Text fontSize="20px" fontWeight="700">
         Company
       </Text>
-      <Link to='/about'>
-    <Text fontSize="16px" fontWeight="500" cursor="pointer">About us</Text></Link>
-    <Link to='/contact'>
-    <Text fontSize="16px" fontWeight="500" cursor="pointer">Contact us</Text></Link>
+      <ScrollToTopLink to='/about'>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">About us</Text></ScrollToTopLink>
+    <ScrollToTopLink to='/contact'>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Contact us</Text></ScrollToTopLink>
     {/* <Text fontSize="14px" fontWeight="500" cursor="pointer">Blog</Text> */}
     </Stack>
     <Stack gap="10px">
@@ -36,8 +38,8 @@ return (
     </Stack>
     <Stack gap="10px">
     <Text fontSize="20px" fontWeight="700">Need Help</Text>
-    <Link to='/home'>
-    <Text fontSize="16px" fontWeight="500" cursor="pointer"> FAQ'S</Text></Link>
+    <ScrollToFAQLink to='/home'>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer"> FAQ'S</Text></ScrollToFAQLink>
     <Text fontSize="20px" fontWeight="700" paddingTop="20px"> Policy Info</Text>
     <Text fontSize="16px" fontWeight="500" cursor="pointer">Privacy Policy</Text>
     <Text fontSize="16px" fontWeight="500" cursor="pointer">Terms of Use</Text>

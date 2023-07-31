@@ -15,6 +15,7 @@ import whoweare from '../../Images/Whoweare.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SideBox from '../../Components/SideBox'
+import ScrollToTopLink from '../../Components/ScrollToTopLink'
 
 
 
@@ -35,12 +36,12 @@ return (
         <Flex justifyContent='space-between'>
         <Image w={10} src={Logo}/>
         <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['60%','60%','30%','30%']} pt={0} color='#10257f'>
-            <Link to='/about'>
+            <ScrollToTopLink to='/about'>
             <Text className='Link_btns'>About us</Text>
-            </Link>
-            <Link to='/contact'>
+            </ScrollToTopLink>
+            <ScrollToTopLink to='/contact'>
             <Text className='Link_btns'>Contact us</Text>
-            </Link>
+            </ScrollToTopLink>
         <Box w='10%'>   
         <Link to='/'>
         <CloseIcon color='#10257f' />
@@ -50,9 +51,9 @@ return (
         </Flex>
     </Box>
     </Box>
-    <Flex  direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h='630px' background='#fdfdfd'>
+    <Flex w={'100vw'} direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h='630px' background='#fdfdfd'>
       <Box data-aos='fade-right' p={11} mt={[20,200,200,200]} ml={[10,90,90,90]} w={['90%','90%','100%','100%']}>
-    <Flex  pt={0} pb={3} justifyContent='space-between'>
+    <Flex pt={0} pb={3} justifyContent='space-between'>
         <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Real Estate</Text>
         <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>

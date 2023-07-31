@@ -10,6 +10,7 @@ import SimpleTwoColumns from '../Components/Slider'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SideBox from '../Components/SideBox'
+import BOD from './BOD.jsx'
 
 
 
@@ -68,39 +69,7 @@ By embracing cutting-edge technologies and sustainable practices, we strive to l
         </Box>
       </Flex>
       </Box>
-
-
-      <Box backgroundColor='#efefef' pt={10} pt={5} pb={10}>
-        <Box w={"80%"} m='auto'>
-        <Text pb={10} fontSize={['26px','26px','36px','36px']}>Our Leadership</Text>
-        <Flex direction={['column','column','column','row']} gap={10} justifyContent='space-around'>
-          <Box backgroundColor='white' textAlign='center'>
-            <Image src='https://homepress.stylemixthemes.com/wp-content/uploads/2018/12/staff-1-699x459.jpg'/>
-            <Text>Rich Wacksman</Text>
-            <Text>Co-Founder and Executive Chairman</Text>
-            <Button mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>CTA</Button>
-          </Box>
-          <Box backgroundColor='white' textAlign='center'>
-            <Image src='https://homepress.stylemixthemes.com/wp-content/uploads/2018/12/staff-1-699x459.jpg'/>
-            <Text>Rich Wacksman</Text>
-            <Text>Co-Founder and Executive Chairman</Text>
-            <Button mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>CTA</Button>
-          </Box>
-          <Box backgroundColor='white' textAlign='center'>
-            <Image src='https://homepress.stylemixthemes.com/wp-content/uploads/2018/12/staff-1-699x459.jpg'/>
-            <Text>Rich Wacksman</Text>
-            <Text>Co-Founder and Executive Chairman</Text>
-            <Button mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>CTA</Button>
-          </Box>
-          <Box backgroundColor='white' textAlign='center'>
-            <Image src='https://homepress.stylemixthemes.com/wp-content/uploads/2018/12/staff-1-699x459.jpg'/>
-            <Text>Rich Wacksman</Text>
-            <Text>Co-Founder and Executive Chairman</Text>
-            <Button mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>CTA</Button>
-          </Box>
-        </Flex>
-        </Box>
-      </Box>
+      <BOD/>
     </Box>
     <Reviews/>
     

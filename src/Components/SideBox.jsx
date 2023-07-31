@@ -9,7 +9,7 @@ const SideBox = () => {
     <Box className='sideBox' display={["none","none","none","block"]}>
     <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
      <Flex className='sideBox1' borderTopRightRadius='15px'>
-        <Text margin='0px' pt='7px' color='white'>Linkedin &nbsp;</Text>
+        <Text margin='0px' pt='7px' color='white'>Linkedin &nbsp; &nbsp;</Text>
         <Box className='sideBox2'>
         <AiFillLinkedin color='white'/>
         </Box>

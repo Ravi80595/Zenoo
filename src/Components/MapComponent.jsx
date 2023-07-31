@@ -16,7 +16,7 @@ return (
         />
         <Marker position={position}>
           <Popup>
-            A marker at the initial map position. <br /> Easily customizable.
+            Zenoo <br /> Where world connects
           </Popup>
         </Marker>
       </MapContainer>

@@ -30,7 +30,7 @@ return (
     <a href="https://www.linkedin.com/company/zenoo.in/" target="blank">
     <Text fontSize="16px" fontWeight="500" cursor="pointer">Real Estate</Text></a>
     <a href="https://www.linkedin.com/company/zenoo.in/" target="blank">
-    <Text fontSize="16px" fontWeight="500" cursor="pointer">Loan Services</Text></a>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Financial Advisory</Text></a>
     <a href="https://www.linkedin.com/company/zenoo.in/" target="blank">
     <Text fontSize="16px" fontWeight="500" cursor="pointer">Insurance Solution</Text></a>
     <a href="https://www.linkedin.com/company/zenoo.in/" target="blank">

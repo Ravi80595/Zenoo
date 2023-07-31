@@ -49,7 +49,7 @@ return(
     <Box background={'whitesmoke'}>
     <Flex data-aos='fade-up' direction={['column','column','column','row']} w='90%' m='auto' gap={[10,40,40,40]} pt={20} pb={20}>
         <Box>
-          <Image w={'800px'} src='https://realnewestate.com/wp-content/uploads/2021/12/becoming-a-real-estate-developer.jpeg'/>
+          <Image borderRadius={20} w={'800px'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' src='https://realnewestate.com/wp-content/uploads/2021/12/becoming-a-real-estate-developer.jpeg'/>
         </Box>
         <Box textAlign={['center','left','left','left']} w={['90%','90%','70%','70%']}>
           <Text fontSize={['26px','26px','36px','36px']} > Our Mission</Text>
@@ -65,7 +65,7 @@ return(
 By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence.</Text>
         </Box>
         <Box>
-          <Image w={'800px'} src='https://t4.ftcdn.net/jpg/03/30/28/45/360_F_330284507_zWMKJuSAPN2VyomK4et4dTdHi2P8lmHb.jpg'/>
+          <Image borderRadius={20} w={'800px'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' w={'800px'} src='https://t4.ftcdn.net/jpg/03/30/28/45/360_F_330284507_zWMKJuSAPN2VyomK4et4dTdHi2P8lmHb.jpg'/>
         </Box>
       </Flex>
       </Box>

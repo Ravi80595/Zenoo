@@ -5,6 +5,7 @@ import {CloseIcon} from '@chakra-ui/icons'
 import { Link } from 'react-router-dom'
 import ScrollToTopLink from './ScrollToTopLink'
 
+
 const Navbar = () => {
 
 

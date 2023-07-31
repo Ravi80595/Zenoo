@@ -14,11 +14,9 @@ useEffect(() => {
 }, [])
 
 
-//https://images.pexels.com/photos/258149/pexels-photo-258149.jpeg?cs=srgb&dl=pexels-pixabay-258149.jpg&fm=jpg
-
 return(
     <Box>
-    <Box position={'absolute'} left={3} top={'38%'} color={'blue'}>
+    <Box position={'absolute'} left={3} top={'35%'} color={'blue'}>
     <a href="https://www.instagram.com/zenoo186/ " target='blank'>
       <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
       <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
@@ -32,11 +30,11 @@ return(
           <Flex justifyContent={'center'}>
           <Image pt={['222px',91,91,91]} w={188} src='https://zenoo.vercel.app/static/media/Logo.60cc4a9cbf255d6eeb4e.png'/></Flex>
         <Text className='title' fontSize={['50px',100,100,100]}  fontFamily='_NewYork' pt={1} color='blue'>ZENOO</Text>
-        <div color='blue' style={{paddingBottom:'5px'}} w={['90%','50%','50%','50%']} m='auto'>
+        <div color='blue'  style={{paddingBottom:'25px', fontWeight:'bold' , marginTop:'-17px'}} w={['90%','50%','50%','50%']} m='auto'>
         <p>Uniting Real-Estate and Finance with Trust</p>
         </div>
         <Link to='/template3'>
-        <Button p={6} _hover={{background:'white',color:'blue',border:'2px solid blue',transition:'1s ease'}} background={'blue'} color={'white'}>Explore opportunities</Button>
+        <Button p={6} fontSize={'20px'} _hover={{background:'white',color:'blue',border:'2px solid blue',transition:'1s ease'}} background={'blue'} color={'white'}>Explore Opportunities</Button>
         </Link>
         </Box>
         

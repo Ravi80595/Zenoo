@@ -1,9 +1,9 @@
-import { Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import styles from '../CSS/footer.module.css'
 import { BsFacebook, BsInstagram, BsYoutube, BsTwitter } from "react-icons/bs";
 import { Link } from "react-router-dom";
-
+import Logo2 from '../Images/Logo.png'
 
 const Footer = () => {
 
@@ -60,7 +60,12 @@ return (
       <Text>Plot No.14, <br /> Sector 44, Gurugram, <br /> Haryana 122003</Text>
     </Stack>
   </Stack>
-  <Stack gap="10px" marginBottom="40px" marginTop="60px">
+  <Box color={'white'}>
+    <Image ml={'50px'} w={50} src='http://localhost:3000/static/media/Logo.60cc4a9cbf255d6eeb4e.png'/>
+    <Heading pl={'25px'}>ZENOO</Heading>
+    <Text>Where world connects</Text>
+  </Box>
+  {/* <Stack gap="10px" marginBottom="40px" marginTop="60px">
     <Text fontSize="16px" fontWeight="700" color='white'>
       Our Payment Partners
     </Text>
@@ -74,8 +79,9 @@ return (
       </Stack>
       <Text color='white' fontSize="14px">© 2022 Zenoo. All Rights Reserved</Text>
     </Stack>
-  </Stack>
+  </Stack> */}
   <Text textAlign='center' color='white'>Created by Laudco Media</Text>
+  {/* <Text textAlign={'right'}>@all right reserved</Text> */}
 </div>
   );
 };

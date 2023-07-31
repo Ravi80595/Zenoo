@@ -32,16 +32,6 @@ return (
     <Box background='#f9f9f9'>
     <Box w='100%' backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
       <SideBox/>
-    {/* <Box background={'transparent'} position={'absolute'} left={22} top={'52vh'} color={'blue'}>
-      <a href="https://www.instagram.com/zenoo186/ " target='blank'>
-      <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
-      <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
-      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png'/></a>
-      <a href="https://api.whatsapp.com/send/?phone=7711884456&text&type=phone_number&app_absent=0" target='blank'>
-      <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png'/></a>
-      <a href="https://www.facebook.com/zenoo18" target='blank'>
-      <Image className='footerLogo' w='40px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png'/></a>
-    </Box> */}
       <Box p={5} background='white'>
         <Flex justifyContent='space-between'>
         <Image w={10} src={Logo}/>
@@ -61,7 +51,7 @@ return (
         </Flex>
     </Box>
     </Box>
-    <Flex direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h='630px' background='#fdfdfd'>
+    <Flex  direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h='630px' background='#fdfdfd'>
       <Box data-aos='fade-right' p={11} mt={[20,200,200,200]} ml={[10,90,90,90]} w={['90%','90%','100%','100%']}>
     <Flex  pt={0} pb={3} justifyContent='space-between'>
         <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Real Estate</Text>
@@ -72,7 +62,7 @@ return (
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Loan Services</Text>
+        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Financial Advisory</Text>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
@@ -96,11 +86,9 @@ return (
     </Flex>
     <hr height='12px'/>
     </Box >
+    {/* <Box h={350} mt={220} border={'20px solid gre'} borderRightRadius={'50px'}></Box> */}
       <Image data-aos='fade-left' w='900px' src='https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg'/>
     </Flex>
-    {/* <Flex w='100%' m='auto' h='400px' mt={90} gap={50}> */}
-
-    {/* <ContinuousVideo/> */}
 
     <Flex data-aos='fade-up' direction={['column','column','row','row']} mt={50}>
       <Box w={['90%','90%','40%','40%']} mt={40}>
@@ -125,7 +113,7 @@ We believe in more than just transactions; we believe in the experiences that tu
         <Image w={'100%'} h={200} src='https://www.praxivaluations.praxi/files/news/ILQI%20large.jpg'/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30}>Mission</Text>
-        <Text>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve</Text>
+        <Text>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve.</Text>
         <Link to='/about'>
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>
@@ -134,14 +122,14 @@ We believe in more than just transactions; we believe in the experiences that tu
         <Image w={'100%'} h={200} src='https://temptationrealtyinc.com/wp-content/uploads/2015/04/v.jpg'/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Vision</Text>
-        <Text>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
+        <Text h={229}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
         <Link to='/about'>
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5}  backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>
     </Box>
 </Flex>
 <Box data-aos='fade-up' pb={277} mt={120} backgroundImage={'https://www.vaporstore.com/wp-content/uploads/2016/05/Savin-NY-Website-Background-Web.jpg'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>
-  <Heading pt={12} fontFamily='Parata'>FAQ's</Heading>
+  <Heading pt={12} fontFamily='Parata'>FAQs</Heading>
   {/* <Text mb={22}>Discovering the Answers: Frequently Asked Questions</Text> */}
 <Accordian/>
 </Box>

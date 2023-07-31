@@ -1,7 +1,7 @@
 import { Box, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import styles from '../CSS/footer.module.css'
-import { BsFacebook, BsInstagram, BsYoutube, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsInstagram,BsTwitter } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import {AiFillLinkedin} from 'react-icons/ai'
 import ScrollToTopLink from "./ScrollToTopLink";

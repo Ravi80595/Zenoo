@@ -4,7 +4,7 @@ import '../CSS/Home.css'
 import { Link } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import Logo from '../Images/Logo.png'
 
 const Home = () => {
 
@@ -28,7 +28,7 @@ return(
     </Box>
         <Box color={'blue'} h={'99vh'} data-aos='fade-up'>
           <Flex justifyContent={'center'}>
-          <Image pt={['222px',91,91,91]} w={188} src='https://zenoo.vercel.app/static/media/Logo.60cc4a9cbf255d6eeb4e.png'/></Flex>
+          <Image pt={['222px',91,91,91]} w={188} src={Logo}/></Flex>
         <Text className='title' fontSize={['50px',100,100,100]}  fontFamily='_NewYork' pt={1} color='blue'>ZENOO</Text>
         <div color='blue'  style={{paddingBottom:'25px', fontWeight:'bold' , marginTop:'-17px'}} w={['90%','50%','50%','50%']} m='auto'>
         <p>Uniting Real-Estate and Finance with Trust</p>

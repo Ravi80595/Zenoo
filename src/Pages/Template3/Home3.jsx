@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Box,Flex,Text,Image, Button, Heading,Stack} from '@chakra-ui/react'
 import '../../CSS/footer.module.css'
-import Logo from '../../Images/Logo.png'
+import Logo3 from '../../Images/Logo3.png'
 import { Link } from 'react-router-dom'
 import {CloseIcon} from '@chakra-ui/icons'
 import {GoArrowUpRight} from 'react-icons/go'
@@ -35,7 +35,7 @@ return (
       <SideBox/>
       <Box p={5} background='white'>
         <Flex justifyContent='space-between'>
-        <Image w={'120px'} src={Logo}/>
+        <Image w={'120px'} src={Logo3}/>
         <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['60%','60%','30%','30%']} pt={0} color='#10257f'>
             <ScrollToTopLink to='/about'>
             <Text className='Link_btns'>About us</Text>

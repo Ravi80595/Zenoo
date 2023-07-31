@@ -1,4 +1,4 @@
-import { Box,Image,Flex,Heading,Text,Button, Input, Textarea, Checkbox} from '@chakra-ui/react'
+import { Box,Image,Flex,Text,Button, Input, Textarea, Checkbox} from '@chakra-ui/react'
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import MapComponent from '../Components/MapComponent'
 import cover from '../Images/cover.png'
 import SideBox from '../Components/SideBox'
+import ZENOO1 from '../Images/ZENOO1.png'
 
 
 const Contact = () => {
@@ -23,13 +24,13 @@ return(
           > Contact us</Text>
       </Box>
       {/* <Heading mt={[50,120,120,120]} ml={10}>Gurgaon Office</Heading> */}
-      <Flex mt={[50,120,120,120]} direction={['column-reverse','column','column','row']} w='80%' m='auto' gap={20}  mb={90}>
+      <Flex mt={[150,120,120,120]} direction={['column-reverse','column','column','row']} w='80%' m='auto' gap={20}  mb={90}>
         <Box w={['95%','95%','40%','60%']} mt={['30px','30px','90px','10px']}>
           <Text>Zenoo, as a conglomerate deeply entrenched in various core sector, has always operated as a values-driven organization. These fundamental principles serve as the bedrock of our businesses within the Zenoo group, guiding our growth and shaping our approach to conducting operations.</Text>
           <Text pt={5}> <b>Call Us : </b>0124 4240520</Text>
           <Text pt={2}> <b>Email Us : </b>info@zenoo.in</Text>
           <Text pt={2}> <b>Address : </b>Plot No.14, Sector 44, Gurugram, Haryana 122003</Text>
-          <Flex pt={5} w={'40%'} justifyContent={'space-around'}> 
+          <Flex pt={5} w={['90%','90%','40%','40%']} justifyContent={'space-around'}> 
           <a href="https://www.instagram.com/zenoo186/ " target='blank'>
       <Image w='30px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
       <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
@@ -41,11 +42,11 @@ return(
           </Flex>
           <Button mt={5} borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s  '}  textAlign={'center'}>GET DIRECTIONS</Button>
         </Box>
-        <Box w='90%'>
+        <Box w='90%' mt={[20,20,0,0]}>
           <MapComponent/>
         </Box>
       </Flex>
-      <Box backgroundImage={'https://png.pngtree.com/background/20210710/original/pngtree-science-and-technology-exhibition-board-background-template-daquan-picture-image_1011084.jpg'} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} pt={20} pb={20}>
+      <Box h={'400px'} backgroundImage={ZENOO1} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} pt={20} pb={20}>
         <Box textAlign ='center' w={['90%','60%','60%','50%']} m='auto' pb={70} >
           <Text pb={"20px"} fontWeight={'bold'} fontSize={['20px','40px','40px','40px']} fontFamily={'sans-serif'}>Why Partner with Zenoo</Text>
           <Text>Selecting ZENOO means aligning with a reliable partner dedicated to your prosperity. Whether you're in the market for a new property, obtaining a loan, protecting your assets through insurance, or seeking legal counsel, we deliver a smooth and all-inclusive journey. Our harmonized approach guarantees tailored solutions that cater to your needs, empowering you to pursue your objectives with unwavering assurance</Text>

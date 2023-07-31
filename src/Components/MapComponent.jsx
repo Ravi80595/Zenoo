@@ -3,9 +3,6 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 
-
-
-
 const MapComponent = () => {
     const position = [28.453432537750142, 77.06834227116423];
 

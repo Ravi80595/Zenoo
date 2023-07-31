@@ -30,7 +30,7 @@ return(
           > About us</Text>
       </Box>
       <Flex direction={['column','column','column','row']} w='80%' m='auto' gap={20} pt={90}>
-        <Image data-aos='fade-right' w={700} h={350} src='https://media.istockphoto.com/id/1199060494/photo/insurance-protecting-family-health-live-house-and-car-concept.jpg?s=612x612&w=0&k=20&c=W8bPvwF5rk7Rm2yDYnMyFhGXZfNqK4bUPlDcRpKVsB8='/>
+        <Image data-aos='fade-right' w={700} h={[250,350,350,350]} src='https://media.istockphoto.com/id/1199060494/photo/insurance-protecting-family-health-live-house-and-car-concept.jpg?s=612x612&w=0&k=20&c=W8bPvwF5rk7Rm2yDYnMyFhGXZfNqK4bUPlDcRpKVsB8='/>
         <Box data-aos='fade-left'>
           <Text>
           At <b> ZENOO </b>, we're not just a conglomerate; we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of real estate, loan services, insurance solutions, legal assistance, interior design, and construction management. Our journey began with a simple yet audacious dream - to create a one-stop hub where all your dreams find their true home.
@@ -47,19 +47,19 @@ return(
     </Box>
 
     <Box background={'whitesmoke'}>
-    <Flex data-aos='fade-up' direction={['column','column','column','row']} w='90%' m='auto' gap={40} pt={20} pb={20}>
+    <Flex data-aos='fade-up' direction={['column','column','column','row']} w='90%' m='auto' gap={[10,40,40,40]} pt={20} pb={20}>
         <Box>
-          <Image  src='https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/about-us-img3.jpg'/>
+          <Image w={'800px'} src='https://realnewestate.com/wp-content/uploads/2021/12/becoming-a-real-estate-developer.jpeg'/>
         </Box>
-        <Box textAlign={'left'} w={['90%','90%','70%','70%']}>
+        <Box textAlign={['center','left','left','left']} w={['90%','90%','70%','70%']}>
           <Text fontSize={['26px','26px','36px','36px']} > Our Mission</Text>
           <Text lineHeight={'1.5rem'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve.</Text>
         </Box>
       </Flex>
       </Box>
       <Box background={'whitesmoke'}>
-    <Flex data-aos='fade-up' direction={['column-reverse','column-reverse','column','row']} w='90%' m='auto' gap={40} pt={20} pb={20}>
-        <Box textAlign={'left'} w={['90%','90%','70%','70%']}>
+    <Flex data-aos='fade-up' direction={['column-reverse','column-reverse','column','row']} w='90%' m='auto' gap={[10,40,40,40]} pt={20} pb={20}>
+        <Box textAlign={['center','left','left','left']} w={['90%','90%','70%','70%']}>
           <Text fontSize={['26px','26px','36px','36px']} > Our Vision</Text>
           <Text lineHeight={'1.5rem'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. 
 By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence.</Text>

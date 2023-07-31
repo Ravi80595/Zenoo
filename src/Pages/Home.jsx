@@ -16,7 +16,7 @@ useEffect(() => {
 
 return(
     <Box>
-    <Box position={'absolute'} left={3} top={'35%'} color={'blue'}>
+    <Box position={'absolute'} left={3} top={'30%'} color={'blue'}>
     <a href="https://www.instagram.com/zenoo186/ " target='blank'>
       <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
       <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>

@@ -16,6 +16,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SideBox from '../../Components/SideBox'
 import ScrollToTopLink from '../../Components/ScrollToTopLink'
+import vision from '../../Images/vision.png'
 
 
 
@@ -30,7 +31,7 @@ const Home3 = () => {
 
 return (
     <Box background='#f9f9f9'>
-    <Box w='100%' backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
+    <Box w='100vw' backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
       <SideBox/>
       <Box p={5} background='white'>
         <Flex justifyContent='space-between'>
@@ -51,10 +52,10 @@ return (
         </Flex>
     </Box>
     </Box>
-    <Flex w={'100vw'} direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h='630px' background='#fdfdfd'>
+    <Flex w={'100vw'} direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','630px']} background='#fdfdfd'>
       <Box data-aos='fade-right' p={11} mt={[20,200,200,200]} ml={[10,90,90,90]} w={['90%','90%','100%','100%']}>
     <Flex pt={0} pb={3} justifyContent='space-between'>
-        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Real Estate</Text>
+        <Text fontSize={['17px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Real Estate</Text>
         <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
@@ -63,7 +64,7 @@ return (
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Financial Advisory</Text>
+        <Text fontSize={['17px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Financial Advisory</Text>
         <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
@@ -73,7 +74,7 @@ return (
     </Flex>
     <hr height='22px' color='rgb(54, 84, 206)'/>
     <Flex pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Insurance Solutions</Text>
+        <Text fontSize={['15px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Insurance Solutions</Text>
         <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
@@ -83,7 +84,7 @@ return (
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex   pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Legal Assistance</Text>
+        <Text fontSize={['17px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Legal Assistance</Text>
         <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
@@ -116,8 +117,8 @@ We believe in more than just transactions; we believe in the experiences that tu
       </Box>
       </Flex>
       <Flex direction={['column','column','column','row']}  justifyContent='space-around'  pt={90} w={['90%','90%','60%','60%']} m='auto' gap={40}>
-    <Box data-aos='fade-right' _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['90%','90%','50%','50%']}  boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-        <Image w={'100%'} h={200} src='https://www.praxivaluations.praxi/files/news/ILQI%20large.jpg'/>
+    <Box data-aos='fade-right' _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']}  boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
+        <Image h={'200px'} w={'400px'} src='https://www.praxivaluations.praxi/files/news/ILQI%20large.jpg'/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30}>Mission</Text>
         <Text>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve.</Text>
@@ -125,8 +126,8 @@ We believe in more than just transactions; we believe in the experiences that tu
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>
     </Box>
-    <Box data-aos='fade-left' _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['90%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-        <Image w={'100%'} h={200} src='https://temptationrealtyinc.com/wp-content/uploads/2015/04/v.jpg'/>
+    <Box data-aos='fade-left' _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
+        <Image w={'350px'} h={200} src={vision}/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Vision</Text>
         <Text h={229}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>

@@ -33,7 +33,7 @@ return(
         <div color='blue'  style={{paddingBottom:'25px', fontWeight:'bold' , marginTop:'-17px'}} w={['90%','50%','50%','50%']} m='auto'>
         <p>Uniting Real-Estate and Finance with Trust</p>
         </div>
-        <Link to='/template3'>
+        <Link to='/home'>
         <Button p={6} fontSize={'20px'} _hover={{background:'white',color:'blue',border:'2px solid blue',transition:'1s ease'}} background={'blue'} color={'white'}>Explore Opportunities</Button>
         </Link>
         </Box>

@@ -20,7 +20,6 @@ import SideBox from '../../Components/SideBox'
 
 const Home3 = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
-  // const [showMore, setShowMore] = useState(false)
 
 
 
@@ -55,34 +54,41 @@ return (
       <Box data-aos='fade-right' p={11} mt={[20,200,200,200]} ml={[10,90,90,90]} w={['90%','90%','100%','100%']}>
     <Flex  pt={0} pb={3} justifyContent='space-between'>
         <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Real Estate</Text>
+        <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
-        </Flex>
+        </Flex></a>
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Financial Advisory</Text>
+        <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
+        </a>
     </Flex>
     <hr height='22px' color='rgb(54, 84, 206)'/>
     <Flex pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Insurance Solutions</Text>
+        <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
+        </a>
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex   pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={[20,30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Legal Assistance</Text>
+        <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(54, 84, 206)'>See the source</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
+        </a>
     </Flex>
     <hr height='12px'/>
     </Box >

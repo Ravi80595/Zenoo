@@ -1,10 +1,11 @@
-import { Box,Image,Flex,Heading,Text,Button, Input, Textarea} from '@chakra-ui/react'
+import { Box,Image,Flex,Heading,Text,Button, Input, Textarea, Checkbox} from '@chakra-ui/react'
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
 import MapComponent from '../Components/MapComponent'
 import cover from '../Images/cover.png'
+import SideBox from '../Components/SideBox'
 
 
 const Contact = () => {
@@ -13,6 +14,7 @@ const Contact = () => {
 return(
     <>
       <Navbar/>
+      <SideBox/>
       <Box w='100%' m='auto' textAlign='left' backgroundColor={'white'}>
       <Box backgroundColor={'white'} w='100%' h={[190,190,290,290]} m='auto' color='black' pt={100} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
       <Text> 
@@ -22,10 +24,21 @@ return(
       </Box>
       {/* <Heading mt={[50,120,120,120]} ml={10}>Gurgaon Office</Heading> */}
       <Flex mt={[50,120,120,120]} direction={['column-reverse','column','column','row']} w='80%' m='auto' gap={20}  mb={90}>
-        <Box w={['95%','95%','40%','50%']} mt={['30px','30px','90px','30px']}>
+        <Box w={['95%','95%','40%','60%']} mt={['30px','30px','90px','10px']}>
           <Text>Zenoo, as a conglomerate deeply entrenched in various core sector, has always operated as a values-driven organization. These fundamental principles serve as the bedrock of our businesses within the Zenoo group, guiding our growth and shaping our approach to conducting operations.</Text>
           <Text pt={5}> <b>Call Us : </b>0124 4240520</Text>
+          <Text pt={2}> <b>Email Us : </b>info@zenoo.in</Text>
           <Text pt={2}> <b>Address : </b>Plot No.14, Sector 44, Gurugram, Haryana 122003</Text>
+          <Flex pt={5} w={'40%'} justifyContent={'space-around'}> 
+          <a href="https://www.instagram.com/zenoo186/ " target='blank'>
+      <Image w='30px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
+      <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
+      <Image  w='30px' src='https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png'/></a>
+      <a href="https://api.whatsapp.com/send/?phone=7711884456&text&type=phone_number&app_absent=0" target='blank'>
+      <Image w='30px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png'/></a>
+      <a href="https://www.facebook.com/zenoo18" target='blank'>
+      <Image w='30px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png'/></a>
+          </Flex>
           <Button mt={5} borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s  '}  textAlign={'center'}>GET DIRECTIONS</Button>
         </Box>
         <Box w='90%'>
@@ -48,9 +61,14 @@ return(
           <Input placeholder='Name'/>
           <Text pt={15}>Email</Text>
           <Input placeholder='Enter your email'/>
+          <Text pt={15}>Phone no.</Text>
+          <Input placeholder='Enter your phone'/>
           <Text pt={5}>Message</Text>
           <Textarea placeholder='Enter your message here'/>
-          <Flex mt={10} justifyContent={'center'}><Button borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s'}  textAlign={'center'}>Submit</Button></Flex>
+          <Checkbox pt={3} colorScheme='blue' defaultChecked>
+           Checkbox line here
+          </Checkbox>
+          <Flex mt={5} justifyContent={'center'}><Button borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s'}  textAlign={'center'}>Submit</Button></Flex>
           </Box>
           </Box>
         </Box>

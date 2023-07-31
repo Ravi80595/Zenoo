@@ -9,6 +9,7 @@ import cover from '../Images/cover.png'
 import SimpleTwoColumns from '../Components/Slider'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SideBox from '../Components/SideBox'
 
 
 
@@ -19,6 +20,7 @@ const About = () => {
 return(
 <>
 <Navbar/>
+<SideBox/>
     <Box backgroundColor={'white'} w='100%' m='auto' textAlign='left'>
       <Box w='100%' h={[190,190,290,290]} m='auto' color='black' pt={100} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
       <Text> 
@@ -56,7 +58,6 @@ return(
       </Box>
       <Box background={'whitesmoke'}>
     <Flex data-aos='fade-up' direction={['column-reverse','column-reverse','column','row']} w='90%' m='auto' gap={40} pt={20} pb={20}>
-        
         <Box textAlign={'left'} w={['90%','90%','70%','70%']}>
           <Text fontSize={['26px','26px','36px','36px']} > Our Vision</Text>
           <Text lineHeight={'1.5rem'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. 

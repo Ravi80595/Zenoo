@@ -1,6 +1,6 @@
 .sideBox{
-    margin-top: 40vh;
-    width: 140px;
+    margin-top: 50vh;
+    width: 40px;
     position: fixed;
     z-index: 999999;
     color: white;
@@ -17,6 +17,7 @@
     margin-left: -10px;
     transition: 0.5s;
     border-radius: 10px;
+    width: 140px;
 }
 .sideBox2{
     font-size: 25px;

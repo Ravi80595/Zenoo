@@ -3,7 +3,9 @@ import React from "react";
 import styles from '../CSS/footer.module.css'
 import { BsFacebook, BsInstagram, BsYoutube, BsTwitter } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import Logo2 from '../Images/Logo.png'
+import {AiFillLinkedin} from 'react-icons/ai'
+
+
 
 const Footer = () => {
 
@@ -12,31 +14,36 @@ return (
   <div zIndex={999999999} className={styles.container} style={{background:'#10257f'}}>
   <Stack color='white' direction={["column",'row',"horizontal","horizontal"]} justify="space-between">
     <Stack gap="10px">
-      <Text fontSize="16px" fontWeight="700">
+      <Text fontSize="20px" fontWeight="700">
         Company
       </Text>
       <Link to='/about'>
-    <Text fontSize="14px" fontWeight="500" cursor="pointer">About us</Text></Link>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">About us</Text></Link>
     <Link to='/contact'>
-    <Text fontSize="14px" fontWeight="500" cursor="pointer">Contact us</Text></Link>
-    <Text fontSize="14px" fontWeight="500" cursor="pointer">Blog</Text>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Contact us</Text></Link>
+    {/* <Text fontSize="14px" fontWeight="500" cursor="pointer">Blog</Text> */}
     </Stack>
     <Stack gap="10px">
-    <Text fontSize="16px" fontWeight="700">Featured Categories</Text>
-    <Text fontSize="14px" fontWeight="500" cursor="pointer">Real Estate</Text>
-    <Text fontSize="14px" fontWeight="500" cursor="pointer">Loan Services</Text>
-    <Text fontSize="14px" fontWeight="500" cursor="pointer">Insurance Solution</Text>
-    <Text fontSize="14px" fontWeight="500" cursor="pointer">Legal Assistance </Text>
+    <Text fontSize="20px" fontWeight="700">Featured Categories</Text>
+    <a href="https://www.linkedin.com/company/zenoo.in/" target="blank">
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Real Estate</Text></a>
+    <a href="https://www.linkedin.com/company/zenoo.in/" target="blank">
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Loan Services</Text></a>
+    <a href="https://www.linkedin.com/company/zenoo.in/" target="blank">
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Insurance Solution</Text></a>
+    <a href="https://www.linkedin.com/company/zenoo.in/" target="blank">
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Legal Assistance </Text></a>
     </Stack>
     <Stack gap="10px">
-    <Text fontSize="16px" fontWeight="700">Need Help</Text>
-    <Text fontSize="14px" fontWeight="500" cursor="pointer"> FAQ'S</Text>
-    <Text fontSize="16px" fontWeight="700" paddingTop="20px"> Policy Info</Text>
-    <Text fontSize="14px" fontWeight="500" cursor="pointer">Privacy Policy</Text>
-    <Text fontSize="14px" fontWeight="500" cursor="pointer">Terms of Use</Text>
+    <Text fontSize="20px" fontWeight="700">Need Help</Text>
+    <Link to='/home'>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer"> FAQ'S</Text></Link>
+    <Text fontSize="20px" fontWeight="700" paddingTop="20px"> Policy Info</Text>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Privacy Policy</Text>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Terms of Use</Text>
     </Stack>
     <Stack gap="10px" marginRight="20px">
-      <Text fontSize="16px" fontWeight="700">
+      <Text fontSize="20px" fontWeight="700">
         Follow us on
       </Text>
       <Stack direction="horizontal" gap="25px">
@@ -48,9 +55,10 @@ return (
         <BsFacebook
           style={{ width: "25px", height: "25px", cursor: "pointer" }}
         /></a>
-        <BsYoutube
+        <a href="https://www.linkedin.com/company/zenoo.in/"target="blank">
+        <AiFillLinkedin
           style={{ width: "25px", height: "25px", cursor: "pointer" }}
-        />
+        /></a>
         <a href="https://twitter.com/ZENOO719261821" target="blank">
         <BsTwitter
           style={{ width: "25px", height: "25px", cursor: "pointer" }}

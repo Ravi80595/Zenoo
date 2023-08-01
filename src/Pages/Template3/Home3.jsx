@@ -127,7 +127,7 @@ We believe in more than just transactions; we believe in the experiences that tu
     </Box>
     </Box>
     <Box data-aos='fade-left' _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-        <Image w={'350px'} h={200} src={vision}/>
+        <Image w={'auto'} h={200} src={vision}/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Vision</Text>
         <Text h={229}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>

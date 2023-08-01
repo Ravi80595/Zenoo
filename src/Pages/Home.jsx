@@ -29,7 +29,7 @@ return(
         <Box color={'blue'} h={'99vh'} data-aos='fade-up'>
           <Flex justifyContent={'center'}>
           <Image pt={['222px',91,91,91]} w={188} src={Logo}/></Flex>
-        <Text className='title' fontSize={['50px',100,100,100]}  fontFamily='_NewYork' pt={1} color='blue'>ZENOO</Text>
+        <Text className='title' fontSize={['50px',100,100,100]}  fontFamily='_NewYork' pt={1} color='blue' pb={['10px','10px','1px','1px']}>ZENOO</Text>
         <div color='blue'  style={{paddingBottom:'25px', fontWeight:'bold' , marginTop:'-17px'}} w={['90%','50%','50%','50%']} m='auto'>
         <p>Uniting Real-Estate and Finance with Trust</p>
         </div>

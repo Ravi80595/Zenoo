@@ -31,7 +31,7 @@ const Home3 = () => {
 
 return (
     <Box background='#f9f9f9'>
-    <Box w='100%' backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
+    <Box w={['100vw','100%','100%','100%']} backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
       <SideBox/>
       <Box p={5} background='white'>
         <Flex justifyContent='space-between'>
@@ -53,7 +53,7 @@ return (
     </Box>
     </Box>
     <Flex w={'100%'} direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','630px']} background='#fdfdfd'>
-      <Box data-aos='fade-right' p={11} mt={[20,200,200,200]} ml={[10,90,90,90]} w={['90%','90%','100%','100%']}>
+      <Box p={11} mt={[20,200,200,200]} ml={[10,90,90,90]} w={['90%','90%','100%','100%']}>
     <Flex pt={0} pb={3} justifyContent='space-between'>
         <Text fontSize={['17px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Real Estate</Text>
         <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
@@ -95,7 +95,7 @@ return (
     <hr height='12px'/>
     </Box >
     {/* <Box h={350} mt={220} border={'20px solid gre'} borderRightRadius={'50px'}></Box> */}
-      <Image data-aos='fade-left' w='900px' src='https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg'/>
+      <Image w='900px' src='https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg'/>
     </Flex>
 
     <Flex data-aos='fade-up' direction={['column','column','row','row']} mt={50}>

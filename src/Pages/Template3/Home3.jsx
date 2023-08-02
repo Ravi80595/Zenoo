@@ -18,7 +18,7 @@ import SideBox from '../../Components/SideBox'
 import ScrollToTopLink from '../../Components/ScrollToTopLink'
 import vision from '../../Images/vision.png'
 import hero from '../../Images/hero.png'
-
+import Logo from '../../Images/Logo.png'
 
 
 const Home3 = () => {
@@ -29,7 +29,11 @@ const Home3 = () => {
   const handleChatIconClick = () => {
     setIsChatOpen(!isChatOpen);
   };
+  // backgroundImage={'http://localhost:3000/static/media/mainImage.e048f31ccb052b45c06d.png'} backgroundSize={'coer'}
 
+
+
+  // backgroundImage={'http://localhost:3000/static/media/mainImage.e048f31ccb052b45c06d.png'} backgroundSize={'cover'}
 return (
     <Box background='#f9f9f9'>
     <Box w={['100vw','100%','100%','100%']} backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
@@ -98,6 +102,7 @@ return (
     <Box h={350} mt={220} w={'70%'} border={'20px solid gre'} borderRightRadius={'50px'}></Box>
       {/* <Image w='900px' h={'700px'} src={''}/> */}
     </Flex>
+    {/* hero */}
     {/* // 'https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg' */}
     <Flex direction={['column','column','row','row']} mt={50}>
       <Box w={['90%','90%','40%','40%']} mt={40}>
@@ -131,7 +136,7 @@ We believe in more than just transactions; we believe in the experiences that tu
         <Image w={'100%'} h={200} src={vision}/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Vision</Text>
-        <Text h={229}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
+        <Text>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
         <Link to='/about'>
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5}  backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>

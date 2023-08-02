@@ -53,7 +53,7 @@ return (
         </Flex>
     </Box>
     </Box>
-    <Flex w={'100%'} direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','630px']} background='#fdfdfd' backgroundImage={hero} backgroundSize={'cover'}>
+    <Flex w={'100%'} direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','100vh']} background='#fdfdfd' backgroundImage={hero} backgroundSize={'cover'}>
       <Box p={11} mt={[20,200,200,200]} ml={[10,90,90,90]} w={['90%','90%','100%','70%']}>
     <Flex pt={0} pb={3} justifyContent='space-between'>
         <Text fontSize={['17px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Real Estate</Text>

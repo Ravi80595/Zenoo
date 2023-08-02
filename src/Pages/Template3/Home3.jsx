@@ -99,7 +99,7 @@ return (
       {/* <Image w='900px' h={'700px'} src={''}/> */}
     </Flex>
     {/* // 'https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg' */}
-    <Flex data-aos='fade-up' direction={['column','column','row','row']} mt={50}>
+    <Flex direction={['column','column','row','row']} mt={50}>
       <Box w={['90%','90%','40%','40%']} mt={40}>
         <Image src={whoweare}/>
       </Box>
@@ -118,7 +118,7 @@ We believe in more than just transactions; we believe in the experiences that tu
       </Box>
       </Flex>
       <Flex direction={['column','column','column','row']}  justifyContent='space-around'  pt={90} w={['90%','90%','60%','60%']} m='auto' gap={40}>
-    <Box data-aos='fade-right' _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']}  boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
+    <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']}  boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
         <Image h={'200px'} w={'100%'} src='https://www.praxivaluations.praxi/files/news/ILQI%20large.jpg'/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30}>Mission</Text>
@@ -127,7 +127,7 @@ We believe in more than just transactions; we believe in the experiences that tu
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>
     </Box>
-    <Box data-aos='fade-left' _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
+    <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
         <Image w={'100%'} h={200} src={vision}/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Vision</Text>
@@ -137,7 +137,7 @@ We believe in more than just transactions; we believe in the experiences that tu
     </Box>
     </Box>
 </Flex>
-<Box data-aos='fade-up' pb={277} mt={120} backgroundImage={'https://www.vaporstore.com/wp-content/uploads/2016/05/Savin-NY-Website-Background-Web.jpg'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>
+<Box pb={277} mt={120} backgroundImage={'https://www.vaporstore.com/wp-content/uploads/2016/05/Savin-NY-Website-Background-Web.jpg'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>
   <Heading pt={12} fontFamily='Parata'>FAQs</Heading>
   {/* <Text mb={22}>Discovering the Answers: Frequently Asked Questions</Text> */}
 <Accordian/>

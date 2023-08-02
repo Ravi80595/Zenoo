@@ -17,6 +17,7 @@ import 'aos/dist/aos.css';
 import SideBox from '../../Components/SideBox'
 import ScrollToTopLink from '../../Components/ScrollToTopLink'
 import vision from '../../Images/vision.png'
+import hero from '../../Images/hero.png'
 
 
 
@@ -52,22 +53,22 @@ return (
         </Flex>
     </Box>
     </Box>
-    <Flex w={'100%'} direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','630px']} background='#fdfdfd'>
-      <Box p={11} mt={[20,200,200,200]} ml={[10,90,90,90]} w={['90%','90%','100%','100%']}>
+    <Flex w={'100%'} direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','630px']} background='#fdfdfd' backgroundImage={hero} backgroundSize={'cover'}>
+      <Box p={11} mt={[20,200,200,200]} ml={[10,90,90,90]} w={['90%','90%','100%','70%']}>
     <Flex pt={0} pb={3} justifyContent='space-between'>
         <Text fontSize={['17px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Real Estate</Text>
         <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
-        <Text className='scrolling-text' color='rgb(54, 84, 206)'>Explore More</Text>
+        <Text className='scrolling-text' color='rgb(21 50 169)'>Explore More</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex></a>
     </Flex>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
     <Flex pt={5} pb={3} justifyContent='space-between'>
-        <Text fontSize={['17px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Financial Advisory</Text>
+        <Text fontSize={['17px',30,30,'27px']} fontWeight='bold' color='rgb(16, 37, 127)'>Financial Advisory</Text>
         <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
-        <Text className='scrolling-text' color='rgb(54, 84, 206)'>Explore More</Text>
+        <Text className='scrolling-text' color='rgb(21 50 169)'>Explore More</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
         </a>
@@ -77,7 +78,7 @@ return (
         <Text fontSize={['15px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Insurance Solutions</Text>
         <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
-        <Text className='scrolling-text' color='rgb(54, 84, 206)'>Explore More</Text>
+        <Text className='scrolling-text' color='rgb(21 50 169)'>Explore More</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
         </a>
@@ -87,17 +88,17 @@ return (
         <Text fontSize={['17px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Legal Assistance</Text>
         <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
-        <Text className='scrolling-text' color='rgb(54, 84, 206)'>Explore More</Text>
+        <Text className='scrolling-text' color='rgb(21 50 169)'>Explore More</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
         </a>
     </Flex>
     <hr height='12px'/>
     </Box >
-    {/* <Box h={350} mt={220} border={'20px solid gre'} borderRightRadius={'50px'}></Box> */}
-      <Image w='900px' src='https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg'/>
+    <Box h={350} mt={220} w={'70%'} border={'20px solid gre'} borderRightRadius={'50px'}></Box>
+      {/* <Image w='900px' h={'700px'} src={''}/> */}
     </Flex>
-
+    {/* // 'https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg' */}
     <Flex data-aos='fade-up' direction={['column','column','row','row']} mt={50}>
       <Box w={['90%','90%','40%','40%']} mt={40}>
         <Image src={whoweare}/>

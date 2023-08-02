@@ -28,12 +28,13 @@ return(
       <Navbar/>
       <SideBox/>
       <Box w='100%' m='auto' textAlign='left' backgroundColor={'white'}>
-      <Box backgroundColor={'white'} w='100%' h={[190,190,290,290]} m='auto' color='black' pt={100} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
-      <Text> 
+        <Box pt={'50px'}>
+      <Box backgroundColor={'white'} w='100%' h={[190,190,290,250]} m='auto' color='black' pt={'50px'} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
+      <Text color={'blue'} _hover={{color:'blue'}}>
         <Link to='/template3' > Home &nbsp;
         </Link>
           > Contact us</Text>
-      </Box>
+      </Box></Box>
       {/* <Heading mt={[50,120,120,120]} ml={10}>Gurgaon Office</Heading> */}
       <Flex mt={[150,120,120,120]} direction={['column-reverse','column','column','row']} w='80%' m='auto' gap={20}  mb={90}>
         <Box w={['95%','95%','40%','60%']} mt={['30px','30px','90px','10px']}>

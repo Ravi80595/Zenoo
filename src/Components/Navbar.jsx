@@ -13,7 +13,7 @@ return (
     <Box p={5} w='100vw' position='fixed' zIndex={999999999} background='white'>
         <Flex justifyContent='space-between'>
             <ScrollToTopLink to='/home'>
-        <Image w={'100px'} h={'40px'} src={Logo3}/></ScrollToTopLink>
+        <Image w={'120px'} h={'40px'} src={Logo3}/></ScrollToTopLink>
         <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['70%','30%','30%','30%']} pt={0} color='white'>
             <ScrollToTopLink to='/about'>
             <Text color={'#10257f'} className='Link_btns'>About us</Text>

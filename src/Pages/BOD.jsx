@@ -52,7 +52,7 @@ return (
             <Image src='https://homepress.stylemixthemes.com/wp-content/uploads/2018/12/staff-1-699x459.jpg'/>
             <Text>Rich Wacksman</Text>
             <Text>Co-Founder and Executive Chairman</Text>
-            <Button mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>CTA</Button>
+            <Button mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know more</Button>
           </Box>
         </Flex>
         </Box>

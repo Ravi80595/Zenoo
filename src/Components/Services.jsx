@@ -23,7 +23,7 @@ export default function SimpleThreeColumns() {
       <Box pb={5} w={'15%'} m={'auto'}>
          <Image src={icon3}/></Box>
       <Text pb={2} fontWeight={600}>Expertise</Text>
-      <Text color={'gray.600'}>Our clients are at the heart of everything we do. We prioritize their needs and work tirelessly to exceed their expectations. </Text>
+      <Text color={'gray.600'}>Our team is comprised of skilled professionals who possess in-depth knowledge and expertise in their respective fields.  </Text>
     </Box>
     </Flex>
     </Box>

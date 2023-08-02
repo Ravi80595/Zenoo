@@ -79,14 +79,14 @@ return(
           <Textarea placeholder='Enter your message here'/>
           <Checkbox  pt={3} colorScheme='blue' defaultChecked>
             <Text fontSize={'16px'}>
-          I hereby give my consent to receive phone calls from Zenoo</Text>
+            By providing your phone number and checking the box below, you grant Zenoo permission to contact you via telephone for communication purposes.</Text>
           </Checkbox>
           <Flex mt={5} justifyContent={'center'}><Button borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s'}  textAlign={'center'}>Submit</Button></Flex>
           </Box>
           </Box>
         </Box>
       <Footer/>
-    </>
+    </> 
   )
 }
 

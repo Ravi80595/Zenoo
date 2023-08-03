@@ -42,7 +42,7 @@ return (
       <Box p={5} background='white'>
         <Flex justifyContent='space-between'>
         <Image w={'120px'} h={'40px'} src={Logo3}/>
-        <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['60%','60%','30%','30%']} pt={0} color='#10257f'>
+        <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['60%','60%','30%','30%']} pt={[2,0,0,0]} color='#10257f'>
             <ScrollToTopLink to='/about'>
             <Text className='Link_btns'>About us</Text>
             </ScrollToTopLink>

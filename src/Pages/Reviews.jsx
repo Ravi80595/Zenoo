@@ -102,13 +102,14 @@ const Reviews = () => {
           spaceBetween={0}
           loop={true}
           loopFillGroupWithBlank={true}
-          // navigation={true}
+          navigation={true}
           modules={[Navigation]}
           className="mySwiper"
-          autoplay={{
-            delay:1000, 
-            disableOnInteraction: false, 
-          }}
+          // autoplay={{
+          //   delay: 3000, // Set the delay to control the sliding interval in milliseconds
+          //   disableOnInteraction: false, // Set to false to continue autoplay after user interactions
+          //   waitForTransition: true, // Set to true to wait for the transition animation to complete before autoplaying to the next slide
+          // }}
         >
           {ReviewsData.map((el, i) => (
             <SwiperSlide style={{ gap: "10px", color: "black",marginLeft:'32px'}} >

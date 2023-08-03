@@ -46,8 +46,8 @@ return(
 
     <Box background={'whitesmoke'}>
     <Flex direction={['column','column','column','row']} w='90%' m='auto' gap={[10,40,40,20]} pt={20} pb={20}>
-        <Box w={'900px'} h={'350px'}  backgroundImage={'https://img.freepik.com/premium-photo/rooftop-balcony-with-cityscape_9083-1881.jpg'} backgroundSize={'cover'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' borderRadius={20}>
-          <Image className='moving-image'  w={'80%'} h={'250px'} m={'auto'} mt={'80px'} src={MissionAbout}/>
+        <Box w={['350px','900px','900px','900px']} h={['250px','350px','350px','350px']}  backgroundImage={'https://img.freepik.com/premium-photo/rooftop-balcony-with-cityscape_9083-1881.jpg'} backgroundSize={'cover'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' borderRadius={20}>
+          <Image className='moving-image'  w={'80%'} h={'250px'} m={'auto'} mt={['10px','80px','80px','80px']} src={MissionAbout}/>
         </Box>
         <Box textAlign={['center','left','left','left']} w={['90%','90%','70%','70%']}>
           <Text fontSize={['26px','26px','36px','36px']} > Our Mission</Text>
@@ -63,7 +63,7 @@ return(
 By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence.</Text>
         </Box>
         <Box>
-          <Image borderRadius={20} w={'800px'} h={'400px'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' src='https://t4.ftcdn.net/jpg/03/30/28/45/360_F_330284507_zWMKJuSAPN2VyomK4et4dTdHi2P8lmHb.jpg'/>
+          <Image borderRadius={20} w={['350px','900px','900px','900px']} h={['250px','350px','350px','350px']} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' src='https://t4.ftcdn.net/jpg/03/30/28/45/360_F_330284507_zWMKJuSAPN2VyomK4et4dTdHi2P8lmHb.jpg'/>
         </Box>
       </Flex>
       </Box>

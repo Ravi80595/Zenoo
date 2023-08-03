@@ -55,7 +55,7 @@ return(
           <MapComponent/>
         </Box>
       </Flex>
-      <Box h={'400px'} backgroundImage={ZENOO1} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} pt={20} pb={20}>
+      <Box h={'400px'} backgroundImage={'https://coolbackgrounds.io/images/backgrounds/white/white-contour-c990a61f.svg'} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} pt={20} pb={20}>
         <Box textAlign ='center' w={['90%','60%','60%','50%']} m='auto' pb={70} >
           <Text pb={"20px"} fontWeight={'bold'} fontSize={['20px','40px','40px','40px']} fontFamily={'sans-serif'}>Why Partner with Zenoo</Text>
           <Text>Selecting ZENOO means aligning with a reliable partner dedicated to your prosperity. Whether you're in the market for a new property, obtaining a loan, protecting your assets through insurance, or seeking legal counsel, we deliver a smooth and all-inclusive journey. Our harmonized approach guarantees tailored solutions that cater to your needs, empowering you to pursue your objectives with unwavering assurance</Text>

@@ -24,7 +24,7 @@ return (
     <ScrollToTopLink to='/contact'>
     <Text fontSize="16px" fontWeight="500" cursor="pointer">Contact us</Text></ScrollToTopLink>
     {/* <Text fontSize="14px" fontWeight="500" cursor="pointer">Blog</Text> */}
-    <Text color={'white'}>info@zenoo.in</Text>
+    <Text color={'white'}>Email : info@zenoo.in</Text>
     </Stack>
     <Stack gap="10px">
     <Text fontSize="20px" fontWeight="700">Featured Categories</Text>
@@ -40,7 +40,7 @@ return (
     <Stack gap="10px">
     <Text fontSize="20px" fontWeight="700">Need Help</Text>
     <ScrollToFAQLink to='/home'>
-    <Text fontSize="16px" fontWeight="500" cursor="pointer"> FAQ'S</Text></ScrollToFAQLink>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer"> FAQs</Text></ScrollToFAQLink>
     <Text fontSize="20px" fontWeight="700" paddingTop="20px"> Policy Info</Text>
     <Text fontSize="16px" fontWeight="500" cursor="pointer">Privacy Policy</Text>
     <Text fontSize="16px" fontWeight="500" cursor="pointer">Terms of Use</Text>

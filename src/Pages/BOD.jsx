@@ -14,7 +14,7 @@ const BOD = () => {
     setIsOpen(true);
     setDynamicData({
       image:'BOD1',
-      title: 'Founder',
+      title: 'Mohit Jain',
       description: 'Mr. Mohit Jain is an accomplished professional with consistent success of over 20 years in achieving sustained revenue and profitability growth in dynamic & changing markets in the real estate industry. He is the Director at Zenoo Pvt ltd, Khomes Realtor Pvt Ltd, and the founder of MKJ Group. His expertise lies in sales strategies, sales management, team leadership, lead generation, market research, business development, cultivating relationships, maximizing ROI, and driving revenue growth. Mr. Mohit Jain is an experienced planner who is great at finding and making the most of business opportunities through strategic partnerships. He keeps a close eye on market trends necessary for business development and revenue generation. He is an effective leader with excellent communication, negotiation, and relationship-building skills directed cross-functional teams using interactive & motivational leadership; acknowledged for recruiting and mentoring leaders with an equal desire to win.',
     });
   };
@@ -56,27 +56,27 @@ return (
         <Text pb={10} fontSize={['26px','26px','36px','36px']}>Our Leadership</Text>
         <Flex direction={['column','column','column','row']} gap={10} justifyContent='space-around'>
           <Box backgroundColor='white' textAlign='center'>
-            <Image w={'650px'} h={'200px'} src={BOD1}/>
+            <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD1}/>
             <Text pt={2}>Mohit Jain</Text>
             <Text fontWeight={'bold'}>Founder</Text>
             <Button onClick={openPopupWithData1} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know More</Button>
           </Box>
           <Box backgroundColor='white' textAlign='center'>
-          <Image w={'650px'} h={'200px'} src={BOD1}/>
+          <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD1}/>
             <Text>Rich Wacksman</Text>
             <Text fontWeight={'bold'}>Founder</Text>
            
             <Button onClick={openPopupWithData2} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know More</Button>
           </Box>
           <Box backgroundColor='white' textAlign='center'>
-          <Image w={'650px'} h={'200px'} src={BOD1}/>
+          <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD1}/>
             <Text>Rich Wacksman</Text>
             <Text fontWeight={'bold'}>Founder</Text>
     
             <Button mt={5} onClick={openPopupWithData3} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know more</Button>
           </Box>
           <Box backgroundColor='white' textAlign='center'>
-          <Image w={'650px'} h={'200px'} src={BOD1}/>
+          <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD1}/>
             <Text>Rich Wacksman</Text>
             <Text fontWeight={'bold'}>Founder</Text>
             <Button  onClick={openPopupWithData4} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know more</Button>

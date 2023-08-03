@@ -55,6 +55,24 @@ const ReviewsData = [
       date:"Dec 18, 2022",
       review:"ZENOO has been an exceptional partner to me and my family. Their real estate team helped me find my dream home effortlessly, and their insurance solutions provided peace of mind. The legal assistance during my property transaction was outstanding. Highly recommended!",
       rating:5
+  },
+  {
+      name:"Ravi Tobria",
+      date:"Dec 10, 2022",
+      review:"ZENOO made my dream home a reality! Their team of dedicated professionals guided me through every step of the buying process, ensuring I found the perfect property at the best price. Highly recommended!",
+      rating:4
+  },
+  {
+      name:"Rashmi Singh",
+      date:"Feb 10, 2023",
+      review:"ZENOO's loan assistance was a game-changer for me. They simplified the entire process, offering competitive rates and personalized solutions that fit my financial situation perfectly. Thank you for helping me achieve my financial goals!",
+      rating:4
+  },
+  {
+      name:"Priya Rastogi",
+      date:"Jan 10, 2023",
+      review:"Trustworthy and efficient! ZENOO provided me with comprehensive insurance coverage tailored to my needs. Their attentive agents explained all the policy details, giving me peace of mind and protection for the future.",
+      rating:5
   }
 ]
 

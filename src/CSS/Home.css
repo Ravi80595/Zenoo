@@ -90,4 +90,17 @@
       transform: translateX(-100%);
     }
   }
+
+  .social-icons-home{
+    display: block;
+  }
   
+
+@media only screen and (max-width: 640px) {
+
+.social-icons-home{
+  display: none;
+}
+
+
+}

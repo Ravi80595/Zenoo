@@ -1,8 +1,53 @@
 import { Box,Text,Image,Button,Flex } from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
 import {AiFillFacebook,AiFillInstagram,AiOutlineWhatsApp,AiFillLinkedin} from 'react-icons/ai'
+import Popup from '../Components/Popup'
+import BOD1 from '../Images/BOD1.png'
 
 const BOD = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [dynamicData, setDynamicData] = useState({});
+
+  // Sample dynamic data (replace with your actual data)
+
+  const openPopupWithData1 = () => {
+    setIsOpen(true);
+    setDynamicData({
+      image:'BOD1',
+      title: 'Founder',
+      description: 'Mr. Mohit Jain is an accomplished professional with consistent success of over 20 years in achieving sustained revenue and profitability growth in dynamic & changing markets in the real estate industry. He is the Director at Zenoo Pvt ltd, Khomes Realtor Pvt Ltd, and the founder of MKJ Group. His expertise lies in sales strategies, sales management, team leadership, lead generation, market research, business development, cultivating relationships, maximizing ROI, and driving revenue growth. Mr. Mohit Jain is an experienced planner who is great at finding and making the most of business opportunities through strategic partnerships. He keeps a close eye on market trends necessary for business development and revenue generation. He is an effective leader with excellent communication, negotiation, and relationship-building skills directed cross-functional teams using interactive & motivational leadership; acknowledged for recruiting and mentoring leaders with an equal desire to win.',
+    });
+  };
+
+  const openPopupWithData2 = () => {
+    setIsOpen(true);
+    // Sample dynamic data for popup - Data Set 2
+    setDynamicData({
+      title: 'BOD2',
+      description: 'This is the second data set.',
+    });
+  };
+  const openPopupWithData3 = () => {
+    setIsOpen(true);
+    setDynamicData({
+      image:'BOD3',
+      title: 'Data Set 1 Title',
+      description: 'This is the first data set.',
+    });
+  };
+  const openPopupWithData4 = () => {
+    setIsOpen(true);
+    setDynamicData({
+      image:'BOD4',
+      title: 'Data Set 1 Title',
+      description: 'This is the first data set.',
+    });
+  };
+
+  const closePopup = () => {
+    setIsOpen(false);
+  };
+
 
 
 return (
@@ -11,48 +56,31 @@ return (
         <Text pb={10} fontSize={['26px','26px','36px','36px']}>Our Leadership</Text>
         <Flex direction={['column','column','column','row']} gap={10} justifyContent='space-around'>
           <Box backgroundColor='white' textAlign='center'>
-            <Image src='https://homepress.stylemixthemes.com/wp-content/uploads/2018/12/staff-1-699x459.jpg'/>
-            <Text>Rich Wacksman</Text>
-            <Text>Co-Founder and Executive Chairman</Text>
-            <Button mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>CTA</Button>
+            <Image w={'650px'} h={'200px'} src={BOD1}/>
+            <Text pt={2}>Mohit Jain</Text>
+            <Text fontWeight={'bold'}>Founder</Text>
+            <Button onClick={openPopupWithData1} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know More</Button>
           </Box>
           <Box backgroundColor='white' textAlign='center'>
-            <Image src='https://homepress.stylemixthemes.com/wp-content/uploads/2018/12/staff-1-699x459.jpg'/>
+          <Image w={'650px'} h={'200px'} src={BOD1}/>
             <Text>Rich Wacksman</Text>
-            <Text>Co-Founder and Executive Chairman</Text>
-            <Flex pt={5} w={'90%'} justifyContent={'space-around'}> 
-          <a href="https://www.instagram.com/zenoo186/ " target='blank'>
-      <Image w='30px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
-      <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
-      <Image  w='30px' src='https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png'/></a>
-      <a href="https://api.whatsapp.com/send/?phone=7711884456&text&type=phone_number&app_absent=0" target='blank'>
-      <Image w='30px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png'/></a>
-      <a href="https://www.facebook.com/zenoo18" target='blank'>
-      <Image w='30px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png'/></a>
-          </Flex>
-            {/* <Button mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>CTA</Button> */}
+            <Text fontWeight={'bold'}>Founder</Text>
+           
+            <Button onClick={openPopupWithData2} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know More</Button>
           </Box>
           <Box backgroundColor='white' textAlign='center'>
-            <Image src='https://homepress.stylemixthemes.com/wp-content/uploads/2018/12/staff-1-699x459.jpg'/>
+          <Image w={'650px'} h={'200px'} src={BOD1}/>
             <Text>Rich Wacksman</Text>
-            <Text>Co-Founder and Executive Chairman</Text>
-    <Flex fontSize={25} pt={5} w={'90%'} justifyContent={'space-around'}> 
-          <a href="https://www.instagram.com/zenoo186/ " target='blank'>
-      <AiFillFacebook w='30px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
-      <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
-      <AiFillInstagram  w='30px' src='https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png'/></a>
-      <a href="https://api.whatsapp.com/send/?phone=7711884456&text&type=phone_number&app_absent=0" target='blank'>
-      <AiOutlineWhatsApp w='30px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png'/></a>
-      <a href="https://www.facebook.com/zenoo18" target='blank'>
-      <AiFillLinkedin w='30px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png'/></a>
-          </Flex>
-            {/* <Button mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>CTA</Button> */}
+            <Text fontWeight={'bold'}>Founder</Text>
+    
+            <Button mt={5} onClick={openPopupWithData3} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know more</Button>
           </Box>
           <Box backgroundColor='white' textAlign='center'>
-            <Image src='https://homepress.stylemixthemes.com/wp-content/uploads/2018/12/staff-1-699x459.jpg'/>
+          <Image w={'650px'} h={'200px'} src={BOD1}/>
             <Text>Rich Wacksman</Text>
-            <Text>Co-Founder and Executive Chairman</Text>
-            <Button mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know more</Button>
+            <Text fontWeight={'bold'}>Founder</Text>
+            <Button  onClick={openPopupWithData4} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know more</Button>
+            <Popup isOpen={isOpen} onClose={closePopup} dynamicData={dynamicData} />
           </Box>
         </Flex>
         </Box>

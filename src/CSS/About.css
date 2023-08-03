@@ -1,0 +1,17 @@
+/* MovingImage.css */
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Adjust this value to change the distance of the movement */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .moving-image {
+    animation: moveUpDown 2s ease-in-out infinite; /* Adjust the animation duration (2s) as needed */
+  }
+  

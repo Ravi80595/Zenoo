@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box,Text,Flex } from '@chakra-ui/react'
 import "../CSS/SideBox.css"
-import {AiFillLinkedin,AiFillInstagram,AiFillFacebook,AiOutlineWhatsApp} from 'react-icons/ai'
+import {AiFillLinkedin,AiFillInstagram,AiFillFacebook,AiOutlineWhatsApp,AiFillYoutube} from 'react-icons/ai'
 
 
 const SideBox = () => {
@@ -32,10 +32,18 @@ const SideBox = () => {
     </Flex>
     </a>
     <a href="https://www.facebook.com/zenoo18" target='blank'>
-    <Flex className='sideBox1' borderBottomRightRadius='15px'>
+    <Flex className='sideBox1'>
         <Text pt='7px' margin='0px' color='white'>Facebook</Text>
         <Box className='sideBox2'>
         <AiFillFacebook color='white'/>
+        </Box>
+    </Flex>
+    </a>
+    <a href="https://www.facebook.com/zenoo18" target='blank'>
+    <Flex className='sideBox1' borderBottomRightRadius='15px'>
+        <Text pt='7px' margin='0px' color='white'>Facebook</Text>
+        <Box className='sideBox2'>
+        <AiFillYoutube color='white'/>
         </Box>
     </Flex>
     </a>

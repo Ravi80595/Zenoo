@@ -19,6 +19,7 @@ import ScrollToTopLink from '../../Components/ScrollToTopLink'
 import vision from '../../Images/vision.png'
 import hero from '../../Images/hero.png'
 import Logo from '../../Images/Logo.png'
+import '../../CSS/Home1.css'
 
 
 const Home3 = () => {
@@ -57,51 +58,50 @@ return (
         </Flex>
     </Box>
     </Box>
-    <Flex w={'100%'} direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','100vh']} background='#fdfdfd' backgroundImage={hero} backgroundSize={'cover'}>
-      <Box p={11} mt={[20,200,200,200]} ml={[10,90,90,90]} w={['90%','90%','100%','70%']}>
+    <Box pt={20}>
+    <Flex className='hero' w={'100%'} direction={['column-reverse','column-reverse','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','100vh']} >
+      <Box p={11} mt={[20,200,200,120]} ml={[10,90,90,90]} w={['90%','90%','100%','70%']}>
+      <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
     <Flex pt={0} pb={3} justifyContent='space-between'>
         <Text fontSize={['17px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Real Estate</Text>
-        <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(21 50 169)'>Explore More</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
-        </Flex></a>
-    </Flex>
+        </Flex>
+    </Flex></a>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
+    <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
     <Flex pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={['17px',30,30,'27px']} fontWeight='bold' color='rgb(16, 37, 127)'>Financial Advisory</Text>
-        <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(21 50 169)'>Explore More</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
-        </a>
-    </Flex>
+    </Flex> </a>
     <hr height='22px' color='rgb(54, 84, 206)'/>
+    <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
     <Flex pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={['15px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Insurance Solutions</Text>
-        <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(21 50 169)'>Explore More</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
-        </a>
-    </Flex>
+    </Flex></a>
     <hr height='22px'  color='rgb(54, 84, 206)'/>
+    <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
     <Flex   pt={5} pb={3} justifyContent='space-between'>
         <Text fontSize={['17px',30,30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Legal Assistance</Text>
-        <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
         <Flex gap={5} pt={3}>
         <Text className='scrolling-text' color='rgb(21 50 169)'>Explore More</Text>
         <GoArrowUpRight color='rgb(54, 84, 206)'/>
         </Flex>
-        </a>
-    </Flex>
+    </Flex></a>
     <hr height='12px'/>
     </Box >
     <Box h={350} mt={220} w={'70%'} border={'20px solid gre'} borderRightRadius={'50px'}></Box>
       {/* <Image w='900px' h={'700px'} src={''}/> */}
     </Flex>
+    </Box>
     {/* hero */}
     {/* // 'https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg' */}
     <Flex direction={['column','column','row','row']} mt={50}>
@@ -126,17 +126,17 @@ We believe in more than just transactions; we believe in the experiences that tu
     <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']}  boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
         <Image h={'200px'} w={'100%'} src='https://www.praxivaluations.praxi/files/news/ILQI%20large.jpg'/>
         <Box p={5}>
-        <Text pt={3} fontWeight='bold' fontSize={30}>Mission</Text>
-        <Text>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve.</Text>
+        <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Mission</Text>
+        <Text h={'220px'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve.</Text>
         <Link to='/about'>
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>
     </Box>
     <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-        <Image w={'100%'} h={200} src={vision}/>
+        <Image w={'100%'} h={'200px'} src={vision}/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Vision</Text>
-        <Text>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
+        <Text h={'220px'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
         <Link to='/about'>
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5}  backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>

@@ -11,7 +11,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SideBox from '../Components/SideBox'
 import BOD from './BOD.jsx'
-
+import MissionAbout from '../Images/MissionAbout.png'
+import '../CSS/About.css'
 
 
 const About = () => {
@@ -24,11 +25,7 @@ return(
 <SideBox/>
     <Box backgroundColor={'white'} w='100%' m='auto' textAlign='left'>
     <Box pt={'50px'}>
-      <Box w='100%' h={[190,190,290,250]} m='auto' color='black' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
-      <Text color={'blue'} _hover={{color:'blue'}}> 
-        <Link to='/template3'> Home &nbsp;
-        </Link>
-          > About us</Text>
+      <Box w='100%' h={[190,190,290,250]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
       </Box></Box>
       <Flex direction={['column','column','column','row']} w='80%' m='auto' gap={20} pt={90}>
         <Image  borderRadius={20} w={700} h={[250,350,350,350]} src='https://media.istockphoto.com/id/1199060494/photo/insurance-protecting-family-health-live-house-and-car-concept.jpg?s=612x612&w=0&k=20&c=W8bPvwF5rk7Rm2yDYnMyFhGXZfNqK4bUPlDcRpKVsB8='/>
@@ -41,16 +38,16 @@ return(
         </Box>
       </Flex>
           <Box background={'whitesmoke'} pb={30}>
-      <Text pt={'30px'} mt={'150px'} fontSize={['26px','26px','36px','36px']} textAlign={'center'}>Our Values </Text>
+      <Text pt={'30px'} mt={'150px'} fontSize={['26px','26px','36px','36px']} textAlign={'center'}>What Drive Us </Text>
     <Text textAlign={'center'}>At the heart of Zenoo lies five core values that govern the way we conduct our business</Text>
     <SimpleThreeColumns/>
     <SimpleTwoColumns/>
     </Box>
 
     <Box background={'whitesmoke'}>
-    <Flex direction={['column','column','column','row']} w='90%' m='auto' gap={[10,40,40,40]} pt={20} pb={20}>
-        <Box>
-          <Image borderRadius={20} w={'800px'} h={'400px'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' src='https://realnewestate.com/wp-content/uploads/2021/12/becoming-a-real-estate-developer.jpeg'/>
+    <Flex direction={['column','column','column','row']} w='90%' m='auto' gap={[10,40,40,20]} pt={20} pb={20}>
+        <Box w={'900px'} h={'350px'}  backgroundImage={'https://img.freepik.com/premium-photo/rooftop-balcony-with-cityscape_9083-1881.jpg'} backgroundSize={'cover'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' borderRadius={20}>
+          <Image className='moving-image'  w={'80%'} h={'250px'} m={'auto'} mt={'80px'} src={MissionAbout}/>
         </Box>
         <Box textAlign={['center','left','left','left']} w={['90%','90%','70%','70%']}>
           <Text fontSize={['26px','26px','36px','36px']} > Our Mission</Text>
@@ -66,7 +63,7 @@ return(
 By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence.</Text>
         </Box>
         <Box>
-          <Image borderRadius={20} w={'800px'} h={'400px'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' w={'800px'} src='https://t4.ftcdn.net/jpg/03/30/28/45/360_F_330284507_zWMKJuSAPN2VyomK4et4dTdHi2P8lmHb.jpg'/>
+          <Image borderRadius={20} w={'800px'} h={'400px'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' src='https://t4.ftcdn.net/jpg/03/30/28/45/360_F_330284507_zWMKJuSAPN2VyomK4et4dTdHi2P8lmHb.jpg'/>
         </Box>
       </Flex>
       </Box>

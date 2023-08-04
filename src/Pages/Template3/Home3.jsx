@@ -112,10 +112,10 @@ return (
       <Box w={['90%','90%','50%','50%']} m='auto' mt={90}>
         <Heading fontFamily={'Parata'}>Who We Are</Heading>
         <Text fontWeight={'bold'} pb={4}>Unlocking the Potential of Tomorrow, Today</Text>
-        <Text>At ZENOO, we're not just a conglomerate, we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of real estate, loan services, insurance solutions, legal assistance, interior design, and construction management. Our journey began with a simple yet audacious dream - to create a one-stop hub where all your dreams find their true home.
+        <Text textAlign={'justify'}>At ZENOO, we're not just a conglomerate, we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of real estate, loan services, insurance solutions, legal assistance, interior design, and construction management. Our journey began with a simple yet audacious dream - to create a one-stop hub where all your dreams find their true home.
           <br />
           <br />
-          <Text>
+          <Text textAlign={'justify'}>
 We believe in more than just transactions; we believe in the experiences that turn dreams into reality. At ZENOO, we're not just in the business of bricks and mortar, numbers, or policies - we are in the business of building trust, nurturing aspirations, and fostering growth. Our team of experts works tirelessly, combining their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.
           </Text>
         </Text>
@@ -128,7 +128,7 @@ We believe in more than just transactions; we believe in the experiences that tu
         <Image h={'200px'} w={'100%'} src='https://www.praxivaluations.praxi/files/news/ILQI%20large.jpg'/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Mission</Text>
-        <Text h={'220px'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve.</Text>
+        <Text h={'220px'} textAlign={'justify'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve.</Text>
         <Link to='/about'>
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>
@@ -137,7 +137,7 @@ We believe in more than just transactions; we believe in the experiences that tu
         <Image w={'100%'} h={'200px'} src={vision}/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Vision</Text>
-        <Text h={'220px'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
+        <Text h={'220px'} textAlign={'justify'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
         <Link to='/about'>
         <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5}  backgroundColor='#3654CE' color='white'>Know More</Button></Link>
     </Box>

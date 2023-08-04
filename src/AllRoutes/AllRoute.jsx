@@ -8,6 +8,8 @@ import Home3 from '../Pages/Template3/Home3'
 import ScrollToTopLink from '../Components/ScrollToTopLink'
 import FixedBackgroundComponent from '../Pages/Template3/FixedBackgroundComponent'
 
+
+
 const AllRoute = () => {
 
 

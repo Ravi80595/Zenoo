@@ -41,7 +41,7 @@ const SideBox = () => {
     </a>
     <a href="https://www.facebook.com/zenoo18" target='blank'>
     <Flex className='sideBox1' borderBottomRightRadius='15px'>
-        <Text pt='7px' margin='0px' color='white'>Facebook</Text>
+        <Text pt='7px' margin='0px' color='white'>YouTube</Text>
         <Box className='sideBox2'>
         <AiFillYoutube color='white'/>
         </Box>

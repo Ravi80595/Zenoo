@@ -13,6 +13,8 @@ import SideBox from '../Components/SideBox'
 import BOD from './BOD.jsx'
 import MissionAbout from '../Images/MissionAbout.png'
 import '../CSS/About.css'
+import vision2 from '../Images/vision2.png'
+
 
 
 const About = () => {
@@ -25,9 +27,9 @@ return(
 <SideBox/>
     <Box backgroundColor={'white'} w='100%' m='auto' textAlign='left'>
     <Box pt={'50px'}>
-      <Box w='100%' h={[190,190,290,250]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
+      <Box w='100%' h={[190,190,290,210]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
       </Box></Box>
-      <Flex direction={['column','column','column','row']} w='80%' m='auto' gap={20} pt={90}>
+      <Flex direction={['column','column','column','row']} w='80%' m='auto' gap={20} pt={70}>
         <Image  borderRadius={20} w={700} h={[250,350,350,350]} src='https://media.istockphoto.com/id/1199060494/photo/insurance-protecting-family-health-live-house-and-car-concept.jpg?s=612x612&w=0&k=20&c=W8bPvwF5rk7Rm2yDYnMyFhGXZfNqK4bUPlDcRpKVsB8='/>
         <Box>
           <Text>
@@ -38,14 +40,14 @@ return(
         </Box>
       </Flex>
           <Box background={'whitesmoke'} pb={30}>
-      <Text pt={'30px'} mt={'150px'} fontSize={['26px','26px','36px','36px']} textAlign={'center'}>What Drive Us </Text>
+      <Text pt={'30px'} mt={'100px'} fontSize={['26px','26px','36px','36px']} textAlign={'center'}>What Drive Us </Text>
     <Text textAlign={'center'}>At the heart of Zenoo lies five core values that govern the way we conduct our business</Text>
     <SimpleThreeColumns/>
     <SimpleTwoColumns/>
     </Box>
 
     <Box background={'whitesmoke'}>
-    <Flex direction={['column','column','column','row']} w='90%' m='auto' gap={[10,40,40,20]} pt={20} pb={20}>
+    <Flex direction={['column','column','column','row']} w='90%' m='auto' gap={[10,40,40,20]} pt={7} pb={10}>
         <Box w={['350px','900px','900px','900px']} h={['250px','350px','350px','350px']}  backgroundImage={'https://img.freepik.com/premium-photo/rooftop-balcony-with-cityscape_9083-1881.jpg'} backgroundSize={'cover'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' borderRadius={20}>
           <Image className='moving-image'  w={'80%'} h={'250px'} m={'auto'} mt={['10px','80px','80px','80px']} src={MissionAbout}/>
         </Box>
@@ -62,8 +64,8 @@ return(
           <Text lineHeight={'1.5rem'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. 
 By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence.</Text>
         </Box>
-        <Box>
-          <Image borderRadius={20} w={['350px','900px','900px','900px']} h={['250px','350px','350px','350px']} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' src='https://t4.ftcdn.net/jpg/03/30/28/45/360_F_330284507_zWMKJuSAPN2VyomK4et4dTdHi2P8lmHb.jpg'/>
+        <Box backgroundImage={'https://img.freepik.com/free-photo/construction-illustration-city-skyline_53876-103044.jpg'} borderRadius={20}>
+          <Image borderRadius={20} w={['350px','900px','900px','900px']} h={['250px','350px','350px','350px']} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' src={vision2}/>
         </Box>
       </Flex>
       </Box>
@@ -77,3 +79,6 @@ By embracing cutting-edge technologies and sustainable practices, we strive to l
 }
 
 export default About
+
+
+// 'https://t4.ftcdn.net/jpg/03/30/28/45/360_F_330284507_zWMKJuSAPN2VyomK4et4dTdHi2P8lmHb.jpg'

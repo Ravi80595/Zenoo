@@ -1,28 +1,26 @@
+import '../../CSS/FixedBackground.css'; // Create a CSS file for styles
 import React, { useState } from 'react'
 import { Box,Flex,Text,Image, Button, Heading,Stack} from '@chakra-ui/react'
 import '../../CSS/footer.module.css'
 import Logo3 from '../../Images/Logo3.png'
 import { Link } from 'react-router-dom'
-import {CloseIcon} from '@chakra-ui/icons'
 import {GoArrowUpRight} from 'react-icons/go'
 import Accordian from './Accordian'
-import ChatBox from '../../Components/Chat/ChatBox'
-import ChatIcon2 from '../../Components/Chat/ChatIcon2'
-import ChatIcon from '../../Components/Chat/ChatIcon'
 import Footer from '../../Components/Footer'
 // import ContinuousVideo from '../../Components/ContinousVideo'
 import whoweare from '../../Images/Whoweare.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SideBox from '../../Components/SideBox'
-import ScrollToTopLink from '../../Components/ScrollToTopLink'
 import vision from '../../Images/vision.png'
-import hero from '../../Images/hero.png'
-import Logo from '../../Images/Logo.png'
 import '../../CSS/Home1.css'
+import ScrollToTopLink from '../../Components/ScrollToTopLink';
+import {CloseIcon} from '@chakra-ui/icons'
 
 
-const Home3 = () => {
+
+
+const FixedBackgroundComponent = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
 
@@ -30,17 +28,21 @@ const Home3 = () => {
   const handleChatIconClick = () => {
     setIsChatOpen(!isChatOpen);
   };
-  // backgroundImage={'http://localhost:3000/static/media/mainImage.e048f31ccb052b45c06d.png'} backgroundSize={'coer'}
 
 
 
-  // backgroundImage={'http://localhost:3000/static/media/mainImage.e048f31ccb052b45c06d.png'} backgroundSize={'cover'}
 return (
-    <Box background='#f9f9f9' className='HomeBox'>
+    <div className="fixed-background">
+      {/* Background image goes here */}
+      <div className="content-wrapper">
+        <div className="content">
+          {/* Your scrollable content goes here */}
+          {/* <h1>Scrollable Content</h1> */}
+          <Box className='HomeBox'>
       <Box>
-    <Box  w={['100vw','100%','100%','100%']} backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
+    <Box  w={['100vw','100%','100%','100%']} position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
       <SideBox/>
-      <Box p={5} background='white'>
+      <Box p={5} backgroundColor={'white'}>
         <Flex justifyContent='space-between'>
         <Image w={'120px'} h={'40px'} src={Logo3}/>
         <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['60%','60%','30%','30%']} pt={[2,0,0,0]} color='#10257f'>
@@ -60,7 +62,7 @@ return (
     </Box>
     </Box>
     <Box pt={20}>
-    <Flex className='hero' w={'100%'} direction={['column','column','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','100vh']} >
+    <Flex w={'100%'} direction={['column','column','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','100vh']} >
       <Box p={11} mt={[10,200,200,120]} ml={[5,90,90,90]} w={['90%','90%','100%','70%']}>
       <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
     <Flex pt={0} pb={3} justifyContent='space-between'>
@@ -126,7 +128,7 @@ We believe in more than just transactions; we believe in the experiences that tu
       <Flex direction={['column','column','column','row']}  justifyContent='space-around'  pt={90} w={['90%','90%','60%','60%']} m='auto' gap={40}>
     <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']}  boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
         <Image h={'200px'} w={'100%'} src='https://www.praxivaluations.praxi/files/news/ILQI%20large.jpg'/>
-        <Box p={5}>
+        <Box backgroundColor={'white'} p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Mission</Text>
         <Text h={'220px'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve.</Text>
         <Link to='/about'>
@@ -135,7 +137,7 @@ We believe in more than just transactions; we believe in the experiences that tu
     </Box>
     <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
         <Image w={'100%'} h={'200px'} src={vision}/>
-        <Box p={5}>
+        <Box backgroundColor={'white'} p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3}>Vision</Text>
         <Text h={'220px'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
         <Link to='/about'>
@@ -143,7 +145,7 @@ We believe in more than just transactions; we believe in the experiences that tu
     </Box>
     </Box>
 </Flex>
-<Box pb={277} mt={120} backgroundImage={'https://www.vaporstore.com/wp-content/uploads/2016/05/Savin-NY-Website-Background-Web.jpg'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>
+<Box pb={277} mt={120} >
   <Heading pt={12} fontFamily='Parata'>FAQs</Heading>
   {/* <Text mb={22}>Discovering the Answers: Frequently Asked Questions</Text> */}
 <Accordian/>
@@ -152,14 +154,17 @@ We believe in more than just transactions; we believe in the experiences that tu
 <Image src=''/>
 </Box>
 <Footer/>
-         <Box>
+         {/* <Box>
       {isChatOpen && <ChatBox/>}
       {isChatOpen?<ChatIcon2 onClick={handleChatIconClick}/>:
       <ChatIcon onClick={handleChatIconClick} />}
-      </Box>
+      </Box> */}
     </Box>
     </Box>
-  )
-}
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Home3
+export default FixedBackgroundComponent;

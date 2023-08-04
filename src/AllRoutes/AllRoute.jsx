@@ -6,6 +6,7 @@ import About from '../Pages/About'
 import Contact from '../Pages/Contact'
 import Home3 from '../Pages/Template3/Home3'
 import ScrollToTopLink from '../Components/ScrollToTopLink'
+import FixedBackgroundComponent from '../Pages/Template3/FixedBackgroundComponent'
 
 const AllRoute = () => {
 
@@ -24,6 +25,7 @@ return (
         <Route path="/about" element={<About/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/home" element={<Home3/>}></Route>
+        <Route path="/newTemplate" element={<FixedBackgroundComponent/>}></Route>
     </Routes>
     </>
   )

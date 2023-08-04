@@ -1,0 +1,35 @@
+/* FixedBackground.css */
+.fixed-background {
+    /* Set the background image URL */
+    background-image: url('../Images/mainImage.png');
+    /* Set the background properties */
+    background-size: cover;
+    background-position: center;
+    /* Set the fixed position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Add any other background styles you need */
+  }
+  
+.content-wrapper {
+    /* Ensure the content occupies the full viewport height */
+    height: 100vh;
+    /* Create a flex container to make the content scrollable */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    /* Add padding or margin to create a suitable separation between the content and background */
+    /* padding: 20px; */
+    /* Set a fixed width for the content */
+    max-width: 100vw;
+    /* Add any other styles for the content container */
+    /* Make the content scrollable */
+    overflow-y: auto;
+  }

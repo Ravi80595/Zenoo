@@ -40,7 +40,7 @@ return(
         </Box>
       </Flex>
           <Box background={'whitesmoke'} pb={30}>
-      <Text pt={'30px'} mt={'100px'} fontSize={['26px','26px','36px','36px']} textAlign={'center'}>What Drive Us </Text>
+      <Text pt={'30px'} mt={'100px'} fontSize={['26px','26px','36px','36px']} textAlign={'center'}>What Drives Us </Text>
     <Text textAlign={'center'}>At the heart of Zenoo lies five core values that govern the way we conduct our business</Text>
     <SimpleThreeColumns/>
     <SimpleTwoColumns/>
@@ -71,6 +71,14 @@ return(
           <Text fontSize={['26px','26px','36px','36px']} > Our Vision</Text>
           <Text lineHeight={'1.5rem'} textAlign={'justify'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. 
 By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence.</Text>
+<Flex w={'99%'} direction={['column','column','row','row']} gap={2} mt={5} justifyContent={'space-around'} fontSize={'16px'} color={'#606060'} fontWeight={500}>
+            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Diversified Market Leadership</Text></Flex>
+            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Tech-Driven Efficiency</Text></Flex>
+            </Flex>
+            <Flex mt={3} direction={['column','column','row','row']} gap={2} mb={10} justifyContent={'space-around'} fontSize={'16px'} color={'#606060'} fontWeight={500}>
+            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Trusted One-Stop Shop</Text></Flex>
+            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Sustainable Growth</Text></Flex>
+            </Flex>
         </Box>
         <Box backgroundImage={'https://img.freepik.com/free-photo/construction-illustration-city-skyline_53876-103044.jpg'} borderRadius={20}>
           <Image borderRadius={20} w={['350px','900px','900px','900px']} h={['250px','350px','350px','350px']} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' src={vision2}/>
@@ -79,8 +87,9 @@ By embracing cutting-edge technologies and sustainable practices, we strive to l
       </Box>
       <BOD/>
     </Box>
+    <Box>
     <Reviews/>
-    
+    </Box>
     <Footer/>
     </>
   )

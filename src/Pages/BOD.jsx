@@ -10,6 +10,8 @@ const BOD = () => {
 
   // Sample dynamic data (replace with your actual data)
 
+  
+
   const openPopupWithData1 = () => {
     setIsOpen(true);
     setDynamicData({

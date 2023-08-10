@@ -1,7 +1,8 @@
 .hero{
   background-image: url('../Images/hero.png');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 640px) {

@@ -92,7 +92,7 @@ const Reviews = () => {
         textAlign={"start"}
         size="lg"
         color={"#30363C"}
-        fontFamily={"sans-serif"}
+        fontFamily={'Prata'}
       >
      What Our Customers have to Say
       </Heading>

@@ -10,7 +10,7 @@ const BOD = () => {
 
   // Sample dynamic data (replace with your actual data)
 
-  
+
 
   const openPopupWithData1 = () => {
     setIsOpen(true);
@@ -54,9 +54,9 @@ const BOD = () => {
 
 return (
     <Box backgroundColor='#efefef' pt={10} pb={10}>
-        <Box w={"80%"} m='auto'>
-        <Text pb={10} fontSize={['26px','26px','36px','36px']}>Our Leadership</Text>
-        <Flex direction={['column','column','column','row']} gap={10} justifyContent='space-around'>
+        <Box w={"95%"} m='auto'>
+        <Text pb={10} fontSize={['26px','26px','36px','36px']} fontFamily={'Prata'}>Our Leadership</Text>
+        <Flex direction={['column','column','column','row']} gap={10} justifyContent='space-around' w={'80%'} m={'auto'}>
           <Box backgroundColor='white' textAlign='center'>
             <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD1}/>
             <Text pt={2}>Mohit Jain</Text>

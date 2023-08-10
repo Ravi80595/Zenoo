@@ -41,7 +41,7 @@ return(
         </Box>
       </Flex>
           <Box background={'whitesmoke'} pb={30}>
-      <Text pt={'30px'} mt={'100px'} fontSize={['26px','26px','36px','36px']} textAlign={'center'}>What Drives Us </Text>
+      <Text pt={'30px'} mt={'100px'} fontSize={['26px','26px','36px','36px']} textAlign={'center'} fontFamily={'Prata'}>What Drives Us </Text>
     <Text textAlign={'center'}>At the heart of Zenoo lies five core values that govern the way we conduct our business</Text>
     <SimpleThreeColumns/>
     <SimpleTwoColumns/>
@@ -53,7 +53,7 @@ return(
           <Image className='moving-image'  w={'80%'} h={'250px'} m={'auto'} mt={['10px','80px','80px','80px']} src={MissionAbout}/>
         </Box>
         <Box textAlign={['center','left','left','left']} w={['90%','90%','70%','70%']}>
-          <Text fontSize={['26px','26px','36px','36px']} > Our Mission</Text>
+          <Text fontSize={['26px','26px','36px','36px']} fontFamily={'Prata'} > Our Mission</Text>
           <Text lineHeight={'1.5rem'} textAlign={'justify'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve.</Text>
           <Flex w={'99%'} direction={['column','column','row','row']} gap={2} mt={5} justifyContent={'space-around'} fontSize={'16px'} color={'#606060'} fontWeight={500}>
             <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Real Estate Excellence</Text></Flex>
@@ -69,7 +69,7 @@ return(
       <Box background={'whitesmoke'}>
     <Flex direction={['column-reverse','column-reverse','column','row']} w='90%' m='auto' gap={[10,40,40,40]} pt={20} pb={20}>
         <Box textAlign={['center','left','left','left']} w={['90%','90%','70%','60%']}>
-          <Text fontSize={['26px','26px','36px','36px']} > Our Vision</Text>
+          <Text fontSize={['26px','26px','36px','36px']} fontFamily={'Prata'}> Our Vision</Text>
           <Text lineHeight={'1.5rem'} textAlign={'justify'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. 
 By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence.</Text>
 <Flex w={'99%'} direction={['column','column','row','row']} gap={2} mt={5} justifyContent={'space-around'} fontSize={'16px'} color={'#606060'} fontWeight={500}>

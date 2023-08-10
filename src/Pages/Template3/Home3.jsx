@@ -59,8 +59,8 @@ return (
         </Flex>
     </Box>
     </Box>
-    <Box pt={20}>
-    <Flex className='hero' w={'100%'} direction={['column','column','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','100vh']} >
+    <Box className='hero' pt={20}>
+    <Flex  w={'100%'} direction={['column','column','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','100vh']} >
       <Box p={11} mt={[10,200,200,120]} ml={[5,90,90,90]} w={['90%','90%','100%','70%']}>
       <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
     <Flex pt={0} pb={3} justifyContent='space-between'>

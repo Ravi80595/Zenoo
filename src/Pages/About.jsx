@@ -70,7 +70,7 @@ return(
     <Flex direction={['column-reverse','column-reverse','column','row']} w='90%' m='auto' gap={[10,40,40,40]} pt={20} pb={20}>
         <Box textAlign={['center','left','left','left']} w={['90%','90%','70%','60%']}>
           <Text fontSize={['26px','26px','36px','36px']} fontFamily={'Prata'}> Our Vision</Text>
-          <Text lineHeight={'1.5rem'} textAlign={'justify'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspire to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. 
+          <Text lineHeight={'1.5rem'} textAlign={'justify'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspires to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. 
 By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence.</Text>
 <Flex w={'99%'} direction={['column','column','row','row']} gap={2} mt={5} justifyContent={'space-around'} fontSize={'16px'} color={'#606060'} fontWeight={500}>
             <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Diversified Market Leadership</Text></Flex>

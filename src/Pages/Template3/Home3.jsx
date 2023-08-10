@@ -116,7 +116,7 @@ return (
           <br />
           <br />
           <Text textAlign={'justify'}>
-We believe in more than just transactions; we believe in the experiences that turn dreams into reality. At ZENOO, we're not just in the business of Bricks and mortar, numbers or policies - we are in the business of building trust, nurturing aspirations, and fostering growth. Our expert works 24/7 round the clock, sharing their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.
+We believe in more than just transactions; we believe in the experiences that turn dreams into reality. At ZENOO, we're not just in the business of Bricks and mortar, numbers or policies - we are in the business of building trust, nurturing aspirations, and fostering growth. Our experts work round the clock, sharing their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.
           </Text>
         </Text>
         <Link to='/about'>

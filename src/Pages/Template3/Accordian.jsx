@@ -27,7 +27,7 @@ function Accordian() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-          ZENOO is a comprehensive and dynamic firm specializing in real estate, loan services, insurance, and legal assistance. With a deep commitment to excellence, integrity, and customer satisfaction, we strive to provide our clients with exceptional solutions tailored to their unique needs. 
+          ZENOO is a comprehensive and dynamic firm specializing in Real Estate, Loan Services, Insurance, and Legal Assistance. With a deep commitment to excellence, integrity, and customer satisfaction, we strive to provide our clients with exceptional solutions tailored to their unique needs. 
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem m={2}>

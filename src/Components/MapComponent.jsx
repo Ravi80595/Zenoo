@@ -6,8 +6,7 @@ import 'leaflet/dist/leaflet.css';
 const MapComponent = () => {
     const position = [28.453432537750142, 77.06834227116423];
 
-// console.log(position)
-  
+
 return (
       <MapContainer center={position} zoom={15} style={{ height: '400px', width: '100%',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
         <TileLayer

@@ -43,9 +43,21 @@ return (
       <Box p={5} background='white'>
         <Flex justifyContent='space-between'>
         <Image w={'120px'} h={'40px'} src={Logo3}/>
-        <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['60%','60%','30%','30%']} pt={[2,0,0,0]} color='#10257f'>
+        <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['60%','60%','30%','60%']} pt={[2,0,0,0]} color='#10257f'>
             <ScrollToTopLink to='/about'>
             <Text className='Link_btns'>About us</Text>
+            </ScrollToTopLink>
+            <ScrollToTopLink to='/founder'>
+            <Text className='Link_btns'>Founder</Text>
+            </ScrollToTopLink>
+            <ScrollToTopLink to='/board'>
+            <Text className='Link_btns'>Board</Text>
+            </ScrollToTopLink>
+            <ScrollToTopLink to='/team'>
+            <Text className='Link_btns'>Our Team</Text>
+            </ScrollToTopLink>
+            <ScrollToTopLink to='/careers'>
+            <Text className='Link_btns'>Careers</Text>
             </ScrollToTopLink>
             <ScrollToTopLink to='/contact'>
             <Text className='Link_btns'>Contact us</Text>
@@ -116,7 +128,7 @@ return (
           <br />
           <br />
           <Text textAlign={'justify'}>
-We believe in more than just transactions; we believe in the experiences that turn dreams into reality. At ZENOO, we're not just in the business of Bricks and mortar, numbers or policies - we are in the business of building trust, nurturing aspirations, and fostering growth. Our experts work round the clock, sharing their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.
+We believe in more than just transactions; we believe in the experiences that turn dreams into reality. At ZENOO, we're not just in the business of Bricks and Mortar, numbers or policies - we are in the business of building trust, nurturing aspirations, and fostering growth. Our experts work round the clock, sharing their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.
           </Text>
         </Text>
         <Link to='/about'>
@@ -124,31 +136,34 @@ We believe in more than just transactions; we believe in the experiences that tu
       </Box>
       </Flex>
       <Flex direction={['column','column','column','row']}  justifyContent='space-around'  pt={90} w={['90%','90%','60%','60%']} m='auto' gap={40}>
+      <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
+        <Image w={'100%'} h={'200px'} src={vision}/>
+        <Box p={5}>
+        <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Vision</Text>
+        <Text h={'220px'} textAlign={'justify'}> ZENOO aspires to positively impact lives by creating Inspiring, Living, Working and Recreational spaces that harmoniously blend with the environment. </Text>
+        <Link to='/about'>
+        {/* <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5}  backgroundColor='#3654CE' color='white'>Know More</Button> */}
+        </Link>
+    </Box>
+    </Box>
     <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']}  boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
         <Image h={'200px'} w={'100%'} src='https://www.praxivaluations.praxi/files/news/ILQI%20large.jpg'/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Mission</Text>
-        <Text h={'220px'} textAlign={'justify'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in India, fostering growth and prosperity for our stakeholders and the communities we serve.</Text>
+        <Text h={'220px'} textAlign={'justify'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable and customer-centric solutions. We aim to be a leading company that fosters growth and prosperity to the communities we serve through integrity, quality and commitment. </Text>
         <Link to='/about'>
-        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
+        {/* <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5} backgroundColor='#3654CE' color='white'>Know More</Button> */}
+        </Link>
     </Box>
     </Box>
-    <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-        <Image w={'100%'} h={'200px'} src={vision}/>
-        <Box p={5}>
-        <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Vision</Text>
-        <Text h={'220px'} textAlign={'justify'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspires to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. </Text>
-        <Link to='/about'>
-        <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5}  backgroundColor='#3654CE' color='white'>Know More</Button></Link>
-    </Box>
-    </Box>
+  
 </Flex>
-<Box pb={277} mt={120} backgroundImage={'https://www.vaporstore.com/wp-content/uploads/2016/05/Savin-NY-Website-Background-Web.jpg'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>
-  <Heading pt={12} fontFamily='Parata'>FAQs</Heading>
+{/* <Box pb={277} mt={120} backgroundImage={'https://www.vaporstore.com/wp-content/uploads/2016/05/Savin-NY-Website-Background-Web.jpg'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}> */}
+  {/* <Heading pt={12} fontFamily='Parata'>FAQs</Heading> */}
   {/* <Text mb={22}>Discovering the Answers: Frequently Asked Questions</Text> */}
-<Accordian/>
-</Box>
-<Box >
+{/* <Accordian/> */}
+{/* </Box> */}
+<Box  mt={10}>
 <Image src=''/>
 </Box>
 <Footer/>

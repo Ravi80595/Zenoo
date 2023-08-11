@@ -14,16 +14,30 @@ return (
         <Flex justifyContent='space-between'>
             <ScrollToTopLink to='/home'>
         <Image w={'120px'} h={'40px'} src={Logo3}/></ScrollToTopLink>
-        <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['70%','30%','30%','40%']} pt={0} color='white'>
+        <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['70%','30%','30%','60%']} pt={0} color='white'>
             <ScrollToTopLink to='/home'>
             <Text color={'#10257f'} className='Link_btns'>Home</Text>
             </ScrollToTopLink>
             <ScrollToTopLink to='/about'>
             <Text color={'#10257f'} className='Link_btns'>About us</Text>
             </ScrollToTopLink>
+            <Link to='/founder'>
+            <Text color={'#10257f'} className='Link_btns'>Founder</Text>
+            </Link>
+            <Link to='/board'>
+            <Text color={'#10257f'} className='Link_btns'>Board</Text>
+            </Link>
+            <Link to='/team'>
+            <Text color={'#10257f'} className='Link_btns'>Our Team</Text>
+            </Link>
+            <Link to='/careers'>
+            <Text color={'#10257f'} className='Link_btns'>Careers</Text>
+            </Link>
             <ScrollToTopLink to='/contact'>
             <Text color={'#10257f'} className='Link_btns'>Contact us</Text>
             </ScrollToTopLink>
+            
+
         <Box w='10%'>   
         <Link to='/'>
         <CloseIcon color='#10257f' />

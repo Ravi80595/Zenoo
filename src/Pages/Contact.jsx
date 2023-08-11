@@ -1,10 +1,10 @@
-import { Box,Image,Flex,Text,Button, Input, Textarea, Checkbox} from '@chakra-ui/react'
+import { Box,Image,Flex,Text,Button, Input, Textarea, Checkbox, Select} from '@chakra-ui/react'
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
 import MapComponent from '../Components/MapComponent'
-import cover from '../Images/cover.png'
+import cover from '../Images/cover.jpg'
 import SideBox from '../Components/SideBox'
 import ZENOO1 from '../Images/ZENOO1.png'
 
@@ -22,21 +22,31 @@ const handleClick = () => {
   // window.location.href = googleMapsURL;
 };
 
+      {/* <Heading mt={[50,120,120,120]} ml={10}>Gurgaon Office</Heading> */}
+{/* <Box backgroundColor={'white'} w='100%' h={[190,190,290,250]} m='auto' color='black' pt={'50px'} pl={21} textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
+</Box> */}
+{/* <Flex mt={[150,120,120,120]} direction={['column-reverse','column','column','row']} w='80%' m='auto' gap={20}  mb={90}> */}
+{/* <Text textAlign={'justify'}>Zenoo, as a conglomerate deeply entrenched in various core sector, has always operated as a values-driven organization. These fundamental principles serve as the bedrock of our businesses within the Zenoo group, guiding our growth and shaping our approach to conducting operations.</Text> */}
+  {/* </Flex> */}
+      {/* <Box h={'400px'} backgroundImage={'https://coolbackgrounds.io/images/backgrounds/white/white-contour-c990a61f.svg'} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} pt={20} pb={20}>
+        <Box textAlign ='center' w={['90%','60%','60%','50%']} m='auto' pb={70} >
+          <Text pb={"20px"} fontWeight={'bold'} fontSize={['20px','40px','40px','40px']} fontFamily={'Prata'}>Why Partner with Zenoo</Text>
+          <Text>Selecting ZENOO means aligning with a reliable partner dedicated to your prosperity. Whether you're in the market for a new property, obtaining a loan, protecting your assets through insurance, or seeking legal counsel, we deliver a smooth and all-inclusive journey. Our harmonized approach guarantees tailored solutions that cater to your needs, empowering you to pursue your objectives with unwavering assurance</Text>
+        </Box>
+      </Box> */}
+
 
 return(
     <>
       <Navbar/>
       <SideBox/>
       <Box w='100%' m='auto' textAlign='left' backgroundColor={'white'}>
-        <Box pt={'50px'}>
-      {/* <Box backgroundColor={'white'} w='100%' h={[190,190,290,250]} m='auto' color='black' pt={'50px'} pl={21} textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
-      </Box> */}
-      </Box>
-      {/* <Heading mt={[50,120,120,120]} ml={10}>Gurgaon Office</Heading> */}
-      <Flex mt={[150,120,120,120]} direction={['column-reverse','column','column','row']} w='80%' m='auto' gap={20}  mb={90}>
-        <Box w={['95%','95%','40%','60%']} mt={['30px','30px','90px','10px']}>
-          <Text textAlign={'justify'}>Zenoo, as a conglomerate deeply entrenched in various core sector, has always operated as a values-driven organization. These fundamental principles serve as the bedrock of our businesses within the Zenoo group, guiding our growth and shaping our approach to conducting operations.</Text>
-          <Text pt={5}> <b>Call Us : </b>0124 4240520</Text>
+        <Box pt={'150px'}>
+      <Box w='60%' m={'auto'}>
+          <MapComponent/>
+        </Box>
+        <Box w={['95%','95%','40%','60%']} mt={['30px','30px','90px','20px']} m={'auto'}>
+          <Text> <b>Call Us : </b>0124 4240520</Text>
           <Text pt={2}> <b>Email Us : </b>info@zenoo.in</Text>
           <Text pt={2}> <b>Address : </b>Plot No.14, Sector 44, Gurugram, Haryana 122003</Text>
           <Flex pt={5} w={['90%','90%','40%','50%']} justifyContent={'space-around'}> 
@@ -51,18 +61,10 @@ return(
       <a href="https://www.facebook.com/zenoo18" target='blank'>
       <Image w='30px' src='https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png'/></a>
           </Flex>
-          <Button onClick={handleClick} mt={5} borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s  '}  textAlign={'center'}>GET DIRECTIONS</Button>
+          <Button onClick={handleClick} mt={5} borderRadius={5} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s  '}  textAlign={'center'}>GET DIRECTIONS</Button>
         </Box>
-        <Box w='90%' mt={[20,20,0,0]}>
-          <MapComponent/>
         </Box>
-      </Flex>
-      <Box h={'400px'} backgroundImage={'https://coolbackgrounds.io/images/backgrounds/white/white-contour-c990a61f.svg'} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} pt={20} pb={20}>
-        <Box textAlign ='center' w={['90%','60%','60%','50%']} m='auto' pb={70} >
-          <Text pb={"20px"} fontWeight={'bold'} fontSize={['20px','40px','40px','40px']} fontFamily={'Prata'}>Why Partner with Zenoo</Text>
-          <Text>Selecting ZENOO means aligning with a reliable partner dedicated to your prosperity. Whether you're in the market for a new property, obtaining a loan, protecting your assets through insurance, or seeking legal counsel, we deliver a smooth and all-inclusive journey. Our harmonized approach guarantees tailored solutions that cater to your needs, empowering you to pursue your objectives with unwavering assurance</Text>
-        </Box>
-      </Box>
+    
       </Box>
       <Box backgroundColor={'#ebfffb'} pb={'62px'} pt={20}>
         <Box backgroundColor={'white'} p={22} borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'  textAlign={'left'} w={['90%','60%','60%','50%']} m='auto' >
@@ -75,8 +77,13 @@ return(
           <Input placeholder='Enter your email'/>
           <Text pt={15}>Phone no.</Text>
           <Input placeholder='Enter your phone'/>
-          <Text pt={5}>Message</Text>
-          <Textarea placeholder='Enter your message here'/>
+          <Text pt={5}>Interest</Text>
+          <Select>
+          <option value="">loan</option>
+          <option value="">Real Estate</option>
+
+          </Select>
+          {/* < placeholder='Enter your message here'/> */}
           <Checkbox  pt={3} colorScheme='blue' defaultChecked>
             <Text fontSize={'16px'}>
             By providing your phone number and checking the box below, you grant Zenoo permission to contact you via telephone for communication purposes.</Text>

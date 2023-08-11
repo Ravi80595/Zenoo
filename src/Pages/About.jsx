@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
 import Reviews from './Reviews'
 import SimpleThreeColumns from '../Components/Services'
-import cover from '../Images/cover.png'
+// import cover from '../Images/cover.jpg'
 import SimpleTwoColumns from '../Components/Slider'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -15,6 +15,7 @@ import MissionAbout from '../Images/MissionAbout.png'
 import '../CSS/About.css'
 import vision2 from '../Images/vision2.png'
 import {BsBookmarkCheckFill} from 'react-icons/bs'
+import cover from '../Images/cover.jpg'
 
 
 
@@ -28,15 +29,15 @@ return(
 <SideBox/>
     <Box backgroundColor={'white'} w='100%' m='auto' textAlign='left'>
     <Box pt={'50px'}>
-      <Box w='100%' h={[190,190,290,210]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}> 
+      <Box w='100%' h={[190,190,290,"310px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'> 
       </Box></Box>
       <Flex direction={['column','column','column','row']} w='80%' m='auto' gap={20} pt={70}>
         <Image  borderRadius={20} w={700} h={[250,350,350,350]} src='https://media.istockphoto.com/id/1199060494/photo/insurance-protecting-family-health-live-house-and-car-concept.jpg?s=612x612&w=0&k=20&c=W8bPvwF5rk7Rm2yDYnMyFhGXZfNqK4bUPlDcRpKVsB8='/>
         <Box>
           <Text textAlign={'justify'}>
-          At <b> ZENOO </b>, we're not just a conglomerate, we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of Real Estate, Loan Services, Insurance Solutions, Legal Assistance, Interior and Construction Management. Our journey began with a simple dream - to create a one-stop hub where all your dreams find their true home.
+          At <b> ZENOO </b>, we're not just a conglomerate, we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of Real Estate, Loan Services, Insurance Solutions, Legal Assistance, Interiors and Construction Management. Our journey began with a simple dream - to create a one-stop hub where all your dreams turn into realty.
          <br/> <br/>
-         Founded by <b> Mohit Jain </b> , ZENOO set sail on an ambitious odyssey to shape the future of various industries. Fueled by the pursuit of excellence, integrity, and unyielding customer satisfaction, we embarked on this transformative journey - a journey that remains anchored in a deep-rooted commitment to our clients' unique needs.
+         ZENOO set sail on an ambitious odyssey to shape the future of various industries. Fueled by the pursuit of excellence, integrity, and unyielding customer satisfaction, we embarked on this transformative journey - a journey that remains anchored in a deep-rooted commitment to our clients' unique needs.
           </Text>
         </Box>
       </Flex>
@@ -48,7 +49,7 @@ return(
     </Box>
 
     <Box background={'whitesmoke'}>
-    <Flex direction={['column','column','column','row']} w='90%' m='auto' gap={[10,40,40,20]} pt={7} pb={10}>
+    {/* <Flex direction={['column','column','column','row']} w='90%' m='auto' gap={[10,40,40,20]} pt={7} pb={10}>
         <Box w={['350px','900px','900px','900px']} h={['250px','350px','350px','350px']}  backgroundImage={'https://img.freepik.com/premium-photo/rooftop-balcony-with-cityscape_9083-1881.jpg'} backgroundSize={'cover'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' borderRadius={20}>
           <Image className='moving-image'  w={'80%'} h={'250px'} m={'auto'} mt={['10px','80px','80px','80px']} src={MissionAbout}/>
         </Box>
@@ -64,10 +65,10 @@ return(
             <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Trusted Legal Support</Text></Flex>
             </Flex>
         </Box>
-      </Flex>
+      </Flex> */}
       </Box>
       <Box background={'whitesmoke'}>
-    <Flex direction={['column-reverse','column-reverse','column','row']} w='90%' m='auto' gap={[10,40,40,40]} pt={20} pb={20}>
+    {/* <Flex direction={['column-reverse','column-reverse','column','row']} w='90%' m='auto' gap={[10,40,40,40]} pt={20} pb={20}>
         <Box textAlign={['center','left','left','left']} w={['90%','90%','70%','60%']}>
           <Text fontSize={['26px','26px','36px','36px']} fontFamily={'Prata'}> Our Vision</Text>
           <Text lineHeight={'1.5rem'} textAlign={'justify'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspires to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. 
@@ -84,9 +85,9 @@ By embracing cutting-edge technologies and sustainable practices, we strive to l
         <Box backgroundImage={'https://img.freepik.com/free-photo/construction-illustration-city-skyline_53876-103044.jpg'} borderRadius={20}>
           <Image borderRadius={20} w={['350px','900px','900px','900px']} h={['250px','350px','350px','350px']} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' src={vision2}/>
         </Box>
-      </Flex>
+      </Flex> */}
       </Box>
-      <BOD/>
+      {/* <BOD/> */}
     </Box>
     <Box>
     <Reviews/>

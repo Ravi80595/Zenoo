@@ -87,15 +87,17 @@ const Reviews = () => {
     {/* <Box>
       <img src={Playstore}/>
     </Box> */}
-      <Heading
+      <Text
         p={5}
-        textAlign={"start"}
+        textAlign={"center"}
         size="lg"
         color={"#30363C"}
         fontFamily={'Prata'}
+        pb={10}
+        fontSize={['26px','26px','36px','36px']}
       >
-     What Our Customers have to Say
-      </Heading>
+     Testimonials
+      </Text>
       <Flex justifyContent={"space-between"} p={5} w={"100%"}>
         <Swiper
           slidesPerView={isBigScreen ? 4 : isTablet ? 2 : isMobile ? 2 : 4}

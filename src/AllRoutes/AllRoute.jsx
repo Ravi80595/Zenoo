@@ -7,6 +7,10 @@ import Contact from '../Pages/Contact'
 import Home3 from '../Pages/Template3/Home3'
 import ScrollToTopLink from '../Components/ScrollToTopLink'
 import FixedBackgroundComponent from '../Pages/Template3/FixedBackgroundComponent'
+import Founder from '../Pages/Founder'
+import Careers from '../Pages/Careers'
+import OurTeam from '../Pages/OurTeam'
+import Board from '../Pages/Board'
 
 
 
@@ -23,6 +27,10 @@ return (
       <ScrollToTopLink to="/home">Home3</ScrollToTopLink> */}
     <Routes>
         <Route path="/" element={<Home/>}></Route>
+        <Route path="/founder" element={<Founder/>}></Route>
+        <Route path="/team" element={<OurTeam/>}></Route>
+        <Route path="/board" element={<Board/>}></Route>
+        <Route path="/careers" element={<Careers/>}></Route>
         <Route path="/main" element={<Dashboard/>}></Route>
         <Route path="/about" element={<About/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>

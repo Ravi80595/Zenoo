@@ -39,8 +39,9 @@ return (
     </Stack>
     <Stack gap="10px">
     <Text fontSize="20px" fontWeight="700">Need Help</Text>
-    <ScrollToFAQLink to='/home'>
-    <Text fontSize="16px" fontWeight="500" cursor="pointer"> FAQs</Text></ScrollToFAQLink>
+    {/* <ScrollToFAQLink to='/home'>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer"> FAQs</Text>
+    </ScrollToFAQLink> */}
     <ScrollToReviewLink to='/about'>
     <Text fontSize="16px" fontWeight="500" cursor="pointer"> Testimonials</Text></ScrollToReviewLink>
     <Text fontSize="20px" fontWeight="700" paddingTop="20px"> Policy Info</Text>

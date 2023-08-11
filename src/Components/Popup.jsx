@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../CSS/Popup.css'
 import { Flex, Image,Text } from '@chakra-ui/react';
-import BOD1 from '../Images/BOD1.png'
+import BOD1 from '../Images/BOD1.jpg'
 import {AiOutlineClose} from 'react-icons/ai'
 
 

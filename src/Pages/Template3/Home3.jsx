@@ -16,10 +16,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SideBox from '../../Components/SideBox'
 import ScrollToTopLink from '../../Components/ScrollToTopLink'
-import vision from '../../Images/vision.png'
+import vision2 from '../../Images/vision2.png'
 import hero from '../../Images/hero.png'
 import Logo from '../../Images/Logo.png'
 import '../../CSS/Home1.css'
+import MissionAbout from '../../Images/MissionAbout.png'
 
 
 const Home3 = () => {
@@ -47,9 +48,9 @@ return (
             <ScrollToTopLink to='/about'>
             <Text className='Link_btns'>About us</Text>
             </ScrollToTopLink>
-            <ScrollToTopLink to='/founder'>
+            {/* <ScrollToTopLink to='/founder'>
             <Text className='Link_btns'>Founder</Text>
-            </ScrollToTopLink>
+            </ScrollToTopLink> */}
             <ScrollToTopLink to='/board'>
             <Text className='Link_btns'>Board</Text>
             </ScrollToTopLink>
@@ -137,7 +138,7 @@ We believe in more than just transactions; we believe in the experiences that tu
       </Flex>
       <Flex direction={['column','column','column','row']}  justifyContent='space-around'  pt={90} w={['90%','90%','60%','60%']} m='auto' gap={40}>
       <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-        <Image w={'100%'} h={'200px'} src={vision}/>
+        <Image w={'100%'} h={'200px'} src={vision2}/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Vision</Text>
         <Text h={'220px'} textAlign={'justify'}> ZENOO aspires to positively impact lives by creating Inspiring, Living, Working and Recreational spaces that harmoniously blend with the environment. </Text>
@@ -147,7 +148,7 @@ We believe in more than just transactions; we believe in the experiences that tu
     </Box>
     </Box>
     <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']}  boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-        <Image h={'200px'} w={'100%'} src='https://www.praxivaluations.praxi/files/news/ILQI%20large.jpg'/>
+        <Image h={'200px'} w={'100%'} src={MissionAbout}/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Mission</Text>
         <Text h={'220px'} textAlign={'justify'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable and customer-centric solutions. We aim to be a leading company that fosters growth and prosperity to the communities we serve through integrity, quality and commitment. </Text>

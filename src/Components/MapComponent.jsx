@@ -8,7 +8,7 @@ const MapComponent = () => {
 
 
 return (
-      <MapContainer center={position} zoom={15} style={{ height: '400px', width: '100%',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
+      <MapContainer center={position} zoom={15} style={{ height: '500px', width: '550px',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; OpenStreetMap contributors"

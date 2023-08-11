@@ -21,9 +21,9 @@ return (
             <ScrollToTopLink to='/about'>
             <Text color={'#10257f'} className='Link_btns'>About us</Text>
             </ScrollToTopLink>
-            <Link to='/founder'>
+            {/* <Link to='/founder'>
             <Text color={'#10257f'} className='Link_btns'>Founder</Text>
-            </Link>
+            </Link> */}
             <Link to='/board'>
             <Text color={'#10257f'} className='Link_btns'>Board</Text>
             </Link>

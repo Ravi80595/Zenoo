@@ -37,19 +37,19 @@ const handleClick = () => {
 
 
 return(
-    <>
+    <Box background={'white'}>
       <Navbar/>
       <SideBox/>
-      <Box w='100%' m='auto' textAlign='left' backgroundColor={'white'}>
-        <Box pt={'150px'}>
-      <Box w='60%' m={'auto'}>
+      <Flex background={'white'} w='95%' m='auto' textAlign='left' backgroundColor={'white'} pt={120} pb={20}>
+        <Box pt={'100px'} w={'50%'}>
+      <Box w={'70%'} m={'auto'}>
           <MapComponent/>
         </Box>
-        <Box w={['95%','95%','40%','60%']} mt={['30px','30px','90px','20px']} m={'auto'}>
+        <Box w={['95%','95%','40%','60%']} mt={['30px','30px','90px','20px']} m={'auto'} textAlign={'center'} pb={20}>
           <Text> <b>Call Us : </b>0124 4240520</Text>
           <Text pt={2}> <b>Email Us : </b>info@zenoo.in</Text>
           <Text pt={2}> <b>Address : </b>Plot No.14, Sector 44, Gurugram, Haryana 122003</Text>
-          <Flex pt={5} w={['90%','90%','40%','50%']} justifyContent={'space-around'}> 
+          <Flex pt={5} w={['90%','90%','40%','90%']} justifyContent={'space-around'}> 
           <a href="https://www.instagram.com/zenoo186/ " target='blank'>
       <Image w='30px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
       <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
@@ -65,12 +65,12 @@ return(
         </Box>
         </Box>
     
-      </Box>
-      <Box backgroundColor={'#ebfffb'} pb={'62px'} pt={20}>
-        <Box backgroundColor={'white'} p={22} borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'  textAlign={'left'} w={['90%','60%','60%','50%']} m='auto' >
+      
+      {/* <Box backgroundColor={'white'} pb={'62px'} pt={20} border={'2px solid red'}> */}
+        <Box backgroundColor={'white'} p={22} borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'  textAlign={'left'} w={['90%','60%','60%','45%']} >
           <Text fontSize={['26px','26px','36px','36px']}>DROP US A LINE</Text>
           <Text pb={10}>Get in touch with our team by completing the below form or call us now. One of our customer service agents will get back to you shortly.</Text>
-          <Box w={['90%','90%','60%','60%']} m='auto'>
+          <Box w={['90%','90%','60%','80%']} m='auto'>
           <Text pt={15}>Name</Text>
           <Input placeholder='Name'/>
           <Text pt={15}>Email</Text>
@@ -78,11 +78,12 @@ return(
           <Text pt={15}>Phone no.</Text>
           <Input placeholder='Enter your phone'/>
           <Text pt={5}>Interest</Text>
-          <Select>
-          <option value="">loan</option>
+          <select style={{width:'480px',padding:'10px',border:'1px solid grey',borderRadius:'10px'}}>
           <option value="">Real Estate</option>
-
-          </Select>
+          <option value="">Financial Advisory</option>
+          <option value="">Insurance Solutions</option>
+          <option value="">Legal Assistance</option>
+          </select>
           {/* < placeholder='Enter your message here'/> */}
           <Checkbox  pt={3} colorScheme='blue' defaultChecked>
             <Text fontSize={'16px'}>
@@ -91,9 +92,10 @@ return(
           <Flex mt={5} justifyContent={'center'}><Button borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s'}  textAlign={'center'}>Submit</Button></Flex>
           </Box>
           </Box>
-        </Box>
+        {/* </Box> */}
+        </Flex>
       <Footer/>
-    </> 
+    </Box> 
   )
 }
 

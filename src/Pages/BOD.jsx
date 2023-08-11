@@ -2,7 +2,11 @@ import { Box,Text,Image,Button,Flex } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import {AiFillFacebook,AiFillInstagram,AiOutlineWhatsApp,AiFillLinkedin} from 'react-icons/ai'
 import Popup from '../Components/Popup'
-import BOD1 from '../Images/BOD1.png'
+import BOD1 from '../Images/BOD1.jpg'
+import BOD2 from '../Images/BOD2.jpg'
+import BOD3 from '../Images/BOD3.jpg'
+
+
 
 const BOD = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +29,7 @@ const BOD = () => {
     setIsOpen(true);
     // Sample dynamic data for popup - Data Set 2
     setDynamicData({
-      title: 'BOD2',
+      title: 'Shreyansh Verma',
       description: 'This is the second data set.',
     });
   };
@@ -53,35 +57,35 @@ const BOD = () => {
 
 
 return (
-    <Box backgroundColor='#efefef' pt={10} pb={10}>
+    <Box backgroundColor='#efefef' pt={120} pb={120}>
         <Box w={"95%"} m='auto'>
-        <Text pb={10} fontSize={['26px','26px','36px','36px']} fontFamily={'Prata'}>Our Leadership</Text>
+        {/* <Text pb={10} fontSize={['26px','26px','36px','36px']} fontFamily={'Prata'}>Our Board</Text> */}
         <Flex direction={['column','column','column','row']} gap={10} justifyContent='space-around' w={'80%'} m={'auto'}>
           <Box backgroundColor='white' textAlign='center'>
             <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD1}/>
             <Text pt={2}>Mohit Jain</Text>
             <Text fontWeight={'bold'}>Founder</Text>
-            <Button onClick={openPopupWithData1} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know More</Button>
+            {/* <Button onClick={openPopupWithData1} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know More</Button> */}
           </Box>
           <Box backgroundColor='white' textAlign='center'>
-          <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD1}/>
-            <Text>Rich Wacksman</Text>
+          <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD2}/>
+            <Text>Shreyansh Verma</Text>
             <Text fontWeight={'bold'}>Founder</Text>
            
-            <Button onClick={openPopupWithData2} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know More</Button>
+            {/* <Button onClick={openPopupWithData2} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know More</Button> */}
           </Box>
           <Box backgroundColor='white' textAlign='center'>
-          <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD1}/>
+          <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD2}/>
             <Text>Rich Wacksman</Text>
             <Text fontWeight={'bold'}>Founder</Text>
     
-            <Button mt={5} onClick={openPopupWithData3} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know more</Button>
+            {/* <Button mt={5} onClick={openPopupWithData3} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know more</Button> */}
           </Box>
           <Box backgroundColor='white' textAlign='center'>
           <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD1}/>
             <Text>Rich Wacksman</Text>
             <Text fontWeight={'bold'}>Founder</Text>
-            <Button  onClick={openPopupWithData4} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know more</Button>
+            {/* <Button  onClick={openPopupWithData4} mt={5} mb={3} style={{backgroundColor:'rgb(48, 52, 65)',color:'white'}} textAlign={'center'}>Know more</Button> */}
             <Popup isOpen={isOpen} onClose={closePopup} dynamicData={dynamicData} />
           </Box>
         </Flex>

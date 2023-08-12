@@ -40,7 +40,7 @@ return(
     <Box background={'white'}>
       <Navbar/>
       <SideBox/>
-      <Flex background={'white'} w='95%' m='auto' textAlign='left' backgroundColor={'white'} pt={120} pb={20}>
+      <Flex direction={['column','column','row','row']} background={'white'} w='95%' m='auto' textAlign='left' backgroundColor={'white'} pt={120} pb={20}>
         <Box pt={'100px'} w={'50%'}>
       <Box w={'70%'} m={'auto'}>
           <MapComponent/>

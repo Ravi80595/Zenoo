@@ -16,7 +16,7 @@ return(
     <Text fontSize={'36px'} pb={5} fontFamily={'Prata'}>CAREERS</Text>
     <Text>At ZENOO, We value both our brand's success and each individual's goals. Our inviting culture attracts the best talents who share our strong work values. We prioritize teamwork, respect, and excellence, ensuring a safe and enjoyable workplace that encourages personal growth. No matter your role or background, we support your career and personal dreams with equal dedication, guiding you to reach new heights at ZENOO.</Text>
     </Box>
-    <Box background={'white'} w={'60%'} m='auto' pb={50}  borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' p={'30px'} mb={50}>
+    <Box background={'white'} w={['90%','90%','60%','60%']} m='auto' pb={50}  borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' p={'30px'} mb={50}>
     <Text fontSize={'36px'}  fontFamily={'Prata'}>Opportunities</Text>
     <Text pb={5}>Start your journey</Text>
     <Text textAlign={'left'} fontWeight={'bold'}>Transaction Manager</Text>
@@ -26,8 +26,8 @@ return(
     <Text textAlign={'left'}>As a Transaction Executive, where you'll orchestrate smooth business deals by coordinating communications, managing documents, and tracking progress – a pivotal role in our company's success.</Text>
     </Box>
     <Box backgroundColor={'grey'} h={200} mb={50}>
-      <Text pt={30} pb={5} fontSize={'20px'}>Join ZENOO on a journey of growth and innovation, as we work together to elevate your ambitions and achieve remarkable success.</Text>
-      <Text fontSize={'36px'} fontFamily={'Prata'}>Interested in joining us?</Text>
+      <Text pt={30} pb={5} fontSize={['14px','14px','20px','20px']}>Join ZENOO on a journey of growth and innovation, as we work together to elevate your ambitions and achieve remarkable success.</Text>
+      <Text fontSize={['14px','14px','20px','26px']} fontFamily={'Prata'}>Interested in joining us?</Text>
       <Text>Send us your cv on careers@zenoo.in</Text>
     </Box>
     <Footer/>

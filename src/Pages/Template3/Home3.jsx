@@ -21,6 +21,8 @@ import hero from '../../Images/hero.png'
 import Logo from '../../Images/Logo.png'
 import '../../CSS/Home1.css'
 import MissionAbout from '../../Images/MissionAbout.png'
+import HomeNavbar from '../../Components/HomeNavbar'
+import Navbar from '../../Components/Navbar'
 
 
 const Home3 = () => {
@@ -36,10 +38,21 @@ const Home3 = () => {
 
 
   // backgroundImage={'http://localhost:3000/static/media/mainImage.e048f31ccb052b45c06d.png'} backgroundSize={'cover'}
+
+
+
+              {/* <ScrollToTopLink to='/founder'>
+            <Text className='Link_btns'>Founder</Text>
+            </ScrollToTopLink> */}
+
+
+            
 return (
+  <>
+  <Navbar/>
     <Box background='#f9f9f9' className='HomeBox'>
       <Box>
-    <Box  w={['100vw','100%','100%','100%']} backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
+    {/* <Box  w={['100vw','100%','100%','100%']} backgroundColor='white' position='fixed' zIndex={999999999} box-shadow='rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'>
       <SideBox/>
       <Box p={5} background='white'>
         <Flex justifyContent='space-between'>
@@ -48,9 +61,7 @@ return (
             <ScrollToTopLink to='/about'>
             <Text className='Link_btns'>About us</Text>
             </ScrollToTopLink>
-            {/* <ScrollToTopLink to='/founder'>
-            <Text className='Link_btns'>Founder</Text>
-            </ScrollToTopLink> */}
+
             <ScrollToTopLink to='/board'>
             <Text className='Link_btns'>Board</Text>
             </ScrollToTopLink>
@@ -71,7 +82,8 @@ return (
         </Flex>
         </Flex>
     </Box>
-    </Box>
+    </Box> */}
+    <Navbar/>
     <Box className='hero' pt={20}>
     <Flex  w={'100%'} direction={['column','column','column','row']} gap={['25px','125px','125px','125px']} h={['730px','630px','630px','100vh']} >
       <Box p={11} mt={[10,200,200,120]} ml={[5,90,90,90]} w={['90%','90%','100%','70%']}>
@@ -122,7 +134,7 @@ return (
       <Box w={['90%','90%','40%','40%']} mt={40}>
         <Image src={whoweare}/>
       </Box>
-      <Box w={['90%','90%','50%','50%']} m='auto' mt={90}>
+      <Box w={['90%','90%','50%','50%']} m='auto' mt={50}>
         <Heading fontFamily={'Parata'}>Who We Are</Heading>
         <Text fontWeight={'bold'} pb={4}>Unlocking the Potential of Tomorrow, Today</Text>
         <Text textAlign={'justify'}>At ZENOO, we're not just a conglomerate, we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of Real Estate, Loan Services, Insurance Solutions, Legal Assistance, Interior and Construction Management. Our journey began with a simple dream - to create a one-stop hub where all your dreams find their true home.
@@ -175,6 +187,7 @@ We believe in more than just transactions; we believe in the experiences that tu
       </Box>
     </Box>
     </Box>
+    </>
   )
 }
 

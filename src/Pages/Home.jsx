@@ -16,7 +16,7 @@ useEffect(() => {
 
 return(
     <Box>
-    <Box className='social-icons-home' position={'absolute'} left={3} top={'30%'} color={'blue'}>
+    <Box className='social-icons-home' position={'absolute'} left={3} top={['30%','30%','30%','30%']} color={'blue'}>
     <a href="https://www.instagram.com/zenoo186/ " target='blank'>
       <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'/></a>
       <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
@@ -30,7 +30,7 @@ return(
     </Box>
         <Box color={'blue'} h={'99vh'} data-aos='fade-up'>
           <Flex justifyContent={'center'}>
-          <Image pt={['222px',91,91,91]} pb={10} w={['488px','488px','488px','488px'  ]} src={Logo}/></Flex>
+          <Image pt={['152px',91,91,91]} pb={10} w={['488px','488px','488px','488px'  ]} src={Logo}/></Flex>
         {/* <Text className='title' fontSize={['50px',100,100,100]}  font-family="'Cabin', sans-serif" style={{fontFamily:"'Cabin', sans-serif'"}} fontWeight={'bold'} pt={1} color='blue' pb={['10px','10px','1px','1px']}>ZENOO</Text> */}
         <div color='blue'  style={{paddingBottom:'25px', fontWeight:'bold' , marginTop:'-17px'}} w={['90%','50%','50%','50%']} m='auto'>
         <p>Serving Solutions, Not Promises</p>

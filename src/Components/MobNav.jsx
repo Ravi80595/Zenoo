@@ -15,27 +15,46 @@ import {
     Flex,
     Box
   } from '@chakra-ui/react'
+import {Link} from 'react-router-dom'
+import ScrollToTopLink from "./ScrollToTopLink";
+import Logo3 from '../Images/Logo3.png'
 
 const MobNav = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
-  return (
-    <Flex justifyContent="space-between" alignItems="center" backgroundColor='black' width='100vw'>
-      <Button p="8px" color="white" bg="black" onClick={onOpen}>
+
+
+return (
+    <Flex justifyContent="space-between" alignItems="center" background='white' width='100vw'>
+       <Box pl={5}>
+        <Link to='/home'>
+          <Image w={70} src={Logo3}/>
+        {/* <Text  fontWeight="bold" color='blue' pr='20px'>Zenoo</Text>*/}
+        </Link> 
+      </Box>
+      <Button p="8px" color="black" bg="white" onClick={onOpen}>
         <HamburgerIcon  w="30px" h="30px" />
       </Button>
-      <Drawer placement="left" onClose={onClose} isOpen={isOpen} size='full'>
+      <Drawer placement="right" onClose={onClose} isOpen={isOpen} size='full'>
         <DrawerOverlay />
         <DrawerContent>
         {/* <Image w="50px" src={Logo} backgroundColor='black'/> */}
-        <DrawerCloseButton pt={['50px','10px']} mt={['0px',"50px"]}/>
+        <DrawerCloseButton pt={['20px','10px']} mt={['10px',"50px"]} color='white'/>
           <DrawerBody className="drawer-box">
             <Flex mt="5px" m='20px' gap="20px" direction="column" >
-                <Text>Home</Text>
-                <Text>About Me</Text>
-                <Text>Projects</Text>
-                <Text>Skills</Text>
-                <Text>Contact</Text>
+              <ScrollToTopLink to='/home'>
+                <Text>Home</Text></ScrollToTopLink>
+                <ScrollToTopLink to='/about'>
+                <Text>About Us</Text></ScrollToTopLink>
+                <ScrollToTopLink to='/board'>
+                <Text>Board</Text></ScrollToTopLink>
+                <ScrollToTopLink to='/team'>
+                <Text>Our Team</Text></ScrollToTopLink>
+                <ScrollToTopLink to='/careers'>
+                <Text>Careers</Text></ScrollToTopLink >
+                <ScrollToTopLink to='/contact'>
+                <Text>Contact us</Text>
+                </ScrollToTopLink>
             </Flex>
             {/* <Text mt="15px">MY ACCOUNT</Text> */}
             {/* <Flex direction="column">
@@ -45,9 +64,7 @@ const MobNav = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Box>
-        <Text  fontWeight="bold" color='white' pr='20px'>Ravi</Text>
-      </Box>
+     
       {/* <Flex gap="10px" mr="10px">
         <IoIosHeartEmpty className={styles.logo} />
         <BsBag className={styles.logo} />

@@ -42,7 +42,7 @@ return(
       <SideBox/>
       <Flex direction={['column','column','row','row']} background={'white'} w='95%' m='auto' textAlign='left' backgroundColor={'white'} pt={120} pb={20}>
         <Box pt={'100px'} w={'50%'}>
-      <Box w={'70%'} m={'auto'}>
+      <Box w={['40%','70%','70%','70%']} m={'auto'}>
           <MapComponent/>
         </Box>
         <Box w={['95%','95%','40%','60%']} mt={['30px','30px','90px','20px']} m={'auto'} textAlign={'center'} pb={20}>
@@ -78,12 +78,12 @@ return(
           <Text pt={15}>Phone no.</Text>
           <Input placeholder='Enter your phone'/>
           <Text pt={5}>Interest</Text>
-          <select style={{width:'480px',padding:'10px',border:'1px solid grey',borderRadius:'10px'}}>
+          <Select>
           <option value="">Real Estate</option>
           <option value="">Financial Advisory</option>
           <option value="">Insurance Solutions</option>
           <option value="">Legal Assistance</option>
-          </select>
+          </Select>
           {/* < placeholder='Enter your message here'/> */}
           <Checkbox  pt={3} colorScheme='blue' defaultChecked>
             <Text fontSize={'16px'}>

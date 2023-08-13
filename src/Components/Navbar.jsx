@@ -4,14 +4,18 @@ import Logo3 from '../Images/Logo3.png'
 import {CloseIcon} from '@chakra-ui/icons'
 import { Link } from 'react-router-dom'
 import ScrollToTopLink from './ScrollToTopLink'
-// import '../CSS/Na'
+import '../CSS/Navbar.css'
+import MobNav from './MobNav'
+
+
 
 const Navbar = () => {
 
-    // className='Laptop-view'
+    
 return (
     <>
-    <Box  box-shadow='rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px' p={5} w='100vw' position='fixed' zIndex={999999999} background='white'>
+    <Box>
+    <Box className='Laptop-view' box-shadow='rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px' p={5} w='100vw' position='fixed' zIndex={999999999} background='white'>
         <Flex justifyContent='space-between'>
             <ScrollToTopLink to='/home'>
         <Image w={'120px'} h={'40px'} src={Logo3}/></ScrollToTopLink>
@@ -45,9 +49,10 @@ return (
         </Flex>
         </Flex>
     </Box>
-    {/* <div className='mobileDiv'>
-            <MobNav />
-        </div> */}
+    </Box>
+    <div className='mobileDiv'>
+            <MobNav/>
+        </div>
     </>
   )
 }

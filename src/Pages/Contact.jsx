@@ -41,11 +41,11 @@ return(
       <Navbar/>
       <SideBox/>
       <Flex direction={['column','column','row','row']} background={'white'} w='95%' m='auto' textAlign='left' backgroundColor={'white'} pt={120} pb={20}>
-        <Box pt={'100px'} w={'50%'}>
-      <Box w={['40%','70%','70%','70%']} m={'auto'}>
+        <Box pt={['10px','50px','50px','50px']} w={['99%','50%','50%','50%']}>
+      <Box w={['80%','70%','70%','70%']} m={'auto'}>
           <MapComponent/>
         </Box>
-        <Box w={['95%','95%','40%','60%']} mt={['30px','30px','90px','20px']} m={'auto'} textAlign={'center'} pb={20}>
+        <Box w={['95%','95%','90%','60%']} m={'auto'} mt={['30px','30px','90px','20px']} textAlign={'center'} pb={20}>
           <Text> <b>Call Us : </b>0124 4240520</Text>
           <Text pt={2}> <b>Email Us : </b>info@zenoo.in</Text>
           <Text pt={2}> <b>Address : </b>Plot No.14, Sector 44, Gurugram, Haryana 122003</Text>
@@ -67,7 +67,7 @@ return(
     
       
       {/* <Box backgroundColor={'white'} pb={'62px'} pt={20} border={'2px solid red'}> */}
-        <Box backgroundColor={'white'} p={22} borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'  textAlign={'left'} w={['90%','60%','60%','45%']} >
+        <Box backgroundColor={'white'} p={22} borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'  textAlign={'left'} w={['99%','60%','60%','45%']} h={['750px','700px','700px','700px']} mt={'50px'}>
           <Text fontSize={['26px','26px','36px','36px']}>DROP US A LINE</Text>
           <Text pb={10}>Get in touch with our team by completing the below form or call us now. One of our customer service agents will get back to you shortly.</Text>
           <Box w={['90%','90%','60%','80%']} m='auto'>
@@ -86,7 +86,7 @@ return(
           </Select>
           {/* < placeholder='Enter your message here'/> */}
           <Checkbox  pt={3} colorScheme='blue' defaultChecked>
-            <Text fontSize={'16px'}>
+            <Text fontSize={['12px','16px','16px','16px']}>
             By providing your phone number and checking the box below, you grant Zenoo permission to contact you via telephone for communication purposes.</Text>
           </Checkbox>
           <Flex mt={5} justifyContent={'center'}><Button borderRadius={50} background={'blue'} color={'white'} _hover={{color:'blue',background:'white', border:'2px solid blue'}} transition={'ease 1s'}  textAlign={'center'}>Submit</Button></Flex>

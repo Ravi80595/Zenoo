@@ -5,12 +5,25 @@
   height: 100vh;
 }
 
+.mapBox{
+  height:450px;
+  width:450px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
 @media only screen and (max-width: 640px) {
 
 .hero{
   background-image: url('../Images/ZENOOMOB.png');
   background-size: cover;
   background-position: right;
+}
+
+.mapBox{
+  height: 300px;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 }  
 

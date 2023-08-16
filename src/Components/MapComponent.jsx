@@ -1,14 +1,16 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-
+import '../CSS/Home1.css'
 
 const MapComponent = () => {
     const position = [28.453432537750142, 77.06834227116423];
 
 
+
+
 return (
-      <MapContainer center={position} zoom={15} style={{ height: '500px', width: '550px',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
+      <MapContainer className='mapBox' center={position} zoom={15}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; OpenStreetMap contributors"
@@ -23,3 +25,4 @@ return (
   };
   
 export default MapComponent
+

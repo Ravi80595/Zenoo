@@ -15,7 +15,7 @@ import MissionAbout from '../Images/MissionAbout.png'
 import '../CSS/About.css'
 import vision2 from '../Images/vision2.png'
 import {BsBookmarkCheckFill} from 'react-icons/bs'
-import cover from '../Images/cover.jpg'
+import cover from '../Images/cover.png'
 
 
 
@@ -29,7 +29,7 @@ return(
 <SideBox/>
     <Box backgroundColor={'white'} w='100%' m='auto' textAlign='left'>
     <Box pt={'50px'}>
-      <Box w='100%' h={[190,190,290,"310px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'> 
+      <Box w='100%' h={[190,190,290,"418px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'> 
       </Box></Box>
       <Flex direction={['column','column','column','row']} w='80%' m='auto' gap={20} pt={70}>
         <Image  borderRadius={20} w={700} h={[250,350,350,350]} src='https://media.istockphoto.com/id/1199060494/photo/insurance-protecting-family-health-live-house-and-car-concept.jpg?s=612x612&w=0&k=20&c=W8bPvwF5rk7Rm2yDYnMyFhGXZfNqK4bUPlDcRpKVsB8='/>

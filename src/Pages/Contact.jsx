@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
 import MapComponent from '../Components/MapComponent'
-import cover from '../Images/cover.jpg'
+import cover from '../Images/cover.png'
 import SideBox from '../Components/SideBox'
 import ZENOO1 from '../Images/ZENOO1.png'
 

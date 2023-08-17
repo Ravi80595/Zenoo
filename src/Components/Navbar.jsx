@@ -18,7 +18,7 @@ return (
     <Box className='Laptop-view' box-shadow='rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px' p={5} w='100vw' position='fixed' zIndex={999999999} background='white'>
         <Flex justifyContent='space-between'>
             <ScrollToTopLink to='/home'>
-        <Image w={'120px'} h={'40px'} src={Logo3}/></ScrollToTopLink>
+        <Image w={'170px'} h={'45px'} src={Logo3}/></ScrollToTopLink>
         <Flex fontSize={['15px',20,20,20]} justifyContent='space-around' w={['70%','30%','30%','60%']} pt={0} color='white'>
             <ScrollToTopLink to='/home'>
             <Text color={'#10257f'} className='Link_btns'>Home</Text>

@@ -6,6 +6,7 @@ import BOD1 from '../Images/BOD1.jpg'
 import BOD2 from '../Images/BOD2.jpg'
 import BOD from './BOD'
 import Popup from '../Components/Popup'
+import cover from '../Images/cover.png'
 
 
 const OurTeam = () => {
@@ -57,6 +58,9 @@ return(
     <Box background={'#efefef'}>
     <Navbar/>
     <Box background={'#efefef'} pt={30} pb={70}>
+    <Box pt={'50px'}>
+      <Box w='100%' h={[190,190,290,"418px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'> 
+      </Box></Box>
     <Box backgroundColor='#efefef' pt={10} pb={'50'}>
     <Box w={'60%'} m='auto' pb={50}>
 <Text pt={120} fontSize={['22px','26px','36px','36px']} fontFamily={'Prata'}>The Faces Behind Zenoo</Text>

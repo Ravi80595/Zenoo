@@ -29,9 +29,9 @@ return (
             {/* <Link to='/founder'>
             <Text color={'#10257f'} className='Link_btns'>Founder</Text>
             </Link> */}
-            <Link to='/board'>
+            {/* <Link to='/board'>
             <Text color={'#10257f'} className='Link_btns'>Board</Text>
-            </Link>
+            </Link> */}
             <Link to='/team'>
             <Text color={'#10257f'} className='Link_btns'>Our Team</Text>
             </Link>

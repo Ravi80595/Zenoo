@@ -3,22 +3,27 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import BOD1 from '../Images/BOD1.jpg'
+import careerCover from '../Images/careerCover.png'
 
 
 const Careers = () => {
 
 
-
+  // https://www.logit.net/media/learn/careers-website-page-improving-content/credera-cta.jpg
 return(
     <Box background={'#efefef'}>
     <Navbar/>
+    <Box pt={'50px'}>
+      <Box w='100%' h={[190,190,290,"418px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={careerCover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='top'> 
+      </Box></Box>
+
     <Box textAlign={'left'} w={'90%'} m={'auto'} background={'#efefef'} pt={100} pb={100}>
     <Text fontSize={'36px'} pb={5} fontFamily={'Prata'}>CAREERS</Text>
     <Text>At ZENOO, We value both our brand's success and each individual's goals. Our inviting culture attracts the best talents who share our strong work values. We prioritize teamwork, respect, and excellence, ensuring a safe and enjoyable workplace that encourages personal growth. No matter your role or background, we support your career and personal dreams with equal dedication, guiding you to reach new heights at ZENOO.</Text>
     </Box>
     <Box background={'white'} w={['90%','90%','60%','60%']} m='auto' pb={50}  borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' p={'30px'} mb={50}>
     <Text fontSize={'36px'}  fontFamily={'Prata'}>Opportunities</Text>
-    <Text pb={5}>Start your journey</Text>
+    {/* <Text pb={5}>Start your journey</Text> */}
     <Text textAlign={'left'} fontWeight={'bold'}>Transaction Manager</Text>
     <Text textAlign={'left'}>As a Transaction Manager, your job is to make sure everything runs smoothly when deals happen. You'll be like a conductor, arranging all the parts and carefully watching over each step of the process.</Text>
 

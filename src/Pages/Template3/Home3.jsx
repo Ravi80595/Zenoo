@@ -23,6 +23,8 @@ import '../../CSS/Home1.css'
 import MissionAbout from '../../Images/MissionAbout.png'
 import HomeNavbar from '../../Components/HomeNavbar'
 import Navbar from '../../Components/Navbar'
+import visionHome from '../../Images/visionHome.png'
+import missionHome from '../../Images/missionHome.png'
 
 
 const Home3 = () => {
@@ -132,16 +134,16 @@ return (
     {/* // 'https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg' */}
     <Flex direction={['column','column','row','row']} mt={50}>
       <Box w={['90%','90%','40%','40%']} mt={40}>
-        <Image src={whoweare}/>
+        <Image h={'450px'} pl={'80px'} mt='-40px' src={whoweare}/>
       </Box>
-      <Box w={['90%','90%','50%','50%']} m='auto' mt={50}>
-        <Heading fontFamily={'Parata'}>Who We Are</Heading>
-        <Text fontWeight={'bold'} pb={4}>Unlocking the Potential of Tomorrow, Today</Text>
-        <Text textAlign={'justify'}>At ZENOO, we're not just a conglomerate, we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of Real Estate, Loan Services, Insurance Solutions, Legal Assistance, Interior and Construction Management. Our journey began with a simple dream - to create a one-stop hub where all your dreams find their true home.
+      <Box w={['90%','90%','50%','50%']} m='auto' mt={155}>
+        {/* <Heading fontFamily={'Parata'}>Who We Are</Heading> */}
+        {/* <Text fontWeight={'bold'} pb={4}>Unlocking the Potential of Tomorrow, Today</Text> */}
+        <Text textAlign={'justify'}> ZENOO is not just a conglomerate but a visionary force that encompasses a World of Possibilities. We have redefined the landscape of Real Estate Solutions- Buying and Selling, Interior & Construction Management.  Financial Advisory- Loan Services, Insurance Solutions & Legal services. Our journey began with a simple dream - to create a one-stop hub. 
           <br />
           <br />
           <Text textAlign={'justify'}>
-We believe in more than just transactions; we believe in the experiences that turn dreams into reality. At ZENOO, we're not just in the business of Bricks and Mortar, numbers or policies - we are in the business of building trust, nurturing aspirations, and fostering growth. Our experts work round the clock, sharing their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.
+          We believe in more than just transactions, we believe in the experiences that turn dreams into reality.  ZENOO, we are not just in the business of Bricks and Mortar, Numbers or Policies - We are in the business of Serving Structured Solutions. Our experts work round the clock, sharing their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations. 
           </Text>
         </Text>
         <Link to='/about'>
@@ -150,7 +152,8 @@ We believe in more than just transactions; we believe in the experiences that tu
       </Flex>
       <Flex direction={['column','column','column','row']}  justifyContent='space-around'  pt={90} w={['90%','90%','60%','60%']} m='auto' gap={40}>
       <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-        <Image w={'100%'} h={'200px'} src={vision2}/>
+        <Image w='400px' h={'250px'} src={visionHome}/>
+        {/* vision2 */}
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Vision</Text>
         <Text h={'220px'} textAlign={'justify'}> ZENOO aspires to positively impact lives by creating Inspiring, Living, Working and Recreational spaces that harmoniously blend with the environment. </Text>
@@ -160,7 +163,7 @@ We believe in more than just transactions; we believe in the experiences that tu
     </Box>
     </Box>
     <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']}  boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-        <Image h={'200px'} w={'100%'} src={MissionAbout}/>
+        <Image h={'250px'} w={'100%'} src={missionHome}/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Mission</Text>
         <Text h={'220px'} textAlign={'justify'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable and customer-centric solutions. We aim to be a leading company that fosters growth and prosperity to the communities we serve through integrity, quality and commitment. </Text>

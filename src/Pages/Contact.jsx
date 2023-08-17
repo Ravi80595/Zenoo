@@ -7,7 +7,7 @@ import MapComponent from '../Components/MapComponent'
 import cover from '../Images/cover.png'
 import SideBox from '../Components/SideBox'
 import ZENOO1 from '../Images/ZENOO1.png'
-
+import contactCover from '../Images/contactCover.png'
 
 const Contact = () => {
 
@@ -40,6 +40,9 @@ return(
     <Box background={'white'}>
       <Navbar/>
       <SideBox/>
+      <Box pt={'50px'}>
+      <Box w='100%' h={[190,190,290,"418px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={contactCover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'> 
+      </Box></Box>
       <Flex direction={['column','column','row','row']} background={'white'} w='95%' m='auto' textAlign='left' backgroundColor={'white'} pt={120} pb={20}>
         <Box pt={['10px','50px','50px','50px']} w={['99%','50%','50%','50%']}>
       <Box w={['80%','70%','70%','70%']} m={'auto'}>

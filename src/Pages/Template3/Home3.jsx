@@ -133,8 +133,8 @@ return (
     {/* hero */}
     {/* // 'https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg' */}
     <Flex direction={['column','column','row','row']}>
-      <Box w={['90%','90%','40%','40%']} mt={'110px'}>
-        <Image h={'450px'} pl={'80px'} mt='-40px' src={whoweare}/>
+      <Box w={['99%','90%','40%','40%']} mt={'110px'}>
+        <Image h={'450px'} pl={['10px','10px','80px','80px']} mt='-40px' src={whoweare}/>
       </Box>
       <Box w={['90%','90%','50%','50%']} m='auto' mt={155}>
         {/* <Heading fontFamily={'Parata'}>Who We Are</Heading> */}

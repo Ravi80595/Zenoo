@@ -70,11 +70,11 @@ return(
     
       
       {/* <Box backgroundColor={'white'} pb={'62px'} pt={20} border={'2px solid red'}> */}
-        <Box backgroundImage={'https://i.etsystatic.com/13440530/r/il/2eb593/1478012712/il_570xN.1478012712_m1j8.jpg'} backgroundColor={'white'} backgroundSize={'cover'} p={22} borderRadius={10} textAlign={'left'} w={['99%','60%','60%','45%']} h={['750px','700px','700px','700px']} mt={'50px'}>
-          <Box w={'62%'} m={'auto'} mt={'30px'}>
+        <Box backgroundImage={'https://clipart-library.com/image_gallery/n1420327.png'} backgroundColor={'white'} backgroundSize={'cover'} backgroundPosition={'center'} p={22} borderRadius={10} textAlign={'left'} w={['99%','60%','60%','45%']} h={['750px','700px','700px','700px']} mt={'10px'}>
+          <Box w={['92%','92%','62%','62%']} m={'auto'} mt={'30px'}>
           {/* <Text fontSize={['26px','26px','36px','36px']}>DROP US A LINE</Text> */}
-          <Text pb={10}>Get in touch with our team by completing the below form or call us now. One of our customer service agents will get back to you shortly.</Text>
-          <Box w={['90%','90%','60%','80%']} m='auto'>
+          {/* <Text pb={10}>Get in touch with our team by completing the below form or call us now. One of our customer service agents will get back to you shortly.</Text> */}
+          <Box w={['90%','90%','60%','82%']} m='auto' mt={'70px'}>
           <Text pt={15}>Name</Text>
           <Input placeholder='Name'/>
           <Text pt={15}>Email</Text>

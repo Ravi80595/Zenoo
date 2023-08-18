@@ -13,8 +13,8 @@ return (
       <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} p={2} background={'white'}  borderRadius={10}>
       <Box pb={3} w={'15%'} m={'auto'}>
          <Image src={icon2}/></Box>
-      <Text pb={2} fontWeight={600}>Customer-Centric</Text>
-      <Text color={'gray.600'}>Our clients are at the heart of everything we do. We prioritize their needs and work tirelessly to exceed their expectations. </Text>
+      <Text pb={2} fontWeight={600}>Hard-Work</Text>
+      <Text color={'gray.600'}>Our company shows diligent effort, and our team works effectively and efficiently contributing to substantial growth of your brand. </Text>
     </Box>
     <Box  _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} p={2} background={'white'}  borderRadius={10}>
       <Box pb={3} w={'20%'} m={'auto'}>

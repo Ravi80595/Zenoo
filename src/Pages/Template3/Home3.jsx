@@ -132,8 +132,8 @@ return (
     </Box>
     {/* hero */}
     {/* // 'https://sydneywpresidence.b-cdn.net/wp-content/uploads/revslider/main/building_white_1000-1.jpeg' */}
-    <Flex direction={['column','column','row','row']} mt={50}>
-      <Box w={['90%','90%','40%','40%']} mt={40}>
+    <Flex direction={['column','column','row','row']}>
+      <Box w={['90%','90%','40%','40%']} mt={'110px'}>
         <Image h={'450px'} pl={'80px'} mt='-40px' src={whoweare}/>
       </Box>
       <Box w={['90%','90%','50%','50%']} m='auto' mt={155}>
@@ -156,17 +156,17 @@ return (
         {/* vision2 */}
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Vision</Text>
-        <Text h={'220px'} textAlign={'justify'}> ZENOO aspires to positively impact lives by creating Inspiring, Living, Working and Recreational spaces that harmoniously blend with the environment. </Text>
+        <Text h={'220px'} textAlign={'justify'}>We want to win at what we do and we do all we can to help our clients and employees to build wealth. We love to work with people who are passionate about working hard and also giving back to their communities in a big way. </Text>
         <Link to='/about'>
         {/* <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5}  backgroundColor='#3654CE' color='white'>Know More</Button> */}
         </Link>
     </Box>
     </Box>
     <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} w={['95%','90%','50%','50%']}  boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-        <Image h={'250px'} w={'100%'} src={missionHome}/>
+        <Image h={'250px'} w={'100%'} border={'1px solid grey'} src={missionHome}/>
         <Box p={5}>
         <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Mission</Text>
-        <Text h={'220px'} textAlign={'justify'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable and customer-centric solutions. We aim to be a leading company that fosters growth and prosperity to the communities we serve through integrity, quality and commitment. </Text>
+        <Text h={'220px'} textAlign={'justify'}>We foster an inclusive environment that leverages the diverse backgrounds and perspectives of all our employees, customers, and partners to drive a sustainable competitive advantage. </Text>
         <Link to='/about'>
         {/* <Button _hover={{backgroundColor:'white',color:'#3654CE',border:'2px solid #3654CE'}} mt={5} backgroundColor='#3654CE' color='white'>Know More</Button> */}
         </Link>

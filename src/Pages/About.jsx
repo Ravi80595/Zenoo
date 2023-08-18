@@ -36,9 +36,9 @@ return(
         {/* <Image  borderRadius={20} w={700} h={[250,350,350,350]} src='https://media.istockphoto.com/id/1199060494/photo/insurance-protecting-family-health-live-house-and-car-concept.jpg?s=612x612&w=0&k=20&c=W8bPvwF5rk7Rm2yDYnMyFhGXZfNqK4bUPlDcRpKVsB8='/> */}
         <Box>
           <Text textAlign={'justify'}>
-          At <b> ZENOO </b>, we're not just a conglomerate, we're a visionary force that encompasses a world of possibilities. With a passion for innovation and a commitment to excellence, we have redefined the landscape of Real Estate, Loan Services, Insurance Solutions, Legal Assistance, Interiors and Construction Management. Our journey began with a simple dream - to create a one-stop hub where all your dreams turn into realty.
+          <b> ZENOO </b> helps buyers get on the property ladder through its mortgage assessment solution that lets customers know how much they can afford to buy without compromising. The company's main premise is to help buyers get on the property ladder and start investing in their future.
          <br/> <br/>
-         ZENOO set sail on an ambitious odyssey to shape the future of various industries. Fueled by the pursuit of excellence, integrity, and unyielding customer satisfaction, we embarked on this transformative journey - a journey that remains anchored in a deep-rooted commitment to our clients' unique needs.
+         <b> ZENOO </b> is one of the leading alternative mortgage facilitators in pan India. This company provides fast finance to property professionals as well as small and medium-sized businesses across India. Unlike Zenoo, it focuses on commercial properties rather than the domestic market.
           </Text>
         </Box>
       </Flex>

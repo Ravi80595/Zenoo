@@ -25,7 +25,6 @@ const OurTeam = () => {
 
   const openPopupWithData2 = () => {
     setIsOpen(true);
-    // Sample dynamic data for popup - Data Set 2
     setDynamicData({
       title: 'BOD2',
       description: 'This is the second data set.',
@@ -67,7 +66,6 @@ return(
 <Text fontSize={['14px','14px','20px','20px']}>At the heart of ZENOO are the dedicated professionals who make up our exceptional team. Get to know the faces behind our success and discover the expertise that drives us forward.</Text>
 </Box>
         <Box w={"95%"} m='auto'>
-        {/* <Text pb={10} fontSize={['26px','26px','36px','36px']} fontFamily={'Prata'}>Our Board</Text> */}
         <Flex direction={['column','column','column','row']} gap={10} justifyContent='space-around' w={'80%'} m={'auto'}>
           <Box backgroundColor='white' textAlign='center'>
             <Image w={'650px'} h={['250px','200px','200px','200px']} src={BOD1}/>

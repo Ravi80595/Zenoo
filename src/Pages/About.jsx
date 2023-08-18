@@ -1,21 +1,13 @@
 import React from 'react'
-import { Box, Flex,Image,Text,Heading, Button } from '@chakra-ui/react'
+import { Box, Flex, Image, Text, Heading, Button } from '@chakra-ui/react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { Link } from 'react-router-dom'
 import Reviews from './Reviews'
 import SimpleThreeColumns from '../Components/Services'
-// import cover from '../Images/cover.jpg'
 import SimpleTwoColumns from '../Components/Slider'
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SideBox from '../Components/SideBox'
-import BOD from './BOD.jsx'
-import MissionAbout from '../Images/MissionAbout.png'
 import '../CSS/About.css'
-import vision2 from '../Images/vision2.png'
-import {BsBookmarkCheckFill} from 'react-icons/bs'
-import cover from '../Images/cover.png'
 import aboutCover from '../Images/aboutCover.png'
 
 
@@ -24,76 +16,38 @@ const About = () => {
 
 
 
-return(
-<>
-<Navbar/>
-<SideBox/>
-    <Box backgroundColor={'white'} w='100%' m='auto' textAlign='left'>
-    <Box pt={'50px'}>
-      <Box w='100vw' h={[190,190,290,"400px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={aboutCover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'> 
-      </Box></Box>
-      <Flex direction={['column','column','column','row']} w='80%' m='auto' gap={20} pt={70}>
-        {/* <Image  borderRadius={20} w={700} h={[250,350,350,350]} src='https://media.istockphoto.com/id/1199060494/photo/insurance-protecting-family-health-live-house-and-car-concept.jpg?s=612x612&w=0&k=20&c=W8bPvwF5rk7Rm2yDYnMyFhGXZfNqK4bUPlDcRpKVsB8='/> */}
-        <Box>
-          <Text textAlign={'justify'}>
-          <b> ZENOO </b> helps buyers get on the property ladder through its mortgage assessment solution that lets customers know how much they can afford to buy without compromising. The company's main premise is to help buyers get on the property ladder and start investing in their future.
-         <br/> <br/>
-         <b> ZENOO </b> is one of the leading alternative mortgage facilitators in pan India. This company provides fast finance to property professionals as well as small and medium-sized businesses across India. Unlike Zenoo, it focuses on commercial properties rather than the domestic market.
-          </Text>
+  return (
+    <>
+      <Navbar />
+      <SideBox />
+      <Box backgroundColor={'white'} w='100%' m='auto' textAlign='left'>
+        <Box pt={'50px'}>
+          <Box w='100vw' h={[190, 190, 290, "400px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={aboutCover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'>
+          </Box></Box>
+        <Flex direction={['column', 'column', 'column', 'row']} w='80%' m='auto' gap={20} pt={70}>
+          <Box>
+            <Text textAlign={'justify'}>
+              <b> ZENOO </b> helps buyers get on the property ladder through its mortgage assessment solution that lets customers know how much they can afford to buy without compromising. The company's main premise is to help buyers get on the property ladder and start investing in their future.
+              <br /> <br />
+              <b> ZENOO </b> is one of the leading alternative mortgage facilitators in pan India. This company provides fast finance to property professionals as well as small and medium-sized businesses across India. Unlike Zenoo, it focuses on commercial properties rather than the domestic market.
+            </Text>
+          </Box>
+        </Flex>
+        <Box background={'whitesmoke'} pb={30}>
+          <Text pt={'30px'} mt={'100px'} fontSize={['26px', '26px', '36px', '36px']} textAlign={'center'} fontFamily={'Prata'}>What Drives Us </Text>
+          <Text textAlign={'center'}>At the heart of Zenoo lies five core values that govern the way we conduct our business</Text>
+          <SimpleThreeColumns />
+          <SimpleTwoColumns />
         </Box>
-      </Flex>
-          <Box background={'whitesmoke'} pb={30}>
-      <Text pt={'30px'} mt={'100px'} fontSize={['26px','26px','36px','36px']} textAlign={'center'} fontFamily={'Prata'}>What Drives Us </Text>
-    <Text textAlign={'center'}>At the heart of Zenoo lies five core values that govern the way we conduct our business</Text>
-    <SimpleThreeColumns/>
-    <SimpleTwoColumns/>
-    </Box>
-
-    <Box background={'whitesmoke'}>
-    {/* <Flex direction={['column','column','column','row']} w='90%' m='auto' gap={[10,40,40,20]} pt={7} pb={10}>
-        <Box w={['350px','900px','900px','900px']} h={['250px','350px','350px','350px']}  backgroundImage={'https://img.freepik.com/premium-photo/rooftop-balcony-with-cityscape_9083-1881.jpg'} backgroundSize={'cover'} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' borderRadius={20}>
-          <Image className='moving-image'  w={'80%'} h={'250px'} m={'auto'} mt={['10px','80px','80px','80px']} src={MissionAbout}/>
+        <Box background={'whitesmoke'}>
         </Box>
-        <Box textAlign={['center','left','left','left']} w={['90%','90%','70%','70%']}>
-          <Text fontSize={['26px','26px','36px','36px']} fontFamily={'Prata'} > Our Mission</Text>
-          <Text lineHeight={'1.5rem'} textAlign={'justify'}>To enrich lives and create exceptional spaces by delivering innovative, sustainable, and customer-centric solutions. Through integrity, quality, and a commitment to excellence, we aim to be a leading force in the Indians, fostering growth and prosperity for our stakeholders and the communities we serve.</Text>
-          <Flex w={'99%'} direction={['column','column','row','row']} gap={2} mt={5} justifyContent={'space-around'} fontSize={'16px'} color={'#606060'} fontWeight={500}>
-            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Real Estate Excellence</Text></Flex>
-            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Financial Security</Text></Flex>
-            </Flex>
-            <Flex mt={3} direction={['column','column','row','row']} gap={2} mb={10} justifyContent={'space-around'} fontSize={'16px'} color={'#606060'} fontWeight={500}>
-            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Comprehensive Insurance</Text></Flex>
-            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Trusted Legal Support</Text></Flex>
-            </Flex>
+        <Box background={'whitesmoke'}>
         </Box>
-      </Flex> */}
       </Box>
-      <Box background={'whitesmoke'}>
-    {/* <Flex direction={['column-reverse','column-reverse','column','row']} w='90%' m='auto' gap={[10,40,40,40]} pt={20} pb={20}>
-        <Box textAlign={['center','left','left','left']} w={['90%','90%','70%','60%']}>
-          <Text fontSize={['26px','26px','36px','36px']} fontFamily={'Prata'}> Our Vision</Text>
-          <Text lineHeight={'1.5rem'} textAlign={'justify'}>Our vision is to be the most admired and trusted corporation in India, setting new standards of excellence and innovation in the distinct industries. ZENOO aspires to positively impact lives by creating inspiring living, working, and recreational spaces that harmoniously blend with the environment. 
-By embracing cutting-edge technologies and sustainable practices, we strive to leave a lasting legacy for future generations while staying committed to our core values and the pursuit of excellence.</Text>
-<Flex w={'99%'} direction={['column','column','row','row']} gap={2} mt={5} justifyContent={'space-around'} fontSize={'16px'} color={'#606060'} fontWeight={500}>
-            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Diversified Market Leadership</Text></Flex>
-            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Tech-Driven Efficiency</Text></Flex>
-            </Flex>
-            <Flex mt={3} direction={['column','column','row','row']} gap={2} mb={10} justifyContent={'space-around'} fontSize={'16px'} color={'#606060'} fontWeight={500}>
-            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Trusted One-Stop Shop</Text></Flex>
-            <Flex w={['100%','100%','50%','50%']} gap={5}><BsBookmarkCheckFill/> <Text>Sustainable Growth</Text></Flex>
-            </Flex>
-        </Box>
-        <Box backgroundImage={'https://img.freepik.com/free-photo/construction-illustration-city-skyline_53876-103044.jpg'} borderRadius={20}>
-          <Image borderRadius={20} w={['350px','900px','900px','900px']} h={['250px','350px','350px','350px']} boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;' src={vision2}/>
-        </Box>
-      </Flex> */}
+      <Box>
+        <Reviews />
       </Box>
-      {/* <BOD/> */}
-    </Box>
-    <Box>
-    <Reviews/>
-    </Box>
-    <Footer/>
+      <Footer />
     </>
   )
 }
@@ -101,4 +55,3 @@ By embracing cutting-edge technologies and sustainable practices, we strive to l
 export default About
 
 
-// 'https://t4.ftcdn.net/jpg/03/30/28/45/360_F_330284507_zWMKJuSAPN2VyomK4et4dTdHi2P8lmHb.jpg'

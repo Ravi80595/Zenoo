@@ -20,7 +20,9 @@ const Contact = () => {
     window.open(googleMapsURL, '_blank');
   };
 
-  return (
+
+
+return (
     <Box background={'white'}>
       <Navbar />
       <SideBox />

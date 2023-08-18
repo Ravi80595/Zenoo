@@ -11,7 +11,7 @@ export default function SimpleTwoColumns() {
       <Box pb={3} w={'20%'} m={'auto'}>
          <Image src={icon4}/></Box>
       <Text pb={2} fontWeight={600}>Teamwork</Text>
-      <Text color={'gray.600'}>Uniting efforts to make your property aspirations a collective success.
+      <Text color={'gray.600'}>Uniting efforts to make your aspirations a collective success.
  </Text>
     </Box>
     <Box _hover={{transform:'translateY(-15px)',transition:'transform 0.5s'}} p={2} background={'white'}  borderRadius={10}>

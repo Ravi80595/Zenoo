@@ -4,7 +4,7 @@ import {AiFillFacebook,AiFillInstagram,AiOutlineWhatsApp,AiFillLinkedin} from 'r
 import Popup from '../Components/Popup'
 import BOD1 from '../Images/BOD1.jpg'
 import BOD2 from '../Images/BOD2.jpg'
-import BOD3 from '../Images/BOD3.jpg'
+// import BOD3 from '../Images/BOD3.jpg'
 
 
 

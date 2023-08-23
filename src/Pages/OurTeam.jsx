@@ -96,7 +96,7 @@ return(
           </Box>
           <Box _hover={{ transform: 'translateY(-15px)', transition: 'transform 0.5s' }} borderRadius={10} backgroundColor='white' textAlign='center'>
           <Image borderTopRadius={10} w={'250px'} h={['250px','200px','200px','200px']} src={Team5}/>
-            <Text pt={2}>Anil Prsad</Text>
+            <Text pt={2}>Anil Prasad</Text>
             {/* <Text fontWeight={'bold'}>Founder</Text> */}
           </Box>
         </Flex>

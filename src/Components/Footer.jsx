@@ -44,9 +44,12 @@ return (
     </ScrollToFAQLink> */}
     <ScrollToReviewLink to='/about'>
     <Text fontSize="16px" fontWeight="500" cursor="pointer"> Testimonials</Text></ScrollToReviewLink>
+    
     <Text fontSize="20px" fontWeight="700" paddingTop="20px"> Policy Info</Text>
-    <Text fontSize="16px" fontWeight="500" cursor="pointer">Privacy Policy</Text>
-    <Text fontSize="16px" fontWeight="500" cursor="pointer">Terms of Use</Text>
+    <ScrollToTopLink to='/privacy'>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Privacy Policy</Text></ScrollToTopLink>
+    <ScrollToTopLink to='/terms'>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Terms of Use</Text></ScrollToTopLink>
     </Stack>
     <Stack gap="10px" marginRight="20px">
     <Box color={'white'}>

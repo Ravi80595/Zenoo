@@ -11,6 +11,8 @@ import Founder from '../Pages/Founder'
 import Careers from '../Pages/Careers'
 import OurTeam from '../Pages/OurTeam'
 import Board from '../Pages/Board'
+import Privacy from '../Pages/Privacy'
+import Terms from '../Pages/Terms'
 
 
 
@@ -35,6 +37,8 @@ return (
         <Route path="/about" element={<About/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/home" element={<Home3/>}></Route>
+        <Route path="/privacy" element={<Privacy/>}></Route>
+        <Route path="/terms" element={<Terms/>}></Route>
         <Route path="/newTemplate" element={<FixedBackgroundComponent/>}></Route>
     </Routes>
     </>

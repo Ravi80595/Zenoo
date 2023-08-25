@@ -100,39 +100,27 @@ const Reviews = () => {
       </Text>
       <Flex justifyContent={"space-between"} p={5} w={"100%"}>
         <Swiper
-          slidesPerView={isBigScreen ? 4 : isTablet ? 2 : isMobile ? 2 : 4}
-          spaceBetween={0}
+          slidesPerView={isBigScreen ? 4 : isTablet ? 2 : isMobile ? 1 : 4}
+          spaceBetween={isMobile ? '150px' : 10} 
+         
           loop={true}
           loopFillGroupWithBlank={true}
           navigation={true}
           modules={[Navigation]}
           className="mySwiper"
-          // autoplay={{
-          //   delay: 3000, // Set the delay to control the sliding interval in milliseconds
-          //   disableOnInteraction: false, // Set to false to continue autoplay after user interactions
-          //   waitForTransition: true, // Set to true to wait for the transition animation to complete before autoplaying to the next slide
-          // }}
         >
           {ReviewsData.map((el, i) => (
             <SwiperSlide style={{ gap: "10px", color: "black",marginLeft:'32px'}} >
-            <Box key={i} width="344px" textAlign="left">
+            <Box key={i} width={["194px","144px","244px","344px"]} textAlign="left"  marginLeft={isMobile? '100px':0}>
               <Heading fontSize="16px" fontWeight="600">
                 {el.name}
               </Heading>
               <Heading fontSize="14px" fontWeight="400" marginTop="5px">
                 {el.date}
               </Heading>
-              <Box
-                width="344px"
-                border="1px solid #e2fff2"
-                borderRadius="7px"
-                padding="24px"
-                marginTop="20px"
-                bg="#f1fef8"
-                height="302px"
-              >
+              <Box width={["224px","144px","244px","344px"]} border="1px solid #e2fff2" borderRadius="7px" padding={["14px" ,"24px" ,"24px" ,"24px" ]} marginTop="20px" bg="#f1fef8" height="302px">
                 <Heading color="#bfeddd"></Heading>
-                <Heading fontSize="16px" color="#4f4d4a" fontWeight="500">
+                <Heading fontSize={["15px","16px","16px","16px"]} color="#4f4d4a" fontWeight="500">
                   {el.review}
                   </Heading>
                   <Text fontWeight={'500'} pt={2}>Rating :

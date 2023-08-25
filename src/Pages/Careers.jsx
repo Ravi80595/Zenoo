@@ -21,7 +21,9 @@ const Careers = () => {
       <Navbar />
       <Box pt={'50px'}>
         <Box w='100%' h={[190, 190, 290, "418px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={careerCover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='top'>
-        </Box></Box>
+        </Box>
+        <Flex justifyContent={'center'} mt={10}><button style={{ background: "blue", color: "white", padding: "10px", borderRadius: "10px" }} onClick={togglePopup}>WORK WITH US</button></Flex></Box>
+        {/* <input type="file" /> */}
       <Box textAlign={'left'} w={'90%'} m={'auto'} background={'#efefef'} pt={100} pb={100}>
         <Text fontSize={'36px'} pb={5} fontFamily={'Prata'}>CAREERS</Text>
         <PopupForm open={popupOpen} onClose={togglePopup} />

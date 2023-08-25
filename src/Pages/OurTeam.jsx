@@ -27,9 +27,9 @@ return(
     <Box pt={'50px'}>
       <Box w='100%' h={[190,190,290,"418px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'> 
       </Box></Box>
-    <Box backgroundColor='#efefef' pt={10} pb={'50'}>
+    <Box backgroundColor='#efefef' pt={[0,0,0,10]} pb={'50'}>
     <Box w={'60%'} m='auto' pb={50}>
-<Text pt={120} fontSize={['22px','26px','36px','36px']} fontFamily={'Prata'}>The Faces Behind Zenoo</Text>
+<Text pt={50} fontSize={['22px','26px','36px','36px']} fontFamily={'Prata'}>The Faces Behind Zenoo</Text>
 <Text fontSize={['14px','14px','20px','20px']}>At the heart of ZENOO are the dedicated professionals who make up our exceptional team. Get to know the faces behind our success and discover the expertise that drives us forward.</Text>
 </Box>
         <Box w={"95%"} m='auto'>
@@ -90,12 +90,12 @@ return(
         <Box w={"95%"} m='auto'>
         <Flex direction={['column','column','column','row']} justifyContent={'center'}  w={'80%'} m={'auto'} gap={'50px'}>
           <Box _hover={{ transform: 'translateY(-15px)', transition: 'transform 0.5s' }} borderRadius={10} backgroundColor='white' textAlign='center'>
-          <Image borderTopRadius={10} w={'250px'} h={['250px','200px','200px','200px']} src={Team4}/>
+          <Image borderTopRadius={10} w={'100%'} h={['250px','200px','200px','200px']} src={Team4}/>
             <Text pt={2}>Shrikrishn Kushwah</Text>
             {/* <Text fontWeight={'bold'}>Founder</Text> */}
           </Box>
           <Box _hover={{ transform: 'translateY(-15px)', transition: 'transform 0.5s' }} borderRadius={10} backgroundColor='white' textAlign='center'>
-          <Image borderTopRadius={10} w={'250px'} h={['250px','200px','200px','200px']} src={Team5}/>
+          <Image borderTopRadius={10} w={'100%'} h={['250px','200px','200px','200px']} src={Team5}/>
             <Text pt={2}>Anil Prasad</Text>
             {/* <Text fontWeight={'bold'}>Founder</Text> */}
           </Box>

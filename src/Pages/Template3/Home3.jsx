@@ -115,7 +115,7 @@ const Home3 = () => {
               </Box>
             </Box>
             <Box _hover={{ transform: 'translateY(-15px)', transition: 'transform 0.5s' }} w={['95%', '90%', '50%', '50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
-              <Image h={'250px'} w={'100%'} border={'1px solid grey'} borderBottom={'none'} src={missionHome} />
+              <Image h={'250px'} w={'100%'} border={'1px solid grey'} backgroundColor={'blue'} borderBottom={'none'} src={missionHome} />
               <Box p={5}>
                 <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Mission</Text>
                 <Text h={'220px'} textAlign={'justify'}>We foster an inclusive environment that leverages the diverse backgrounds and perspectives of all our employees, customers, and partners to drive a sustainable competitive advantage. </Text>

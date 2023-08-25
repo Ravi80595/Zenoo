@@ -91,7 +91,7 @@ return(
         <Flex direction={['column','column','column','row']} justifyContent={'center'}  w={'80%'} m={'auto'} gap={'50px'}>
           <Box _hover={{ transform: 'translateY(-15px)', transition: 'transform 0.5s' }} borderRadius={10} backgroundColor='white' textAlign='center'>
           <Image borderTopRadius={10} w={'250px'} h={['250px','200px','200px','200px']} src={Team4}/>
-            <Text pt={2}>Kishan Thakur</Text>
+            <Text pt={2}>Shrikrishn Kushwah</Text>
             {/* <Text fontWeight={'bold'}>Founder</Text> */}
           </Box>
           <Box _hover={{ transform: 'translateY(-15px)', transition: 'transform 0.5s' }} borderRadius={10} backgroundColor='white' textAlign='center'>

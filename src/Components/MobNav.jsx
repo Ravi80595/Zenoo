@@ -46,8 +46,8 @@ return (
                 <Text>Home</Text></ScrollToTopLink>
                 <ScrollToTopLink to='/about'>
                 <Text>About Us</Text></ScrollToTopLink>
-                <ScrollToTopLink to='/board'>
-                <Text>Board</Text></ScrollToTopLink>
+                {/* <ScrollToTopLink to='/board'>
+                <Text>Board</Text></ScrollToTopLink> */}
                 <ScrollToTopLink to='/team'>
                 <Text>Our Team</Text></ScrollToTopLink>
                 <ScrollToTopLink to='/careers'>

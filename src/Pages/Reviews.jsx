@@ -107,11 +107,12 @@ const Reviews = () => {
           navigation={true}
           modules={[Navigation]}
           className="mySwiper"
+          style={{marginLeft:'10px'}}
         >
            {/* marginLeft={isMobile? '100px':0} */}
-           {/* marginLeft:'32px' */}
+           {/*  ,marginLeft:'12px'*/}
           {ReviewsData.map((el, i) => (
-            <SwiperSlide style={{ gap: "50px", color: "black",}} >
+            <SwiperSlide style={{ gap: "50px", color: "black"}} >
             <Box key={i} width={["194px","194px","244px","344px"]} textAlign="left" >
               <Heading fontSize="16px" fontWeight="600">
                 {el.name}

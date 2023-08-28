@@ -101,17 +101,18 @@ const Reviews = () => {
       <Flex justifyContent={"space-between"} p={5} w={"100%"}>
         <Swiper
           slidesPerView={isBigScreen ? 4 : isTablet ? 2 : isMobile ? 1 : 4}
-          spaceBetween={isMobile ? '150px' : 10} 
-         
+          spaceBetween={isMobile ? '250px' : 10} 
           loop={true}
           loopFillGroupWithBlank={true}
           navigation={true}
           modules={[Navigation]}
           className="mySwiper"
         >
+           {/* marginLeft={isMobile? '100px':0} */}
+           {/* marginLeft:'32px' */}
           {ReviewsData.map((el, i) => (
-            <SwiperSlide style={{ gap: "10px", color: "black",marginLeft:'32px'}} >
-            <Box key={i} width={["194px","144px","244px","344px"]} textAlign="left"  marginLeft={isMobile? '100px':0}>
+            <SwiperSlide style={{ gap: "50px", color: "black",}} >
+            <Box key={i} width={["194px","194px","244px","344px"]} textAlign="left" >
               <Heading fontSize="16px" fontWeight="600">
                 {el.name}
               </Heading>

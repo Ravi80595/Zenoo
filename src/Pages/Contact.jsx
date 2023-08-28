@@ -54,7 +54,7 @@ return (
           </Box>
         </Box>
         {/* backgroundImage={'https://clipart-library.com/image_gallery/n1420327.png'} backgroundColor={'white'} backgroundSize={'cover'} backgroundPosition={'center'} */}
-        <Box boxShadow='rgb(3 102 255 / 40%) 0px 2px 4px, rgb(8 68 255 / 30%) 0px 7px 13px -3px, rgb(24 80 255 / 20%) 0px -3px 0px inset' borderRadius={10} textAlign={'left'} w={['99%', '60%', '60%', '40%']} h={['550px', '550px', '550px', '550px']} mt={'10px'}>
+        <Box backgroundColor='#ecfbff' boxShadow='rgb(3 102 255 / 40%) 0px 2px 4px, rgb(8 68 255 / 30%) 0px 7px 13px -3px, rgb(24 80 255 / 20%) 0px -3px 0px inset' borderRadius={10} textAlign={'left'} w={['99%', '60%', '60%', '40%']} h={['550px', '550px', '550px', '550px']} mt={'10px'}>
           <Box w={['92%', '92%', '62%', '92%']} m={'auto'} mt={'30px'}>
             {/* <Text fontSize={['26px','26px','36px','36px']}>DROP US A LINE</Text> */}
             {/* <Text pb={10}>Get in touch with our team by completing the below form or call us now. One of our customer service agents will get back to you shortly.</Text> */}

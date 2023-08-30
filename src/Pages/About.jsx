@@ -27,9 +27,9 @@ const About = () => {
         <Flex direction={['column', 'column', 'column', 'row']} w='80%' m='auto' gap={20} pt={70}>
           <Box>
             <Text textAlign={'justify'}>
-              <b> ZENOO </b> helps buyers get on the property ladder through its mortgage assessment solution that lets customers know how much they can afford to buy without compromising. The company's main premise is to help buyers get on the property ladder and start investing in their future.
+              <b> ZENOO </b> provides a mortgage assessment solution that helps buyers determine their affordability without making any compromises. The company's primary objective is to assist buyers in getting onto the property ladder and investing in their future.
               <br /> <br />
-              <b> ZENOO </b> is one of the leading alternative mortgage facilitators in pan India. This company provides fast finance to property professionals as well as small and medium-sized businesses across India. Unlike Zenoo, it focuses on commercial properties rather than the domestic market.
+              <b> ZENOO </b> is more than just a company. We are a forward-thinking entity that offers a wide range of possibilities. Our focus is on revolutionizing the Real Estate industry through Buying and Selling, Interior & Construction Management. Additionally, we provide Financial Advisory services such as Loan Services, Insurance Solutions, and Legal services. Our initial goal was to create a convenient one-stop-shop for all our clients.
             </Text>
           </Box>
         </Flex>

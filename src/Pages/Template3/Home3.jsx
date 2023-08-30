@@ -92,11 +92,11 @@ const Home3 = () => {
               <Image h={'450px'} pl={['10px', '10px', '80px', '80px']} mt='-40px' src={whoweare} />
             </Box>
             <Box w={['90%', '90%', '50%', '50%']} m='auto' mt={155}>
-              <Text textAlign={'justify'}> ZENOO is not just a conglomerate but a visionary force that encompasses a World of Possibilities. We have redefined the landscape of Real Estate Solutions- Buying and Selling, Interior & Construction Management.  Financial Advisory- Loan Services, Insurance Solutions & Legal services. Our journey began with a simple dream - to create a one-stop hub.
+              <Text textAlign={'justify'}> At ZENOO, we don't just focus on transactions; we believe in creating meaningful experiences that turn dreams into reality. Our business is more than just bricks and mortar, numbers, or policies - we are dedicated to providing structured solutions that serve our customers. Our team of experts works tirelessly, sharing their knowledge, creativity, and ingenuity to craft solutions that exceed expectations.
                 <br />
                 <br />
                 <Text textAlign={'justify'}>
-                  We believe in more than just transactions, we believe in the experiences that turn dreams into reality.  ZENOO, we are not just in the business of Bricks and Mortar, Numbers or Policies - We are in the business of Serving Structured Solutions. Our experts work round the clock, sharing their knowledge, creativity, and ingenuity to craft solutions that go beyond expectations.
+                ZENOO is more than just a company. We are a forward-thinking entity that offers a wide range of possibilities. Our focus is on revolutionizing the Real Estate industry through Buying and Selling, Interior & Construction Management. Additionally, we provide Financial Advisory services such as Loan Services, Insurance Solutions, and Legal services. Our initial goal was to create a convenient one-stop-shop for all our clients.
                 </Text>
               </Text>
               <Link to='/about'>
@@ -109,7 +109,7 @@ const Home3 = () => {
               {/* vision2 */}
               <Box p={5}>
                 <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Vision</Text>
-                <Text h={'220px'} textAlign={'justify'}>We want to win at what we do and we do all we can to help our clients and employees to build wealth. We love to work with people who are passionate about working hard and also giving back to their communities in a big way. </Text>
+                <Text h={'220px'} textAlign={'justify'}>Our goal is to achieve success in our endeavors, and we strive to assist our clients and employees in creating wealth. We enjoy collaborating with individuals who are dedicated to putting in hard work and making significant contributions to their communities. </Text>
                 <Link to='/about'>
                 </Link>
               </Box>
@@ -118,7 +118,7 @@ const Home3 = () => {
               <Image h={'250px'} w={'100%'} border={'1px solid grey'} backgroundColor={'blue'} borderBottom={'none'} src={missionHome} />
               <Box p={5}>
                 <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Mission</Text>
-                <Text h={'220px'} textAlign={'justify'}>We foster an inclusive environment that leverages the diverse backgrounds and perspectives of all our employees, customers, and partners to drive a sustainable competitive advantage. </Text>
+                <Text h={'220px'} textAlign={'justify'}>We create a welcoming atmosphere that utilizes the varied experiences and viewpoints of our staff, clients, and partners to achieve a long-lasting edge in the market. </Text>
                 <Link to='/about'>
                 </Link>
               </Box>

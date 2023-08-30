@@ -30,7 +30,7 @@ return(
     <Box backgroundColor='#efefef' pt={[0,0,0,10]} pb={'50'}>
     <Box w={'60%'} m='auto' pb={50}>
 <Text pt={50} fontSize={['22px','26px','36px','36px']} fontFamily={'Prata'}>The Faces Behind Zenoo</Text>
-<Text fontSize={['14px','14px','20px','20px']}>At the heart of ZENOO are the dedicated professionals who make up our exceptional team. Get to know the faces behind our success and discover the expertise that drives us forward.</Text>
+<Text fontSize={['14px','14px','20px','20px']}>Meet the exceptional team of dedicated professionals at ZENOO who drive our success forward</Text>
 </Box>
         <Box w={"95%"} m='auto'>
         <Flex direction={['column','column','column','row']} gap={10} justifyContent='space-around' w={'80%'} m={'auto'}>

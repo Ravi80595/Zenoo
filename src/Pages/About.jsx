@@ -29,7 +29,6 @@ const About = () => {
             <Text textAlign={'justify'}>
               <b> ZENOO </b> provides a mortgage assessment solution that helps buyers determine their affordability without making any compromises. The company's primary objective is to assist buyers in getting onto the property ladder and investing in their future.
               <br /> <br />
-              <b> ZENOO </b> is more than just a company. We are a forward-thinking entity that offers a wide range of possibilities. Our focus is on revolutionizing the Real Estate industry through Buying and Selling, Interior & Construction Management. Additionally, we provide Financial Advisory services such as Loan Services, Insurance Solutions, and Legal services. Our initial goal was to create a convenient one-stop-shop for all our clients.
             </Text>
           </Box>
         </Flex>

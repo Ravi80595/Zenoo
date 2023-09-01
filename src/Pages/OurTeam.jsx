@@ -47,7 +47,6 @@ return(
           <Image borderTopRadius={10} w={'650px'} h={['250px','200px','200px','250px']} src={BOD3}/>
             <Text pt={2}>Amitesh  Mathur </Text>
           </Box>
-          
         </Flex>
         </Box>
       </Box>

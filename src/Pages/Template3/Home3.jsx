@@ -38,7 +38,7 @@ const Home3 = () => {
 
 
 
-  return (
+return(
     <>
       <Navbar />
       <Box background='#f9f9f9' className='HomeBox'>

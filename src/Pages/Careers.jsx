@@ -10,9 +10,9 @@ const Careers = () => {
   const [popupOpen, setPopupOpen] = useState(false);
 
 
-  const togglePopup = () => {
-    setPopupOpen(!popupOpen);
-  };
+const togglePopup = () => {
+  setPopupOpen(!popupOpen);
+};
 
 
 

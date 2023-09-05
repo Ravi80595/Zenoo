@@ -47,7 +47,7 @@ return (
                 <Image w='30px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png' /></a>
               <a href="https://www.facebook.com/zenoo18" target='blank'>
                 <Image w='30px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png' /></a>
-              <a href="https://www.facebook.com/zenoo18" target='blank'>
+              <a href="https://www.youtube.com/channel/UCk5O3EwfOobD_vhZnlT0CLg" target='blank'>
                 <Image w='30px' src='https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png' /></a>
             </Flex>
             <Button onClick={handleClick} mt={5} borderRadius={5} background={'blue'} color={'white'} _hover={{ color: 'blue', background: 'white', border: '2px solid blue' }} transition={'ease 1s  '} textAlign={'center'}>GET DIRECTIONS</Button>

@@ -25,7 +25,7 @@ return (
           <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png' /></a>
         <a href="https://www.facebook.com/zenoo18" target='blank'>
           <Image className='footerLogo' w='40px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png' /></a>
-        <a href="https://www.facebook.com/zenoo18" target='blank'>
+        <a href="https://www.youtube.com/channel/UCk5O3EwfOobD_vhZnlT0CLg" target='blank'>
           <Image className='footerLogo' w='40px' src='https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png' /></a>
       </Box>
       <Box color={'blue'} h={'99vh'} data-aos='fade-up'>
@@ -39,6 +39,9 @@ return (
         </Link>
       </Box>
     </Box>
+
+
+
   )
 }
 

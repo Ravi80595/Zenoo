@@ -74,7 +74,7 @@ return (
         <BsTwitter
           style={{ width: "25px", height: "25px", cursor: "pointer" }}
         /></a>
-        <a href="https://twitter.com/ZENOO719261821" target="blank">
+        <a href="https://www.youtube.com/channel/UCk5O3EwfOobD_vhZnlT0CLg" target="blank">
         <BsYoutube
           style={{ width: "25px", height: "25px", cursor: "pointer" }}
         /></a>

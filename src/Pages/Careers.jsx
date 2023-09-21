@@ -27,7 +27,7 @@ const togglePopup = () => {
       <Box textAlign={'left'} w={'90%'} m={'auto'} background={'#efefef'} pt={100} pb={100}>
         <Text fontSize={'36px'} pb={5} fontFamily={'Prata'}>CAREERS</Text>
         <PopupForm open={popupOpen} onClose={togglePopup} />
-        <Text>At ZENOO, we place equal importance on both the success of our brand and the individual goals of our team members. Our inclusive and welcoming culture attracts top-notch talent who share our unwavering commitment to teamwork, respect, and excellence. We foster a safe and enjoyable work environment that encourages personal development, irrespective of one's role or background. Our dedicated focus is on supporting our employees' career and personal aspirations, guiding them towards achieving new heights within our organization.</Text>
+        <Text>At ZENOO, we believe that the success of our brand and the goals of our team members are equally essential. Our inclusive and welcoming culture attracts top-notch talent who share our unwavering commitment to teamwork, respect, and excellence. We foster a safe and enjoyable work environment that encourages personal development irrespective of role or background. Our dedicated focus is supporting our employees' career and personal aspirations, guiding them toward achieving new heights within our organization.</Text>
       </Box>
       <Box background={'white'} w={['90%', '90%', '60%', '60%']} m='auto' pb={50} borderRadius={10} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' p={'30px'} mb={50}>
         <Text fontSize={'36px'} fontFamily={'Prata'}>Opportunities</Text>

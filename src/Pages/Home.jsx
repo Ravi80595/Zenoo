@@ -31,8 +31,8 @@ return (
       <Box color={'blue'} h={'99vh'} data-aos='fade-up'>
         <Flex justifyContent={'center'}>
           <Image pt={['152px', 91, 91, 91]} w={['488px', '488px', '488px', '488px']} src={Logo} /></Flex>
-        <div color='blue' style={{ paddingBottom: '25px', fontWeight: 'bold', wordSpacing: '3px', fontSize: "19px", letterSpacing: "2px", marginLeft: "-15px" }} w={['90%', '50%', '50%', '90%']} m='auto'>
-          <p>Selling Solutions, Not Promises</p>
+        <div color='blue' style={{ paddingBottom: '25px', fontWeight: 'bold', wordSpacing: '3px', fontSize: "19px", letterSpacing: "2px", marginLeft: "-15px",paddingTop:'20px' }} w={['90%', '50%', '50%', '90%']} m='auto'>
+          <p>Where World Connects</p>
         </div>
         <Link to='/home'>
           <Button p={6} fontSize={'20px'} _hover={{ background: 'white', color: 'blue', border: '2px solid blue', transition: '1s ease' }} background={'blue'} color={'white'}>Explore Opportunities</Button>

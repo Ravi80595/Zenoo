@@ -15,6 +15,7 @@ import Team4 from '../Images/Team4.png'
 import Team5 from '../Images/Team5.png'
 import Team6 from '../Images/Team6.png'
 import Chatbot from '../Components/Chat/ChatBot'
+import SideBox from '../Components/SideBox'
 
 
 const OurTeam = () => {
@@ -26,6 +27,7 @@ return(
   <Chatbot/>
     <Box background={'#efefef'}>
     <Navbar/>
+    <SideBox/>
     <Box background={'#efefef'} pt={30} pb={70}>
     <Box pt={'50px'}>
       <Box w='100%' h={[190,190,290,"418px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'> 

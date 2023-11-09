@@ -5,6 +5,7 @@ import Footer from '../Components/Footer'
 import MapComponent from '../Components/MapComponent'
 import SideBox from '../Components/SideBox'
 import contactCover from '../Images/contactCover.png'
+import Chatbot from '../Components/Chat/ChatBot'
 
 
 
@@ -28,6 +29,7 @@ return (
     <Box background={'white'}>
       <Navbar />
       <SideBox />
+      <Chatbot/>
       <Box pt={'50px'}>
         <Box w='100%' h={[190, 190, 290, "418px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={contactCover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'>
         </Box></Box>

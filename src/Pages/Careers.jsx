@@ -4,6 +4,8 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import careerCover from '../Images/careerCover.png'
 import PopupForm from '../Components/PopupForm'
+import SideBox from '../Components/SideBox'
+import Chatbot from '../Components/Chat/ChatBot'
 
 
 const Careers = () => {
@@ -20,6 +22,8 @@ const togglePopup = () => {
     <>
     <Box background={'#efefef'}>
       <Navbar />
+    <SideBox/>
+    <Chatbot/>
       <Box pt={'50px'}>
         <Box w='100%' h={[190, 190, 290, "418px"]} m='auto' mt={'30px'} pl={21} color='white' textAlign='left' backgroundImage={careerCover} backgroundRepeat={'no-repeat'} backgroundSize={'contain'} backgroundPosition='top'>
         </Box>

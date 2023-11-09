@@ -37,23 +37,60 @@ const Chatbot = () => {
         {
           id: 'realEstateAnswer',
           message: 'You selected Real Estate. How can I assist you with Real Estate?',
-          end: true,
+          trigger: '5'
         },
         {
           id: 'financialAnswer',
           message: 'You selected Financial Advisory. How can I assist you with Financial Advisory?',
-          end: true,
+          trigger: '5'
         },
         {
           id: 'insuranceAnswer',
           message: 'You selected Insurance. How can I assist you with Insurance?',
-          end: true,
+          trigger: '5'
         },
         {
           id: 'legalAnswer',
           message: 'You selected Legal Assistance. How can I assist you with Legal Assistance?',
-          end: true,
+          trigger: '5'
         },
+        {
+            id: '5',
+            message: 'Would you like to connect with one of our experts for personalized assistance?',
+            trigger: '6',
+          },
+        {
+            id: '6',
+            options: [
+              { value: 1, label: 'Yes', trigger: 'yes' },
+              { value: 2, label: 'No', trigger: 'no' },
+            ],
+          },
+          {
+            id: 'yes',
+            message: 'Thank you Please fill the form. We will connect you with our team shortly to address your needs',
+            trigger:'7'
+          },
+          {
+            id: 'no',
+            message: 'Thank you for your information. If you prefer not to connect with us at the moment, no worries at all.',
+            end: true,
+          },
+          {
+            id: '7',
+            component: (
+              <div>
+                <p>
+                  You can fill out our contact form by {' '}
+                  <a href="https://zenoo.vercel.app/contact" target="_blank" rel="noopener noreferrer">
+                    clicking here
+                  </a>
+                  .
+                </p>
+              </div>
+            ),
+            end: true,
+          },
       ];
      
     // Creating our own theme

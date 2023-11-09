@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 import BOD1 from '../Images/BOD1.jpg'
 import BOD2 from '../Images/BOD2.jpg'
 // import BOD from './BOD'
-import Popup from '../Components/Popup'
+// import Popup from '../Components/Popup'
 import cover from '../Images/cover.png'
 import BOD3 from '../Images/BOD3.png'
 import Team1 from '../Images/Team1.png'
@@ -14,6 +14,7 @@ import Team3 from '../Images/Team3.png'
 import Team4 from '../Images/Team4.png'
 import Team5 from '../Images/Team5.png'
 import Team6 from '../Images/Team6.png'
+import Chatbot from '../Components/Chat/ChatBot'
 
 
 const OurTeam = () => {
@@ -21,6 +22,8 @@ const OurTeam = () => {
 
 
 return(
+  <>
+  <Chatbot/>
     <Box background={'#efefef'}>
     <Navbar/>
     <Box background={'#efefef'} pt={30} pb={70}>
@@ -29,7 +32,7 @@ return(
       </Box></Box>
     <Box backgroundColor='#efefef' pt={[0,0,0,10]} pb={'50'}>
     <Box w={'60%'} m='auto' pb={50}>
-<Text pt={50} fontSize={['22px','26px','36px','36px']} fontFamily={'Prata'}>The Faces Behind Zenoo</Text>
+<Text pt={'90px'} fontSize={['22px','26px','36px','36px']} fontFamily={'Prata'}>The Faces Behind Zenoo</Text>
 <Text fontSize={['14px','14px','20px','20px']}>Meet the exceptional team of dedicated professionals at ZENOO who drive our success forward.</Text>
 </Box>
         <Box w={"95%"} m='auto'>
@@ -60,12 +63,6 @@ return(
             <Image borderTopRadius={10} w={'650px'} h={['250px','200px','200px','200px']} src={Team1}/>
             <Text pt={2}>Sonali Sharma</Text>
             {/* <Text fontWeight={'bold'}>Founder</Text> */}
-          </Box>
-          <Box _hover={{ transform: 'translateY(-15px)', transition: 'transform 0.5s' }} borderRadius={10} backgroundColor='white' textAlign='center'>
-          <Image borderTopRadius={10} w={'650px'} h={['250px','200px','200px','200px']} src={Team2}/>
-            <Text pt={2}>Sunit kochhar</Text>
-            {/* <Text fontWeight={'bold'}>Founder</Text> */}
-           
           </Box>
           <Box _hover={{ transform: 'translateY(-15px)', transition: 'transform 0.5s' }} borderRadius={10} backgroundColor='white' textAlign='center'>
           <Image borderTopRadius={10} w={'650px'} h={['250px','200px','200px','200px']} src={Team3}/>
@@ -108,6 +105,7 @@ return(
 
     <Footer/>
     </Box> 
+    </>
   )
 }
 

@@ -1,0 +1,22 @@
+/* Chatbot.css */
+
+/* Override default styles */
+.rsc-header {
+  background-color: rgb(16, 37, 127) !important;
+  color: white !important;
+  font-size: 20px !important;
+}
+
+/* .rsc-container {
+  background-color: #C9FF8F !important;
+} */
+
+.rsc-user {
+  background-color: #FF5733 !important;
+  color: white !important;
+}
+
+.rsc-bot {
+  background-color: rgb(16, 37, 127) !important;
+  color: white !important;
+}

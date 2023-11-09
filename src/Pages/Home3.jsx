@@ -1,29 +1,31 @@
 import React, { useState } from 'react'
 import { Box, Flex, Text, Image, Button, Heading, Stack } from '@chakra-ui/react'
 import '../CSS/footer.module.css'
-import Logo3 from '../Images/Logo3.png'
+// import Logo3 from '../Images/Logo3.png'
 import { Link } from 'react-router-dom'
-import { CloseIcon } from '@chakra-ui/icons'
+// import { CloseIcon } from '@chakra-ui/icons'
 import { GoArrowUpRight } from 'react-icons/go'
-import Accordian from './Template3/Accordian'
-import ChatBox from '../Components/Chat/ChatBox'
-import ChatIcon2 from '../Components/Chat/ChatIcon2'
-import ChatIcon from '../Components/Chat/ChatIcon'
+// import Accordian from './Template3/Accordian'
+// import ChatBox from '../Components/Chat/ChatBox'
+// import ChatIcon2 from '../Components/Chat/ChatIcon2'
+// import ChatIcon from '../Components/Chat/ChatIcon'
 import Footer from '../Components/Footer'
 import whoweare from '../Images/Whoweare.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import SideBox from '../Components/SideBox'
-import ScrollToTopLink from '../Components/ScrollToTopLink'
-import vision2 from '../Images/vision2.png'
-import hero from '../Images/hero.png'
-import Logo from '../Images/Logo.png'
+// import SideBox from '../Components/SideBox'
+// import ScrollToTopLink from '../Components/ScrollToTopLink'
+// import vision2 from '../Images/vision2.png'
+// import hero from '../Images/hero.png'
+// import Logo from '../Images/Logo.png'
 import '../CSS/Home1.css'
-import MissionAbout from '../Images/MissionAbout.png'
-import HomeNavbar from '../Components/HomeNavbar'
-import Navbar from '../Components/Navbar'
+// import MissionAbout from '../Images/MissionAbout.png'
+// import HomeNavbar from '../Components/HomeNavbar'
+// import Navbar from '../Components/Navbar'
 import visionHome from '../Images/visionHome.png'
 import missionHome from '../Images/missionHome.png'
+import Navbar2 from '../Components/Navbar2'
+import Chatbot from '../Components/Chat/ChatBot'
 
 
 const Home3 = () => {
@@ -39,10 +41,11 @@ const Home3 = () => {
 
 return(
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Chatbot/>
       <Box background='#f9f9f9' className='HomeBox'>
         <Box>
-          <Navbar />
+          <Navbar2/>
           <Box className='hero' pt={20}>
             <Flex w={'100%'} direction={['column', 'column', 'column', 'row']} gap={['25px', '125px', '125px', '125px']} h={['730px', '630px', '630px', '100vh']} >
               <Box p={11} mt={[10, 200, 200, 120]} ml={[5, 90, 90, 90]} w={['90%', '90%', '100%', '70%']}>
@@ -117,22 +120,21 @@ return(
               <Image h={'250px'} w={'100%'} border={'1px solid grey'} backgroundColor={'blue'} borderBottom={'none'} src={missionHome} />
               <Box p={5}>
                 <Text pt={3} fontWeight='bold' fontSize={30} mt={-3} fontFamily={'Parata'}>Mission</Text>
-                <Text h={'220px'} textAlign={'justify'}>We create a welcoming atmosphere that utilizes the varied experiences and viewpoints of our staff, clients, and partners to achieve a long-lasting edge in the market. </Text>
+                <Text h={'220px'} textAlign={'justify'}>We cultivate a warm and inclusive environment that harnesses the diverse experiences and perspectives of our dedicated staff, clients, and partners to gain a sustained competitive advantage in the market. </Text>
                 <Link to='/about'>
                 </Link>
               </Box>
             </Box>
-
           </Flex>
           <Box mt={10}>
             <Image src='' />
           </Box>
           <Footer />
-          <Box>
+          {/* <Box>
             {isChatOpen && <ChatBox />}
             {isChatOpen ? <ChatIcon2 onClick={handleChatIconClick} /> :
               <ChatIcon onClick={handleChatIconClick} />}
-          </Box>
+          </Box> */}
         </Box>
       </Box>
     </>

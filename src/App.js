@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import AllRoute from './AllRoutes/AllRoute';
 import './App.css';
 import ReactGA from 'react-ga';

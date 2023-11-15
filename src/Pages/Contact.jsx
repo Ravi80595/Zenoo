@@ -35,9 +35,17 @@ return (
         </Box></Box>
       <Flex direction={['column', 'column', 'row', 'row']} background={'white'} w='95%' m='auto' textAlign='left' backgroundColor={'white'} pt={120} pb={20}>
         <Box pt={['10px', '50px', '5px', '5px']} w={['99%', '50%', '50%', '50%']}>
+
+
+          {/* ******************************* Map component ************************************ */}
+
+
           <Box w={['80%', '70%', '70%', '70%']} m={'auto'}>
             <MapComponent />
           </Box>
+
+          {/* ************************* contact Info changes here  ****************************** */}
+
           <Box w={['95%', '95%', '90%', '60%']} m={'auto'} mt={['30px', '30px', '90px', '20px']} textAlign={'center'} pb={20}>
             <Text> <b>Call Us : </b>0124 4240520</Text>
             <Text pt={2}> <b>Email Us : </b>info@zenoo.in</Text>
@@ -57,6 +65,10 @@ return (
             <Button onClick={handleClick} mt={5} borderRadius={5} background={'blue'} color={'white'} _hover={{ color: 'blue', background: 'white', border: '2px solid blue' }} transition={'ease 1s  '} textAlign={'center'}>GET DIRECTIONS</Button>
           </Box>
         </Box>
+
+         {/* ********************** Contact form **************************** */}
+
+
         <Box boxShadow='rgb(3 102 255 / 40%) 0px 2px 4px, rgb(8 68 255 / 30%) 0px 7px 13px -3px, rgb(24 80 255 / 20%) 0px -3px 0px inset' borderRadius={10} textAlign={'left'} w={['99%', '60%', '60%', '40%']} h={['550px', '550px', '550px', '550px']} mt={'10px'}>
           <Box w={['92%', '92%', '62%', '92%']} m={'auto'} mt={'30px'}>
             <Box w={['90%', '90%', '60%', '82%']} m='auto' mt={'70px'}>

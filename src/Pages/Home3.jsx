@@ -49,7 +49,7 @@ return(
           <Box className='hero' pt={20}>
             <Flex w={'100%'} direction={['column', 'column', 'column', 'row']} gap={['25px', '125px', '125px', '125px']} h={['730px', '630px', '630px', '100vh']} >
               <Box p={11} mt={[10, 200, 200, 120]} ml={[5, 90, 90, 90]} w={['90%', '90%', '100%', '70%']}>
-                <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
+                <a href="http://zenoolandbase.com/" target='blank'>
                   <Flex pt={0} pb={3} justifyContent='space-between'>
                     <Text fontSize={['17px', 30, 30, 30]} fontWeight='bold' color='rgb(16, 37, 127)'>Real Estate</Text>
                     <Flex gap={5} pt={3}>
@@ -58,7 +58,7 @@ return(
                     </Flex>
                   </Flex></a>
                 <hr height='22px' color='rgb(54, 84, 206)' />
-                <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
+                <a href="https://zenoocapitals.com/" target='blank'>
                   <Flex pt={5} pb={3} justifyContent='space-between'>
                     <Text fontSize={['17px', 30, 30, '27px']} fontWeight='bold' color='rgb(16, 37, 127)'>Financial Advisory</Text>
                     <Flex gap={5} pt={3}>
@@ -67,7 +67,7 @@ return(
                     </Flex>
                   </Flex> </a>
                 <hr height='22px' color='rgb(54, 84, 206)' />
-                <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
+                <a href="https://zenoocapitals.com/" target='blank'>
                   <Flex pt={5} pb={3} justifyContent='space-between'>
                     <Text fontSize={['15px', 30, 30, 30]} fontWeight='bold' color='rgb(16, 37, 127)'>Insurance Solutions</Text>
                     <Flex gap={5} pt={3}>
@@ -76,7 +76,7 @@ return(
                     </Flex>
                   </Flex></a>
                 <hr height='22px' color='rgb(54, 84, 206)' />
-                <a href="https://www.linkedin.com/company/zenoo.in/" target='blank'>
+                <a href="http://zenoolegal.com/" target='blank'>
                   <Flex pt={5} pb={3} justifyContent='space-between'>
                     <Text fontSize={['17px', 30, 30, 30]} fontWeight='bold' color='rgb(16, 37, 127)'>Legal Assistance</Text>
                     <Flex gap={5} pt={3}>

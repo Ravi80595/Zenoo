@@ -56,7 +56,7 @@ const togglePopup = () => {
         <Text textAlign={'left'}>We are currently seeking an enthusiastic Telesales Representative to aid in generating sales for our esteemed company. Your main responsibilities will involve closing sales deals over the phone and maintaining positive customer relationships. To excel in this role, it is essential to possess exceptional communication skills and have a natural talent for interacting with people. You should feel comfortable presenting products or services over the phone, and be equipped to handle customer concerns and queries. Our objective is to expand our business by attracting new customers and fostering growth.</Text>
 
 
-        <Flex justifyContent={'center'} mt={10}><button style={{ background: "blue", color: "white", padding: "10px", borderRadius: "10px" }} onClick={togglePopup}>WORK WITH US</button></Flex>
+        {/* <Flex justifyContent={'center'} mt={10}><button style={{ background: "blue", color: "white", padding: "10px", borderRadius: "10px" }} onClick={togglePopup}>WORK WITH US</button></Flex> */}
       </Box>
 
       {/* *********************** 2nd text heading page ******************************* */}

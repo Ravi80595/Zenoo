@@ -22,6 +22,40 @@ const Contact = () => {
   };
 
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = {
+      name: event.target.elements.name.value,
+      email: event.target.elements.email.value,
+      mobile: event.target.elements.phone.value,
+      Source: event.target.elements.interest.value,
+    };
+    // console.log(formData)
+
+    // Send POST request to the API
+    try {
+      const response = await fetch('https://zenoo.dreamertechs.com/index.php?entryPoint=CRMwebLead&eventType=webLeads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        // Request was successful, handle the response if needed
+        console.log('Form submitted successfully');
+      } else {
+        // Request failed, handle the error
+        console.error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+
 
 return (
   <>
@@ -69,10 +103,10 @@ return (
          {/* ********************** Contact form **************************** */}
 
 
-        <Box boxShadow='rgb(3 102 255 / 40%) 0px 2px 4px, rgb(8 68 255 / 30%) 0px 7px 13px -3px, rgb(24 80 255 / 20%) 0px -3px 0px inset' borderRadius={10} textAlign={'left'} w={['99%', '60%', '60%', '40%']} h={['550px', '550px', '550px', '550px']} mt={'10px'}>
+        <Box boxShadow='rgb(3 102 255 / 40%) 0px 2px 4px, rgb(8 68 255 / 30%) 0px 7px 13px -3px, rgb(24 80 255 / 20%) 0px -3px 0px inset' borderRadius={10} textAlign={'left'} w={['99%', '60%', '60%', '40%']} h={['600px', '600px', '550px', '550px']} mt={'10px'}>
           <Box w={['92%', '92%', '62%', '92%']} m={'auto'} mt={'30px'}>
             <Box w={['90%', '90%', '60%', '82%']} m='auto' mt={'70px'}>
-              <Text pt={15}>Name</Text>
+              {/* <Text pt={15}>Name</Text>
               <Input placeholder='Name' />
               <Text pt={15}>Email</Text>
               <Input placeholder='Enter your email' />
@@ -89,7 +123,43 @@ return (
                 <Text fontSize={['12px', '16px', '16px', '12px']}>
                   By providing your phone number and checking the box below, you grant Zenoo permission to contact you via telephone for communication purposes.</Text>
               </Checkbox>
-              <Flex mt={5} justifyContent={'center'}><Button borderRadius={50} background={'blue'} color={'white'} _hover={{ color: 'blue', background: 'white', border: '2px solid blue' }} transition={'ease 1s'} textAlign={'center'}>Submit</Button></Flex>
+              <Flex mt={5} justifyContent={'center'}><Button borderRadius={50} background={'blue'} color={'white'} _hover={{ color: 'blue', background: 'white', border: '2px solid blue' }} transition={'ease 1s'} textAlign={'center'}>Submit</Button></Flex> */}
+
+
+<form onSubmit={handleSubmit}>
+      <label>
+        Name
+        <br />
+        <Input mb={'15px'} type="text" name="name" placeholder="Name" />
+      </label>
+      <br />
+      <label>
+        Email <br />
+        <Input mb={'15px'} type="email" name="email" placeholder="Enter your email" />
+      </label>
+      <label>
+        Phone no. <br />
+        <Input mb={'15px'} type="tel" name="phone" placeholder="Enter your phone" />
+      </label>
+      <label>
+        Interest <br />
+        <Select mb={'15px'} name="interest">
+          <option value="Real Estate">Real Estate</option>
+          <option value="Financial Advisory">Financial Advisory</option>
+          <option value="Insurance Solutions">Insurance Solutions</option>
+          <option value="Legal Assistance">Legal Assistance</option>
+        </Select>
+      </label>
+      <div>
+        <label>
+          <Checkbox  fontSize={['12px', '16px', '16px', '12px']} type="checkbox"  name="permission" defaultChecked />
+          By providing your phone number and checking the box below, you grant Zenoo permission to contact you via telephone for communication purposes.
+        </label>
+      </div>
+      <div>
+        <button style={{background:'blue',color:'white',marginTop:'15px',padding:'5px',borderRadius:'8px'}} type="submit">Submit</button>
+      </div>
+    </form>
             </Box>
           </Box>
         </Box>

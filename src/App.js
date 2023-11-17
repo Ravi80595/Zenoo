@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 
 
 function App() {
-  ReactGA.initialize('G-TWK62TEZM1');
+  ReactGA.initialize('G-GC3ESPNMS6');
 
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);

@@ -30,33 +30,9 @@ const Contact = () => {
       email: event.target.elements.email.value,
       mobile: event.target.elements.phone.value,
       Source: event.target.elements.interest.value,
+      Description:event.target.elements.Desc.value
     };
      console.log(formData)
-
-    
-     // Send POST request to the API
-
-
-//   axios.post('https://zenoo.dreamertechs.com/index.php?entryPoint=CRMwebLead&eventType=webLeads'),{
-//  data:formData
-// }.then((res)=>{
-//   console.log(res)
-// })
-
-
-// async function triggerWebhook() {
-//   try {
-//     const response = await axios.post('https://zenoo.dreamertechs.com/index.php?entryPoint=CRMwebLead&eventType=webLeads', {
-//       // Your webhook payload data here
-//       key1: 'value1',
-//       key2: 'value2',
-//     });
-
-//     console.log('Webhook triggered successfully:', response.data);
-//   } catch (error) {
-//     console.error('Error triggering webhook:', error.message);
-//   }
-// }
 
 
 axios.post('https://zenoo.dreamertechs.com/index.php?entryPoint=CRMwebLead&eventType=webLeads', formData)
@@ -66,26 +42,6 @@ axios.post('https://zenoo.dreamertechs.com/index.php?entryPoint=CRMwebLead&event
   .catch(error => {
     console.error('Error:', error);
   });
-
-    // try {
-    //   const response = await fetch('https://zenoo.dreamertechs.com/index.php?entryPoint=CRMwebLead&eventType=webLeads', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(formData),
-    //   });
-
-    //   if (response.ok) {
-    //     // Request was successful, handle the response if needed
-    //     console.log('Form submitted successfully');
-    //   } else {
-    //     // Request failed, handle the error
-    //     console.error('Form submission failed');
-    //   }
-    // } catch (error) {
-    //   console.error('Error:', error);
-    // }
   };
 
 
@@ -136,7 +92,7 @@ return (
          {/* ********************** Contact form **************************** */}
 
 
-        <Box boxShadow='rgb(3 102 255 / 40%) 0px 2px 4px, rgb(8 68 255 / 30%) 0px 7px 13px -3px, rgb(24 80 255 / 20%) 0px -3px 0px inset' borderRadius={10} textAlign={'left'} w={['99%', '60%', '60%', '40%']} h={['600px', '600px', '550px', '550px']} mt={'10px'}>
+        <Box boxShadow='rgb(3 102 255 / 40%) 0px 2px 4px, rgb(8 68 255 / 30%) 0px 7px 13px -3px, rgb(24 80 255 / 20%) 0px -3px 0px inset' borderRadius={10} textAlign={'left'} w={['99%', '60%', '60%', '40%']} h={['600px', '600px', '550px', '650px']} mt={'10px'}>
           <Box w={['92%', '92%', '62%', '92%']} m={'auto'} mt={'30px'}>
             <Box w={['90%', '90%', '60%', '82%']} m='auto' mt={'70px'}>
               {/* <Text pt={15}>Name</Text>
@@ -182,6 +138,10 @@ return (
           <option value="Insurance Solutions">Insurance Solutions</option>
           <option value="Legal Assistance">Legal Assistance</option>
         </Select>
+      </label>
+      <label>
+        Message <br />
+        <Textarea mb={'15px'} type="text" name="Desc" placeholder="Enter your message" />
       </label>
       <div>
         <label>

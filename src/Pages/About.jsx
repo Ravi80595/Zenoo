@@ -5,17 +5,21 @@ import Footer from '../Components/Footer'
 import Reviews from './Reviews'
 import SimpleThreeColumns from '../Components/Services'
 import SimpleTwoColumns from '../Components/Slider'
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SideBox from '../Components/SideBox'
 import '../CSS/About.css'
 import aboutCover from '../Images/aboutCover.png'
 import Chatbot from '../Components/Chat/ChatBot'
+import { useEffect } from 'react'
 
 
 
 const About = () => {
 
-
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   return (
     <>

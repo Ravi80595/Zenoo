@@ -6,7 +6,7 @@ import MapComponent from '../Components/MapComponent'
 import SideBox from '../Components/SideBox'
 import contactCover from '../Images/contactCover.png'
 import Chatbot from '../Components/Chat/ChatBot'
-
+import axios from 'axios'
 
 
 
@@ -31,28 +31,61 @@ const Contact = () => {
       mobile: event.target.elements.phone.value,
       Source: event.target.elements.interest.value,
     };
-    // console.log(formData)
+     console.log(formData)
 
-    // Send POST request to the API
-    try {
-      const response = await fetch('https://zenoo.dreamertechs.com/index.php?entryPoint=CRMwebLead&eventType=webLeads', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+    
+     // Send POST request to the API
 
-      if (response.ok) {
-        // Request was successful, handle the response if needed
-        console.log('Form submitted successfully');
-      } else {
-        // Request failed, handle the error
-        console.error('Form submission failed');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    }
+
+//   axios.post('https://zenoo.dreamertechs.com/index.php?entryPoint=CRMwebLead&eventType=webLeads'),{
+//  data:formData
+// }.then((res)=>{
+//   console.log(res)
+// })
+
+
+// async function triggerWebhook() {
+//   try {
+//     const response = await axios.post('https://zenoo.dreamertechs.com/index.php?entryPoint=CRMwebLead&eventType=webLeads', {
+//       // Your webhook payload data here
+//       key1: 'value1',
+//       key2: 'value2',
+//     });
+
+//     console.log('Webhook triggered successfully:', response.data);
+//   } catch (error) {
+//     console.error('Error triggering webhook:', error.message);
+//   }
+// }
+
+
+axios.post('https://zenoo.dreamertechs.com/index.php?entryPoint=CRMwebLead&eventType=webLeads', formData)
+  .then(response => {
+    console.log('Response:', response);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+    // try {
+    //   const response = await fetch('https://zenoo.dreamertechs.com/index.php?entryPoint=CRMwebLead&eventType=webLeads', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify(formData),
+    //   });
+
+    //   if (response.ok) {
+    //     // Request was successful, handle the response if needed
+    //     console.log('Form submitted successfully');
+    //   } else {
+    //     // Request failed, handle the error
+    //     console.error('Form submission failed');
+    //   }
+    // } catch (error) {
+    //   console.error('Error:', error);
+    // }
   };
 
 

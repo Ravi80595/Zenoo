@@ -11,8 +11,6 @@ import { GoArrowUpRight } from 'react-icons/go'
 // import ChatIcon from '../Components/Chat/ChatIcon'
 import Footer from '../Components/Footer'
 import whoweare from '../Images/Whoweare.png'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 // import SideBox from '../Components/SideBox'
 // import ScrollToTopLink from '../Components/ScrollToTopLink'
 // import vision2 from '../Images/vision2.png'
@@ -26,6 +24,9 @@ import visionHome from '../Images/visionHome.png'
 import missionHome from '../Images/missionHome.png'
 import Navbar2 from '../Components/Navbar2'
 import Chatbot from '../Components/Chat/ChatBot'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react'
 
 
 const Home3 = () => {
@@ -37,18 +38,21 @@ const Home3 = () => {
     setIsChatOpen(!isChatOpen);
   };
 
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
 
 return(
     <>
       {/* <Navbar /> */}
-      <Chatbot/>
+      <Chatbot data-aos='fade-up'/>
       <Box background='#f9f9f9' className='HomeBox'>
         <Box>
           <Navbar2/>
           <Box className='hero' pt={20}>
             <Flex w={'100%'} direction={['column', 'column', 'column', 'row']} gap={['25px', '125px', '125px', '125px']} h={['730px', '630px', '630px', '100vh']} >
-              <Box p={11} mt={[10, 200, 200, 120]} ml={[5, 90, 90, 90]} w={['90%', '90%', '100%', '70%']}>
+              <Box p={11} mt={[10, 200, 200, 120]} ml={[5, 90, 90, 90]} w={['90%', '90%', '100%', '70%']} data-aos='fade-right'>
                 <a href="http://zenoolandbase.com/" target='blank'>
                   <Flex pt={0} pb={3} justifyContent='space-between'>
                     <Text fontSize={['17px', 30, 30, 30]} fontWeight='bold' color='rgb(16, 37, 127)'>Real Estate</Text>
@@ -90,10 +94,10 @@ return(
             </Flex>
           </Box>
           <Flex direction={['column', 'column', 'row', 'row']}>
-            <Box w={['99%', '90%', '40%', '40%']} mt={'110px'}>
+            <Box w={['99%', '90%', '40%', '40%']} mt={'110px'} data-aos='fade-left'>
               <Image h={'450px'} pl={['10px', '10px', '80px', '80px']} mt='-40px' src={whoweare} />
             </Box>
-            <Box w={['90%', '90%', '50%', '50%']} m='auto' mt={155}>
+            <Box w={['90%', '90%', '50%', '50%']} m='auto' mt={155} data-aos='fade-right'>
               <Text textAlign={'justify'}> At ZENOO, we don't just focus on transactions; we believe in creating meaningful experiences that turn dreams into reality. Our business is more than just bricks and mortar, numbers, or policies - we are dedicated to providing structured solutions that serve our customers. Our team of experts works tirelessly, sharing their knowledge, creativity, and ingenuity to craft solutions that exceed expectations.
                 <br />
                 <br />
@@ -105,7 +109,7 @@ return(
                 <Button _hover={{ backgroundColor: 'white', color: '#3654CE', border: '2px solid #3654CE' }} mt={10} pl={20} pr={20} backgroundColor='#3654CE' color='white'>Know More</Button></Link>
             </Box>
           </Flex>
-          <Flex direction={['column', 'column', 'column', 'row']} justifyContent='space-around' pt={90} w={['90%', '90%', '60%', '60%']} m='auto' gap={40}>
+          <Flex direction={['column', 'column', 'column', 'row']} justifyContent='space-around' pt={90} w={['90%', '90%', '60%', '60%']} m='auto' gap={40} data-aos='fade-up'>
             <Box _hover={{ transform: 'translateY(-15px)', transition: 'transform 0.5s' }} w={['95%', '90%', '50%', '50%']} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
               <Image w='400px' h={'250px'} src={visionHome} />
               {/* vision2 */}

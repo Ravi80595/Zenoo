@@ -18,15 +18,15 @@ return (
     <Box>
       <Box className='social-icons-home' position={'absolute'} left={3} top={['30%', '30%', '30%', '30%']} color={'blue'}>
         <a href="https://www.instagram.com/zenoo186/ " target='blank'>
-          <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png' /></a>
+          <Image className='footerLogo' w='40px' src='https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png'     data-aos='fade-right' /></a>
         <a href="https://www.linkedin.com/company /zenoo.in/ " target='blank'>
-          <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png' /></a>
+          <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png' data-aos='fade-right' data-aos-duration="1200" /></a>
         <a href="https://api.whatsapp.com/send/?phone=7711884456&text&type=phone_number&app_absent=0" target='blank'>
-          <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png' /></a>
+          <Image className='footerLogo' w='40px' src='https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png' data-aos='fade-right' data-aos-duration="1400" /></a>
         <a href="https://www.facebook.com/zenoo18" target='blank'>
-          <Image className='footerLogo' w='40px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png' /></a>
+          <Image className='footerLogo' w='40px' src='https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png' data-aos='fade-right' data-aos-duration="1600" /></a>
         <a href="https://www.youtube.com/channel/UCk5O3EwfOobD_vhZnlT0CLg" target='blank'>
-          <Image className='footerLogo' w='40px' src='https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png' /></a>
+          <Image className='footerLogo' w='40px' src='https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png' data-aos='fade-right' data-aos-duration="1800" /></a>
       </Box>
       <Box color={'blue'} h={'99vh'} data-aos='fade-up'>
         <Flex justifyContent={'center'}>

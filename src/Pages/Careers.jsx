@@ -25,7 +25,7 @@ const togglePopup = () => {
     <SideBox/>
     <Chatbot/>
       <Box pt={'13px'}>
-        <Box w='100%' h={[100, 100, 290, "418px"]} m='auto' mt={'30px'} pl={21} color='white' textAlign='left' backgroundImage={careerCover} backgroundRepeat={'no-repeat'} backgroundSize={'contain'} backgroundPosition='top'>
+        <Box w='100%' h={[100, 100, 290, "418px"]} m='auto' mt={'30px'} pl={21} color='white' textAlign='left' backgroundImage={careerCover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='right'>
         </Box>
         <Flex justifyContent={'center'}>
           {/* <button style={{ background: "blue", color: "white", padding: "10px", borderRadius: "10px" }} onClick={togglePopup}>WORK WITH US</button> */}

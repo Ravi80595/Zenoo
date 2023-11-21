@@ -27,9 +27,10 @@ const About = () => {
       <SideBox />
       <Chatbot/>
       <Box backgroundColor={'white'} w='100%' m='auto' textAlign='left'>
-        <Box pt={'50px'}>
-          <Box w='100vw' h={[190, 190, 290, "400px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={aboutCover} backgroundRepeat={'no-repeat'} backgroundSize={'contain'} backgroundPosition='center'>
-          </Box></Box>
+        <Box pt={['13px','13px','50px','50px']}>
+          <Box w='100vw' h={[130, 190, 290, "400px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={aboutCover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='bottom'>
+          </Box>
+          </Box>
         <Flex direction={['column', 'column', 'column', 'row']} w='80%' m='auto' gap={20} pt={70}>
           <Box>
 

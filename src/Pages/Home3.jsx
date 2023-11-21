@@ -46,10 +46,10 @@ const Home3 = () => {
 return(
     <>
       {/* <Navbar /> */}
-      <Chatbot data-aos='fade-up'/>
       <Box background='#f9f9f9' className='HomeBox'>
         <Box>
           <Navbar2/>
+      <Chatbot data-aos='fade-up'/>
           <Box className='hero' pt={20}>
             <Flex w={'100%'} direction={['column', 'column', 'column', 'row']} gap={['25px', '125px', '125px', '125px']} h={['730px', '630px', '630px', '100vh']} >
               <Box p={11} mt={[10, 200, 200, 120]} ml={[5, 90, 90, 90]} w={['90%', '90%', '100%', '70%']} data-aos='fade-right'>

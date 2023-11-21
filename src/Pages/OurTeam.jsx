@@ -29,7 +29,7 @@ return(
     <Navbar/>
     <SideBox/>
     <Box background={'#efefef'} pt={30} pb={70}>
-    <Box pt={'50px'}>
+    <Box pt={['13px','13px','50px','50px']}>
       <Box w='100%' h={[190,190,290,"418px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'> 
       </Box></Box>
     <Box backgroundColor='#efefef' pt={[0,0,0,10]} pb={'50'}>

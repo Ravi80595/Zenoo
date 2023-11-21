@@ -20,9 +20,9 @@ return (
         Company
       </Text>
       <ScrollToTopLink to='/about'>
-    <Text fontSize="16px" fontWeight="500" cursor="pointer">About us</Text></ScrollToTopLink>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">About Us</Text></ScrollToTopLink>
     <ScrollToTopLink to='/contact'>
-    <Text fontSize="16px" fontWeight="500" cursor="pointer">Contact us</Text></ScrollToTopLink>
+    <Text fontSize="16px" fontWeight="500" cursor="pointer">Contact Us</Text></ScrollToTopLink>
     {/* <Text fontSize="14px" fontWeight="500" cursor="pointer">Blog</Text> */}
     <Text color={'white'}>Email : info@zenoo.in</Text>
     </Stack>

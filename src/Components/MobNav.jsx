@@ -53,7 +53,7 @@ return (
                 <ScrollToTopLink to='/careers'>
                 <Text>Careers</Text></ScrollToTopLink >
                 <ScrollToTopLink to='/contact'>
-                <Text>Contact us</Text>
+                <Text>Contact Us</Text>
                 </ScrollToTopLink>
             </Flex>
             {/* <Text mt="15px">MY ACCOUNT</Text> */}

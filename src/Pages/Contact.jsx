@@ -57,7 +57,7 @@ return (
         <Box w='100%' h={[190, 190, 290, "418px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={contactCover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'>
         </Box></Box>
       <Flex direction={['column', 'column', 'row', 'row']} background={'white'} w='95%' m='auto' textAlign='left' backgroundColor={'white'} pt={120} pb={20}>
-        <Box pt={['10px', '50px', '5px', '5px']} w={['99%', '50%', '50%', '50%']}>
+        <Box pt={['5px', '50px', '5px', '5px']} w={['99%', '50%', '50%', '50%']}>
 
 
           {/* ******************************* Map component ************************************ */}
@@ -92,7 +92,7 @@ return (
          {/* ********************** Contact form **************************** */}
 
 
-        <Box boxShadow='rgb(3 102 255 / 40%) 0px 2px 4px, rgb(8 68 255 / 30%) 0px 7px 13px -3px, rgb(24 80 255 / 20%) 0px -3px 0px inset' borderRadius={10} textAlign={'left'} w={['99%', '60%', '60%', '40%']} h={['600px', '600px', '550px', '650px']} mt={'10px'}>
+        <Box boxShadow='rgb(3 102 255 / 40%) 0px 2px 4px, rgb(8 68 255 / 30%) 0px 7px 13px -3px, rgb(24 80 255 / 20%) 0px -3px 0px inset' borderRadius={10} textAlign={'left'} w={['99%', '60%', '60%', '40%']} h={['650px', '650px', '550px', '650px']} mt={'10px'}>
           <Box w={['92%', '92%', '62%', '92%']} m={'auto'} mt={'30px'}>
             <Box w={['90%', '90%', '60%', '82%']} m='auto' mt={'70px'}>
               {/* <Text pt={15}>Name</Text>

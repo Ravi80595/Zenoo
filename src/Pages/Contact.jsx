@@ -145,8 +145,8 @@ return (
       </label>
       <div>
         <label>
-          <Checkbox  fontSize={['12px', '16px', '16px', '12px']} type="checkbox"  name="permission" defaultChecked />
-          By providing your phone number and checking the box below, you grant Zenoo permission to contact you via telephone for communication purposes.
+          <Checkbox paddingRight={'10px'} marginTop={'5px'}  fontSize={['12px', '16px', '16px', '12px']} type="checkbox"  name="permission" defaultChecked />
+          By providing your details and checking the box below, you grant Zenoo permission to react out to you.
         </label>
       </div>
       <div>

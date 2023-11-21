@@ -28,32 +28,32 @@ const Chatbot = () => {
         {
           id: '4',
           options: [
-            { value: 1, label: 'Real Estate', trigger: 'realEstateAnswer' },
-            { value: 2, label: 'Financial Advisory', trigger: 'financialAnswer' },
-            { value: 3, label: 'Insurance', trigger: 'insuranceAnswer' },
-            { value: 4, label: 'Legal Assistance', trigger: 'legalAnswer' },
+            { value: 1, label: 'Real Estate', trigger: '5' },
+            { value: 2, label: 'Financial Advisory', trigger: '5' },
+            { value: 3, label: 'Insurance', trigger: '5' },
+            { value: 4, label: 'Legal Assistance', trigger: '5' },
           ],
         },
-        {
-          id: 'realEstateAnswer',
-          message: 'You selected Real Estate. How can I assist you with Real Estate?',
-          trigger: '5'
-        },
-        {
-          id: 'financialAnswer',
-          message: 'You selected Financial Advisory. How can I assist you with Financial Advisory?',
-          trigger: '5'
-        },
-        {
-          id: 'insuranceAnswer',
-          message: 'You selected Insurance. How can I assist you with Insurance?',
-          trigger: '5'
-        },
-        {
-          id: 'legalAnswer',
-          message: 'You selected Legal Assistance. How can I assist you with Legal Assistance?',
-          trigger: '5'
-        },
+        // {
+        //   id: 'realEstateAnswer',
+        //   message: 'You selected Real Estate. How can I assist you with Real Estate?',
+        //   trigger: '5'
+        // },
+        // {
+        //   id: 'financialAnswer',
+        //   message: 'You selected Financial Advisory. How can I assist you with Financial Advisory?',
+        //   trigger: '5'
+        // },
+        // {
+        //   id: 'insuranceAnswer',
+        //   message: 'You selected Insurance. How can I assist you with Insurance?',
+        //   trigger: '5'
+        // },
+        // {
+        //   id: 'legalAnswer',
+        //   message: 'You selected Legal Assistance. How can I assist you with Legal Assistance?',
+        //   trigger: '5'
+        // },
         {
             id: '5',
             message: 'Would you like to connect with one of our experts for personalized assistance?',
@@ -116,7 +116,7 @@ const Chatbot = () => {
       <ChatBot
         // This appears as the header
         // text for the chat bot
-        headerTitle="Zenoo"
+        headerTitle="Zenoo Assistance"
         steps={steps}
         {...config}
         theme={theme} 

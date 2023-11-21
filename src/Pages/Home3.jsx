@@ -64,7 +64,7 @@ return(
                 <hr height='22px' color='rgb(54, 84, 206)' />
                 <a href="https://zenoocapitals.com/" target='blank'>
                   <Flex pt={5} pb={3} justifyContent='space-between'>
-                    <Text fontSize={['17px', 30, 30, '27px']} fontWeight='bold' color='rgb(16, 37, 127)'>Financial Advisory</Text>
+                    <Text fontSize={['17px', 30, 30,30]} fontWeight='bold' color='rgb(16, 37, 127)'>Financial Advisory</Text>
                     <Flex gap={5} pt={3}>
                       <Text className='scrolling-text' color='rgb(21 50 169)'>Explore More</Text>
                       <GoArrowUpRight color='rgb(54, 84, 206)' />
@@ -94,10 +94,10 @@ return(
             </Flex>
           </Box>
           <Flex direction={['column', 'column', 'row', 'row']}>
-            <Box w={['99%', '90%', '40%', '40%']} mt={'110px'} data-aos='fade-left'>
-              <Image h={'450px'} pl={['10px', '10px', '80px', '80px']} mt='-40px' src={whoweare} />
+            <Box w={['79%', '79%', '40%', '40%']} m={'auto'} mt={'110px'} data-aos='fade-left'>
+              <Image h={['350px','350px','450px','450px']} pl={['10px', '10px', '80px', '80px']} mt='-40px' src={whoweare} />
             </Box>
-            <Box w={['90%', '90%', '50%', '50%']} m='auto' mt={155} data-aos='fade-right'>
+            <Box w={['90%', '90%', '50%', '50%']} m='auto' mt={[35,35,155,155]} data-aos='fade-right'>
               <Text textAlign={'justify'}> At ZENOO, we don't just focus on transactions; we believe in creating meaningful experiences that turn dreams into reality. Our business is more than just bricks and mortar, numbers, or policies - we are dedicated to providing structured solutions that serve our customers. Our team of experts works tirelessly, sharing their knowledge, creativity, and ingenuity to craft solutions that exceed expectations.
                 <br />
                 <br />

@@ -24,7 +24,7 @@ return (
             <Text color={'#10257f'} className='Link_btns'>Home</Text>
             </ScrollToTopLink>
             <ScrollToTopLink to='/about'>
-            <Text color={'#10257f'} className='Link_btns'>About us</Text>
+            <Text color={'#10257f'} className='Link_btns'>About Us</Text>
             </ScrollToTopLink>
             {/* <Link to='/founder'>
             <Text color={'#10257f'} className='Link_btns'>Founder</Text>
@@ -39,7 +39,7 @@ return (
             <Text color={'#10257f'} className='Link_btns'>Careers</Text>
             </Link>
             <ScrollToTopLink to='/contact'>
-            <Text color={'#10257f'} className='Link_btns'>Contact us</Text>
+            <Text color={'#10257f'} className='Link_btns'>Contact Us</Text>
             </ScrollToTopLink>
         <Box w='10%'>   
         <Link to='/'>

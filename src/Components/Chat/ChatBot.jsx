@@ -101,8 +101,10 @@ const Chatbot = () => {
         botBubbleColor: 'rgb(16, 37, 127)',
         headerFontColor: 'white',
         botFontColor: 'white',
-        userBubbleColor: 'rgb(16, 37, 127)',
+        userBubbleColor: 'blue', 
         userFontColor: 'white',
+        userFontFamily: 'Rubik, sans-serif', // Set user input font family to Rubik
+        botFontFamily: 'Rubik, sans-serif',
     };
      
     // Set some properties of the bot

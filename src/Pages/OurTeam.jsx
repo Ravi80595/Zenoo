@@ -24,10 +24,10 @@ const OurTeam = () => {
 
 return(
   <>
-  <Chatbot/>
     <Box background={'#efefef'}>
     <Navbar/>
     <SideBox/>
+  <Chatbot/>
     <Box background={'#efefef'} pt={30} pb={70}>
     <Box pt={['13px','13px','50px','50px']}>
       <Box w='100%' h={[190,190,290,"418px"]} m='auto' pt={50} pl={21} color='white' textAlign='left' backgroundImage={cover} backgroundRepeat={'no-repeat'} backgroundSize={'cover'} backgroundPosition='center'> 
